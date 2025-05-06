@@ -1,4 +1,4 @@
-name: BIRD
+name: daily.yml
 
 on:
   schedule:
