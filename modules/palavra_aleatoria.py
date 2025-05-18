@@ -4,10 +4,10 @@ import string
 from utils.retry import try_with_retries
 
 def fetch_definition_pt():
-    # Step 1: Pick a random letter to list entries from Wiktionary
+    
     letter = random.choice(string.ascii_lowercase)
+    print(f"[PT] Trying words starting with: {letter}")
 
-    # Step 2: Query Wiktionary for words starting with that letter
     url = "https://pt.wiktionary.org/w/api.php"
     params = {
         "action": "query",
@@ -22,12 +22,12 @@ def fetch_definition_pt():
         res = requests.get(url, params=params)
         pages = res.json()["query"]["allpages"]
         if not pages:
+            print("[PT] No pages found")
             return None
 
-        # Step 3: Pick a random page title (word)
         word = random.choice(pages)["title"]
+        print(f"[PT] Trying word: {word}")
 
-        # Step 4: Fetch extract (definition)
         extract_params = {
             "action": "query",
             "format": "json",
@@ -37,16 +37,20 @@ def fetch_definition_pt():
             "explaintext": True,
             "redirects": 1
         }
+
         res2 = requests.get(url, params=extract_params)
         data = res2.json()["query"]["pages"]
         extract = next(iter(data.values())).get("extract")
 
         if not extract or len(extract) < 20:
+            print(f"[PT] No good extract for word: {word}")
             return None
 
         first_line = extract.split("\n")[0].strip()
         return f"📖 **Palavra do Dia:** {word}\n__Definição__: {first_line}"
-    except Exception:
+        
+    except Exception as e:
+        print(f"[PT] Exception occurred: {e}")
         return None
 
 def generate():
