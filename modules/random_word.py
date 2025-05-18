@@ -1,23 +1,28 @@
+import requests
 from random_word import RandomWords
-from PyDictionary import PyDictionary
 
 def generate():
     r = RandomWords()
-    dictionary = PyDictionary()
 
-    for _ in range(10):  # Try up to 10 words
-        try:
-            word = r.get_random_word()
-            if not word:
-                continue
-
-            meaning = dictionary.meaning(word)
-
-            if meaning:
-                part_of_speech = next(iter(meaning))
-                definition = meaning[part_of_speech][0]
-                return f"📚 *Word of the Day:* {word}\n_{part_of_speech}_: {definition}"
-        except Exception as e:
+    for _ in range(5):  # Try up to 5 words
+        word = r.get_random_word()
+        if not word:
             continue
 
-    return f"The word is {word}, but ⚠️ could not find definition today."
+        url = f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}"
+        try:
+            res = requests.get(url)
+            if res.status_code != 200:
+                continue
+
+            data = res.json()
+            meaning = data[0]["meanings"][0]
+            part_of_speech = meaning["partOfSpeech"]
+            definition = meaning["definitions"][0]["definition"]
+
+            return f"📚 *Word of the Day:* {word}\n_{part_of_speech}_: {definition}"
+        except Exception:
+            continue
+
+    return "⚠️ Could not find a usable word with a definition today."
+
