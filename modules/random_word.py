@@ -5,16 +5,19 @@ def generate():
     r = RandomWords()
     dictionary = PyDictionary()
 
-    try:
-        word = r.get_random_word()
-        meaning = dictionary.meaning(word)
+    for _ in range(10):  # Try up to 10 words
+        try:
+            word = r.get_random_word()
+            if not word:
+                continue
 
-        if meaning:
-            # Just grab the first definition of the first part of speech
-            part_of_speech = next(iter(meaning))
-            definition = meaning[part_of_speech][0]
-            return f"📚 *Word of the Day:* {word}\n_{part_of_speech}_: {definition}"
-        else:
-            return "⚠️ Could not find a definition for the random word."
-    except Exception as e:
-        return f"❌ Error getting word of the day: {e}"
+            meaning = dictionary.meaning(word)
+
+            if meaning:
+                part_of_speech = next(iter(meaning))
+                definition = meaning[part_of_speech][0]
+                return f"📚 *Word of the Day:* {word}\n_{part_of_speech}_: {definition}"
+        except Exception as e:
+            continue
+
+    return f"The word is {word}, but ⚠️ could not find definition today."
