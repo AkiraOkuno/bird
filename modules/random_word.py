@@ -20,7 +20,7 @@ def generate():
             part_of_speech = meaning["partOfSpeech"]
             definition = meaning["definitions"][0]["definition"]
 
-            return f"📚 *Word of the Day:* {word}\n_{part_of_speech}_: {definition}"
+            return f"📚 **Word of the Day:** {word} (__{part_of_speech}__): {definition}"
         except Exception:
             continue
 
