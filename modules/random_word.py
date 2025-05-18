@@ -4,7 +4,7 @@ from random_word import RandomWords
 def generate():
     r = RandomWords()
 
-    for _ in range(5):  # Try up to 5 random words
+    for _ in range(100):
         word = r.get_random_word()
         if not word:
             continue
