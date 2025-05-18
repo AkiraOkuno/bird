@@ -15,3 +15,15 @@ def send_telegram_message(text):
             }
         )
         print(f"Sent to {chat_id.strip()}: {response.status_code}, {response.text}")
+
+def send_image_message(chat_id, image_url, caption=None):
+    token = os.environ["TELEGRAM_TOKEN"]
+    url = f"https://api.telegram.org/bot{token}/sendPhoto"
+    payload = {
+        "chat_id": chat_id,
+        "photo": image_url,
+        "caption": caption,
+        "parse_mode": "Markdown"
+    }
+    response = requests.post(url, data=payload)
+    print(f"[Image] Sent to {chat_id}: {response.status_code}")
