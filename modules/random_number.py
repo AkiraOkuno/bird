@@ -1,4 +1,5 @@
 import random
 
 def generate():
-    return Your random number is {random.randint(1, 100)}"
+    return f"🎲 Your random number is {random.randint(1, 100)}"
+    
