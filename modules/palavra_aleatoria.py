@@ -2,7 +2,7 @@ import requests
 import random
 from utils.retry import try_with_retries
 
-WORDS_URL = "https://raw.githubusercontent.com/hermitdave/FrequencyWords/master/content/2018/pt/pt_50k.txt"
+WORDS_URL = "https://raw.githubusercontent.com/hermitdave/FrequencyWords/master/content/2018/pt/pt_full.txt"
 
 def load_random_word():
     try:
