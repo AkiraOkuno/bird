@@ -3,8 +3,7 @@ name: BIRD
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'  # Every 5 minutes
-
+    - cron: '0 14 * * *'  # Runs once daily at 9:00 AM EST/EDT
 jobs:
   run:
     runs-on: ubuntu-latest
