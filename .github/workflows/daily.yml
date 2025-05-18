@@ -21,6 +21,7 @@ jobs:
           pip install requests
           pip install random-word
           pip install PyDictionary
+          pip install beautifulsoup4
 
       - name: Run bot
         env:
