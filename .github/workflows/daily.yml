@@ -27,7 +27,3 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           CHAT_IDS: ${{ secrets.CHAT_IDS }}
         run: python main.py
-
-          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          CHAT_IDS: ${{ secrets.CHAT_IDS }}
-        run: python main.py
