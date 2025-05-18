@@ -1,49 +1,45 @@
 import requests
-import random
+import xml.etree.ElementTree as ET
 from utils.retry import try_with_retries
 
-WORDS_URL = "https://raw.githubusercontent.com/hermitdave/FrequencyWords/master/content/2018/pt/pt_full.txt"
-
-def load_random_word():
-    try:
-        res = requests.get(WORDS_URL)
-        words = [line.split()[0] for line in res.text.splitlines() if line]
-        return random.choice(words)
-    except Exception as e:
-        print(f"[PT] Failed to load word list: {e}", flush=True)
-        return None
+API_RANDOM = "https://dicionario-aberto.net/random"
+API_WORD = "https://dicionario-aberto.net/word/{}"
 
 def fetch_definition_pt():
-    word = load_random_word()
-    if not word:
-        return None
-
-    print(f"[PT] Trying word: {word}", flush=True)
-
-    url = "https://pt.wiktionary.org/w/api.php"
-    params = {
-        "action": "query",
-        "format": "json",
-        "prop": "extracts",
-        "titles": word,
-        "exintro": True,
-        "explaintext": True,
-        "redirects": 1
-    }
-
     try:
-        res = requests.get(url, params=params)
-        data = res.json().get("query", {}).get("pages", {})
-        extract = next(iter(data.values())).get("extract", "").strip()
+        # Step 1: Get a random word
+        res = requests.get(API_RANDOM)
+        if res.status_code != 200:
+            print(f"[PT] Failed to get random word", flush=True)
+            return None
 
-        if extract and len(extract) >= 10:
-            first_line = extract.split("\n")[0].strip()
-            return f"📖 **Palavra do Dia:** {word}\n__Definição__: {first_line}"
+        word = res.json().get("word")
+        print(f"[PT] Trying word: {word}", flush=True)
 
-        print(f"[PT] No extract for {word}", flush=True)
-        return None
+        # Step 2: Get definition for that word
+        res2 = requests.get(API_WORD.format(word))
+        if res2.status_code != 200:
+            print(f"[PT] Failed to get definition for: {word}", flush=True)
+            return None
+
+        data = res2.json()
+        if not data or "xml" not in data[0]:
+            print(f"[PT] No XML content found for: {word}", flush=True)
+            return None
+
+        xml = data[0]["xml"]
+        root = ET.fromstring(xml)
+
+        # Try to extract the first <def> tag
+        definition = root.find(".//def")
+        if definition is not None and definition.text and len(definition.text.strip()) > 5:
+            return f"📖 **Palavra do Dia:** {word}\n__Definição__: {definition.text.strip()}"
+        else:
+            print(f"[PT] No definition found in XML for: {word}", flush=True)
+            return None
+
     except Exception as e:
-        print(f"[PT] Exception fetching definition: {e}", flush=True)
+        print(f"[PT] Exception occurred: {e}", flush=True)
         return None
 
 def generate():
