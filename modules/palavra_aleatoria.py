@@ -54,4 +54,4 @@ def fetch_definition_pt():
         return None
 
 def generate():
-    return try_with_retries(fetch_definition_pt, attempts=10, delay=5)
+    return try_with_retries(fetch_definition_pt, attempts=2, delay=5)
