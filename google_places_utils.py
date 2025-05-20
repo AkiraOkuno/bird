@@ -3,6 +3,7 @@
 import requests
 import os
 import random
+from urllib.parse import quote_plus
 
 API_KEY = os.environ["GOOGLE_API_KEY"]
 
@@ -53,9 +54,10 @@ def get_random_tourist_photos(country_name, max_photos=5, max_results=50):
         name = place.get("name", "Lugar desconhecido")
         address = place.get("formatted_address", "")
         place_id = place.get("place_id")
+        query = quote_plus(name)
         maps_url = (
             f"https://www.google.com/maps/search/?api=1"
-            f"&query={name.replace(' ', '+')}&query_place_id={place_id}"
+            f"&query={query}&query_place_id={place_id}"
             if place_id else None
         )
         trivia = get_wikipedia_summary(name)
@@ -112,9 +114,10 @@ def get_random_city_photos(country_name, max_photos=5, max_results=50):
         name = place.get("name", "Cidade desconhecida")
         address = place.get("formatted_address", "")
         place_id = place.get("place_id")
+        query = quote_plus(name)
         maps_url = (
             f"https://www.google.com/maps/search/?api=1"
-            f"&query={name.replace(' ', '+')}&query_place_id={place_id}"
+            f"&query={query}&query_place_id={place_id}"
             if place_id else None
         )
         trivia = get_wikipedia_summary(f"{name}, {country_name}")
@@ -169,12 +172,12 @@ def get_random_restaurant_for_country(country_name):
         address = place.get("formatted_address", "")
         rating = place.get("rating")
         place_id = place.get("place_id")
+        query = quote_plus(name)
         maps_url = (
             f"https://www.google.com/maps/search/?api=1"
-            f"&query={name.replace(' ', '+')}&query_place_id={place_id}"
+            f"&query={query}&query_place_id={place_id}"
             if place_id else None
         )
-
         photo_ref = place["photos"][0]["photo_reference"]
         photo_url = (
             f"https://maps.googleapis.com/maps/api/place/photo"
