@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import random
 import itertools
 import os
+import time
 from telegram_utils import send_image_message, send_telegram_message
 from utils.retry import try_with_retries
 
