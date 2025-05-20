@@ -63,7 +63,7 @@ def generate():
     ingrs = list(itertools.chain(*[x.text.strip().split("   ") for x in soup.find_all("ul", {'class': "js_ga_ob"})]))
     steps = list(itertools.chain(*[x.text.strip().split("   ") for x in soup.find_all("ol", {'class': "olStd"})]))
     stats_print = "\n".join(stats)
-    ingrs_print = "\n".join(["* " + x for x in ingrs])
+    ingrs_print = "\n".join(["- " + x for x in ingrs])
     steps_print = "\n".join([str(n+1)+") "+x for n,x in enumerate(steps)])
     caption = f"🥩 Receita de hoje: {nome}\n\n{stats_print}\n\n🔪 Ingredientes:\n{ingrs_print}\n\n🍳 Modo de preparo:\n{steps_print}"
     print(caption)
