@@ -104,7 +104,7 @@ def get_random_city_photos(country_name, max_photos=5, max_results=50):
     for place in results:
         name = place.get("name", "Cidade desconhecida")
         address = place.get("formatted_address", "")
-        trivia = get_wikipedia_summary(name)
+        trivia = get_wikipedia_summary(f"{name}, {country_name}")
 
         for photo in place.get("photos", []):
             ref = photo.get("photo_reference")
