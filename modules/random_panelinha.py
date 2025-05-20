@@ -3,6 +3,7 @@ import re
 from bs4 import BeautifulSoup
 import random
 import itertools
+import os
 
 def get_panelinha():
     
