@@ -55,7 +55,7 @@ def get_panelinha():
     return req_prato.text
 
 def generate():
-  
+    
     req_prato_text = get_panelinha()
     soup = BeautifulSoup(req_prato_text, "html.parser")
     nome = soup.find_all("h1", {'class': "tH2"})[0].text
@@ -66,10 +66,10 @@ def generate():
     ingrs_print = "\n".join(["* " + x for x in ingrs])
     steps_print = "\n".join([str(n+1)+") "+x for n,x in enumerate(steps)])
     caption = f"🥩 Receita de hoje: {nome}\n\n{stats_print}\n\n🔪 Ingredientes:\n{ingrs_print}\n\n🍳 Modo de preparo:\n{steps_print}"
-    
+    print(caption)
     links_imagens = soup.find_all("link", {'as': "image"})[0].get("imagesrcset")
     image_url = re.findall("[^,]+(?=640)",links_imagens)[0].strip()       
-
+    print(image_url)
     chat_ids = os.environ["CHAT_IDS"].split(",")
 
     for chat_id in chat_ids:
