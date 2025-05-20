@@ -90,7 +90,7 @@ def generate():
             f"⭐ Avaliação: {restaurant['rating'] or 'Sem nota'}"
         )
         if restaurant.get("maps_url"):
-            caption += f"\n🔗 [Ver no Google Maps]({restaurant['maps_url']})"
+            caption += f"\n🔗 [Ver no Google Maps]({entry['maps_url']})"
     
         for chat_id in chat_ids:
             send_image_message(chat_id.strip(), restaurant["image_url"], caption)
