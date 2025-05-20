@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import random
 import itertools
 import os
-from telegram_utils import send_image_message
+from telegram_utils import send_image_message, send_telegram_message
 from utils.retry import try_with_retries
 
 def get_panelinha():
@@ -60,7 +60,6 @@ def generate():
         return "⚠️ Não foi possível carregar uma receita hoje."
 
     soup = BeautifulSoup(req_prato_text, "html.parser")
-
     nome = soup.find_all("h1", {'class': "tH2"})[0].text.strip()
 
     stats = list(itertools.chain(*[x.text.strip().split("   ") for x in soup.find_all("dl", {'class': "stats"})]))
@@ -71,7 +70,6 @@ def generate():
     ingrs_print = "\n".join(["- " + x for x in ingrs])
     steps_print = "\n".join([f"{n+1}) {x}" for n, x in enumerate(steps)])
 
-    # --- Captions ---
     short_caption = f"🥩 Receita de hoje: *{nome}*\n\n{stats_print}"
     full_text = (
         f"🥩 Receita completa: *{nome}*\n\n"
@@ -80,7 +78,6 @@ def generate():
         f"🍳 *Modo de preparo:*\n{steps_print}"
     )
 
-    # --- Image ---
     try:
         image_links = soup.find_all("link", {'as': "image"})
         links_imagens = image_links[0].get("imagesrcset") if image_links else None
@@ -92,7 +89,10 @@ def generate():
     chat_ids = os.environ["CHAT_IDS"].split(",")
 
     for chat_id in chat_ids:
+        chat_id = chat_id.strip()
         if image_url:
-            send_image_message(chat_id.strip(), image_url, short_caption)
+            send_image_message(chat_id, image_url, short_caption)
+            time.sleep(1.5)  # ✅ Ensure image arrives first
+        send_telegram_message(chat_id, full_text)
 
-    return full_text or "⚠️ Não foi possível obter uma receita hoje."
+    return None
