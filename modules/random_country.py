@@ -2,7 +2,7 @@ import requests
 import random
 import os
 from telegram_utils import send_image_message
-from google_places_utils import get_random_tourist_photos
+from google_places_utils import get_random_tourist_photos, get_random_city_photos
 
 API_URL = "https://restcountries.com/v3.1/all"
 
