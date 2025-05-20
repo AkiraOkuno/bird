@@ -58,9 +58,19 @@ def generate():
     # 2. Send photos of tourist spots in that country
     country_name = caption.split("*País do Dia:*")[-1].split("\n")[0].strip()
     
-    photo_entries = get_random_tourist_photos(country_name, max_photos=5)
+    tourist_photo_entries = get_random_tourist_photos(country_name, max_photos=5)
     
     for entry in photo_entries:
+        caption = f"📸 *{entry['place_name']}*\n📍 {entry['address']}"
+        if entry.get("trivia"):
+            caption += f"\n🧠 {entry['trivia']}"
+        for chat_id in chat_ids:
+            send_image_message(chat_id.strip(), entry["image_url"], caption)
+
+
+    random_photos = get_random_city_photos(country_name, max_photos=5)
+
+    for entry in random_photos:
         caption = f"📸 *{entry['place_name']}*\n📍 {entry['address']}"
         if entry.get("trivia"):
             caption += f"\n🧠 {entry['trivia']}"
