@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import random
 import itertools
 import os
-from telegram_utils import send_image_message_v2
+from telegram_utils import send_image_message
 from utils.retry import try_with_retries
 
 def get_panelinha():
@@ -55,24 +55,45 @@ def get_panelinha():
     return req_prato.text
 
 def generate():
-    
-    req_prato_text = get_panelinha()
+    req_prato_text = try_with_retries(get_panelinha, attempts=5, delay=3)
+    if req_prato_text is None:
+        return "⚠️ Não foi possível carregar uma receita hoje."
+
     soup = BeautifulSoup(req_prato_text, "html.parser")
-    nome = soup.find_all("h1", {'class': "tH2"})[0].text
+
+    nome = soup.find_all("h1", {'class': "tH2"})[0].text.strip()
+
     stats = list(itertools.chain(*[x.text.strip().split("   ") for x in soup.find_all("dl", {'class': "stats"})]))
     ingrs = list(itertools.chain(*[x.text.strip().split("   ") for x in soup.find_all("ul", {'class': "js_ga_ob"})]))
     steps = list(itertools.chain(*[x.text.strip().split("   ") for x in soup.find_all("ol", {'class': "olStd"})]))
+
     stats_print = "\n".join(stats)
     ingrs_print = "\n".join(["- " + x for x in ingrs])
-    steps_print = "\n".join([str(n+1)+") "+x for n,x in enumerate(steps)])
-    caption = f"🥩 Receita de hoje: {nome}\n\n{stats_print}\n\n🔪 Ingredientes:\n{ingrs_print}\n\n🍳 Modo de preparo:\n{steps_print}"
-    print(caption)
-    links_imagens = soup.find_all("link", {'as': "image"})[0].get("imagesrcset")
-    image_url = re.findall("[^,]+(?=640)",links_imagens)[0].strip()       
-    print(image_url)
+    steps_print = "\n".join([f"{n+1}) {x}" for n, x in enumerate(steps)])
+
+    # --- Captions ---
+    short_caption = f"🥩 Receita de hoje: *{nome}*\n\n{stats_print}"
+    full_text = (
+        f"🥩 Receita completa: *{nome}*\n\n"
+        f"{stats_print}\n\n"
+        f"🔪 *Ingredientes:*\n{ingrs_print}\n\n"
+        f"🍳 *Modo de preparo:*\n{steps_print}"
+    )
+
+    # --- Image ---
+    try:
+        image_links = soup.find_all("link", {'as': "image"})
+        links_imagens = image_links[0].get("imagesrcset") if image_links else None
+        image_url = re.findall(r"[^,]+(?=640)", links_imagens)[0].strip() if links_imagens else None
+    except Exception as e:
+        print(f"[PANELINHA] Error extracting image: {e}")
+        image_url = None
+
     chat_ids = os.environ["CHAT_IDS"].split(",")
 
     for chat_id in chat_ids:
-        send_image_message_v2(chat_id.strip(), image_url, caption)
+        if image_url:
+            send_image_message(chat_id.strip(), image_url, short_caption)
+        send_text_message(chat_id.strip(), full_text)
 
     return None
