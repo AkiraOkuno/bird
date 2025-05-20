@@ -94,6 +94,6 @@ def generate():
         if image_url:
             send_image_message(chat_id, image_url, short_caption)
             time.sleep(1.5)  # ✅ Ensure image arrives first
-        send_telegram_message(chat_id, full_text)
+        send_telegram_message(full_text)
 
     return None
