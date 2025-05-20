@@ -5,6 +5,8 @@ import random
 import itertools
 import os
 
+from telegram_utils import send_image_message
+
 def get_panelinha():
     
     headers = {
