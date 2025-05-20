@@ -2,7 +2,7 @@ import requests
 import random
 import os
 from telegram_utils import send_image_message
-from google_places_utils import get_random_tourist_photos, get_random_city_photos
+from google_places_utils import get_random_tourist_photos, get_random_city_photos, get_random_restaurant_for_country
 
 API_URL = "https://restcountries.com/v3.1/all"
 
@@ -80,6 +80,20 @@ def generate():
             caption += f"\n🔗 [Ver no Google Maps]({entry['maps_url']})"
         for chat_id in chat_ids:
             send_image_message(chat_id.strip(), entry["image_url"], caption)
+
+
+    restaurant = get_random_restaurant_for_country(country_name)
+    if restaurant:
+        caption = (
+            f"🍽️ *{restaurant['name']}* (em {restaurant['city']})\n"
+            f"📍 {restaurant['address']}\n"
+            f"⭐ Avaliação: {restaurant['rating'] or 'Sem nota'}"
+        )
+        if restaurant.get("maps_url"):
+            caption += f"\n🔗 [Ver no Google Maps]({restaurant['maps_url']})"
+    
+        for chat_id in chat_ids:
+            send_image_message(chat_id.strip(), restaurant["image_url"], caption)
             
     return None
 
