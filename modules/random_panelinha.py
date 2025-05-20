@@ -94,6 +94,5 @@ def generate():
     for chat_id in chat_ids:
         if image_url:
             send_image_message(chat_id.strip(), image_url, short_caption)
-        send_text_message(chat_id.strip(), full_text)
 
-    return None
+    return full_text or None
