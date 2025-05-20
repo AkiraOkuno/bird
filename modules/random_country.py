@@ -2,6 +2,7 @@ import requests
 import random
 import os
 from telegram_utils import send_image_message
+from google_places_utils import get_place_images_for_country
 
 API_URL = "https://restcountries.com/v3.1/all"
 
