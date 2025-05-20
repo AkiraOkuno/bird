@@ -54,4 +54,23 @@ def generate():
     for chat_id in chat_ids:
         send_image_message(chat_id.strip(), flag_url, caption)
 
+    # 2. Send photos of tourist spots in that country
+    country_name = caption.split("*País do Dia:*")[-1].split("\n")[0].strip()
+    photo_urls = get_place_images_for_country(country_name, max_photos=5)
+
+    for url in photo_urls:
+        for chat_id in chat_ids:
+            send_image_message(chat_id.strip(), url, f"📸 Imagem de {country_name}")
+
     return None
+
+
+
+
+
+
+
+
+
+
+
