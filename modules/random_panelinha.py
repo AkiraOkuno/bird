@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import random
 import itertools
 import os
-from telegram_utils import send_image_message
+from telegram_utils import send_image_message_v2
 from utils.retry import try_with_retries
 
 def get_panelinha():
@@ -73,6 +73,6 @@ def generate():
     chat_ids = os.environ["CHAT_IDS"].split(",")
 
     for chat_id in chat_ids:
-        send_image_message(chat_id.strip(), image_url, caption)
+        send_image_message_v2(chat_id.strip(), image_url, caption)
 
     return None
