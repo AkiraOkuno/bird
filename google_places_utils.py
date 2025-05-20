@@ -52,6 +52,8 @@ def get_random_tourist_photos(country_name, max_photos=5, max_results=50):
     for place in results:
         name = place.get("name", "Lugar desconhecido")
         address = place.get("formatted_address", "")
+        place_id = place.get("place_id")
+        maps_url = f"https://www.google.com/maps/place/?q=place_id:{place_id}" if place_id else None
         trivia = get_wikipedia_summary(name)
 
         for photo in place.get("photos", []):
@@ -62,7 +64,8 @@ def get_random_tourist_photos(country_name, max_photos=5, max_results=50):
                     "image_url": image_url,
                     "place_name": name,
                     "address": address,
-                    "trivia": trivia
+                    "trivia": trivia,
+                    "maps_url": maps_url
                 })
                 break  # one photo per place
         if len(selected_photos) >= max_photos:
@@ -104,6 +107,8 @@ def get_random_city_photos(country_name, max_photos=5, max_results=50):
     for place in results:
         name = place.get("name", "Cidade desconhecida")
         address = place.get("formatted_address", "")
+        place_id = place.get("place_id")
+        maps_url = f"https://www.google.com/maps/place/?q=place_id:{place_id}" if place_id else None
         trivia = get_wikipedia_summary(f"{name}, {country_name}")
 
         for photo in place.get("photos", []):
@@ -114,7 +119,8 @@ def get_random_city_photos(country_name, max_photos=5, max_results=50):
                     "image_url": image_url,
                     "place_name": name,
                     "address": address,
-                    "trivia": trivia
+                    "trivia": trivia,
+                    "maps_url": maps_url
                 })
                 break  # one photo per city/town
         if len(selected_photos) >= max_photos:
