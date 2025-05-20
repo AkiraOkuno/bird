@@ -8,8 +8,9 @@ from telegram_utils import send_image_message
 from utils.retry import try_with_retries
 
 def get_panelinha():
+    
     headers = {
-        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,/;q=0.8,application/signed-exchange;v=b3;q=0.7",
         "accept-encoding": "gzip, deflate, br, zstd",
         "accept-language": "pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
         "priority": "u=0, i",
@@ -25,55 +26,37 @@ def get_panelinha():
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
     }
 
-    try:
-        dict_max_page = {
-            "entradas": 30,
-            "pratos-principais": 50,
-            "verao": 20,
-            "bebidas": 5,
-            "cafe-da-manha": 15,
-            "sopas": 5,
-            "inverno": 10,
-            "acompanhamentos": 40,
-            "sobremesas": 20,
-            "doces": 25
-        }
 
-        categorias_pond = list(itertools.chain(*[[k]*v for k, v in dict_max_page.items()]))
-        random_cat = random.choice(categorias_pond)
-        max_page = dict_max_page.get(random_cat)
-        random_page = random.randint(1, max_page)
+    dict_max_page = {"entradas":30,
+                     "pratos-principais":50,
+                     "verao":20,
+                     "bebidas":5,
+                     "cafe-da-manha":15,
+                     "sopas":5,
+                     "inverno":10,
+                     "acompanhamentos":40,
+                     "sobremesas":20,
+                     "doces":25}
+    
+    categorias_pond = list(itertools.chain(*[[k]*v for k,v in dict_max_page.items()]))
+    random_cat = random.choice(categorias_pond)
+    get_max = dict_max_page.get(random_cat)
+    random_page = random.randint(1,get_max)
 
-        url = f"https://panelinha.com.br/categoria/{random_cat}/pagina/{random_page}"
-        req = requests.get(url, headers=headers, timeout=5)
-        if req.status_code != 200:
-            print(f"[PANELINHA] Failed category page: {req.status_code}")
-            return None
-
-        soup = BeautifulSoup(req.text, "html.parser")
-        lista_pratos = [x['href'] for x in soup.find_all('a', href=True) if "/receita/" in x['href']]
-        if not lista_pratos:
-            print("[PANELINHA] No recipes found.")
-            return None
-
-        random_prato = random.choice(lista_pratos)
-        url_prato = "https://panelinha.com.br" + random_prato
-        req_prato = requests.get(url_prato, headers=headers, timeout=5)
-        if req_prato.status_code != 200:
-            print(f"[PANELINHA] Failed recipe page: {req_prato.status_code}")
-            return None
-
-        req_prato.encoding = "utf-8"
-        return req_prato.text
-
-    except Exception as e:
-        print(f"[PANELINHA] Exception occurred: {e}")
-        return None
-
+    url = f"https://panelinha.com.br/categoria/{random_cat}/pagina/{random_page}"
+    req = requests.get(url, headers=headers)
+    soup = BeautifulSoup(req.text, "html.parser")    
+    lista_pratos = [x['href'] for x in soup.find_all('a', href=True) if "/receita/" in x['href']]
+    random_prato = random.choice(lista_pratos)
+    
+    url_prato = "https://panelinha.com.br"+random_prato
+    req_prato = requests.get(url_prato, headers=headers)
+    req_prato.encoding = "utf-8"
+    return req_prato.text
 
 def generate():
     
-    req_prato_text = try_with_retries(get_panelinha, attempts=5, delay=3)
+    req_prato_text = get_panelinha()
     soup = BeautifulSoup(req_prato_text, "html.parser")
     nome = soup.find_all("h1", {'class': "tH2"})[0].text
     stats = list(itertools.chain(*[x.text.strip().split("   ") for x in soup.find_all("dl", {'class': "stats"})]))
