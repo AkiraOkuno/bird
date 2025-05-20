@@ -2,7 +2,7 @@ import requests
 import random
 import os
 from telegram_utils import send_image_message
-from google_places_utils import get_place_images_for_country
+from google_places_utils import get_random_tourist_photos
 
 API_URL = "https://restcountries.com/v3.1/all"
 
@@ -57,16 +57,16 @@ def generate():
 
     # 2. Send photos of tourist spots in that country
     country_name = caption.split("*País do Dia:*")[-1].split("\n")[0].strip()
-    photo_entries = get_place_images_for_country(country_name, max_photos=5)
-
+    
+    photo_entries = get_random_tourist_photos(country_name, max_photos=5)
+    
     for entry in photo_entries:
-        image_url = entry["image_url"]
-        place_name = entry["place_name"]
-        address = entry["address"]
-        caption = f"📸 *{place_name}*\n📍 {address}"
+        caption = f"📸 *{entry['place_name']}*\n📍 {entry['address']}"
+        if entry.get("trivia"):
+            caption += f"\n🧠 {entry['trivia']}"
         for chat_id in chat_ids:
-            send_image_message(chat_id.strip(), image_url, caption)
-
+            send_image_message(chat_id.strip(), entry["image_url"], caption)
+            
     return None
 
 
