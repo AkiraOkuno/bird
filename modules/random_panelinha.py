@@ -95,4 +95,4 @@ def generate():
         if image_url:
             send_image_message(chat_id.strip(), image_url, short_caption)
 
-    return full_text or None
+    return full_text or "⚠️ Não foi possível obter uma receita hoje."
