@@ -64,6 +64,8 @@ def generate():
         caption = f"📸 *{entry['place_name']}*\n📍 {entry['address']}"
         if entry.get("trivia"):
             caption += f"\n🧠 {entry['trivia']}"
+        if entry.get("maps_url"):
+            caption += f"\n🔗 [Ver no Google Maps]({entry['maps_url']})"
         for chat_id in chat_ids:
             send_image_message(chat_id.strip(), entry["image_url"], caption)
 
@@ -74,6 +76,8 @@ def generate():
         caption = f"📸 *{entry['place_name']}*\n📍 {entry['address']}"
         if entry.get("trivia"):
             caption += f"\n🧠 {entry['trivia']}"
+        if entry.get("maps_url"):
+            caption += f"\n🔗 [Ver no Google Maps]({entry['maps_url']})"
         for chat_id in chat_ids:
             send_image_message(chat_id.strip(), entry["image_url"], caption)
             
