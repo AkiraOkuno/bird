@@ -53,7 +53,11 @@ def get_random_tourist_photos(country_name, max_photos=5, max_results=50):
         name = place.get("name", "Lugar desconhecido")
         address = place.get("formatted_address", "")
         place_id = place.get("place_id")
-        maps_url = f"https://www.google.com/maps/place/?q=place_id:{place_id}" if place_id else None
+        maps_url = (
+            f"https://www.google.com/maps/search/?api=1"
+            f"&query={name.replace(' ', '+')}&query_place_id={place_id}"
+            if place_id else None
+        )
         trivia = get_wikipedia_summary(name)
 
         for photo in place.get("photos", []):
@@ -108,7 +112,11 @@ def get_random_city_photos(country_name, max_photos=5, max_results=50):
         name = place.get("name", "Cidade desconhecida")
         address = place.get("formatted_address", "")
         place_id = place.get("place_id")
-        maps_url = f"https://www.google.com/maps/place/?q=place_id:{place_id}" if place_id else None
+        maps_url = (
+            f"https://www.google.com/maps/search/?api=1"
+            f"&query={name.replace(' ', '+')}&query_place_id={place_id}"
+            if place_id else None
+        )
         trivia = get_wikipedia_summary(f"{name}, {country_name}")
 
         for photo in place.get("photos", []):
@@ -161,7 +169,11 @@ def get_random_restaurant_for_country(country_name):
         address = place.get("formatted_address", "")
         rating = place.get("rating")
         place_id = place.get("place_id")
-        maps_url = f"https://www.google.com/maps/place/?q=place_id:{place_id}" if place_id else None
+        maps_url = (
+            f"https://www.google.com/maps/search/?api=1"
+            f"&query={name.replace(' ', '+')}&query_place_id={place_id}"
+            if place_id else None
+        )
 
         photo_ref = place["photos"][0]["photo_reference"]
         photo_url = (
