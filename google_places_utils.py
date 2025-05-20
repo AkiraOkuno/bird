@@ -128,3 +128,54 @@ def get_random_city_photos(country_name, max_photos=5, max_results=50):
 
     return selected_photos
 
+def get_random_restaurant_for_country(country_name):
+    """
+    Choose a random city in the country and return a random restaurant with photo, rating, and map link.
+    """
+    # Step 1: Pick a random city
+    city_photos = get_random_city_photos(country_name, max_photos=1)
+    if not city_photos:
+        return None
+
+    city_name = city_photos[0]["place_name"]
+
+    # Step 2: Search for restaurants in that city
+    search_url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
+    params = {
+        "query": f"restaurant in {city_name}, {country_name}",
+        "key": API_KEY
+    }
+
+    res = requests.get(search_url, params=params)
+    results = res.json().get("results", [])
+    if not results:
+        return None
+
+    # Step 3: Pick a random restaurant with a photo
+    random.shuffle(results)
+    for place in results:
+        if "photos" not in place:
+            continue
+
+        name = place.get("name", "Restaurante desconhecido")
+        address = place.get("formatted_address", "")
+        rating = place.get("rating")
+        place_id = place.get("place_id")
+        maps_url = f"https://www.google.com/maps/place/?q=place_id:{place_id}" if place_id else None
+
+        photo_ref = place["photos"][0]["photo_reference"]
+        photo_url = (
+            f"https://maps.googleapis.com/maps/api/place/photo"
+            f"?maxwidth=1600&photoreference={photo_ref}&key={API_KEY}"
+        )
+
+        return {
+            "name": name,
+            "address": address,
+            "rating": rating,
+            "image_url": photo_url,
+            "maps_url": maps_url,
+            "city": city_name
+        }
+
+    return None
