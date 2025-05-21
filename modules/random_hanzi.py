@@ -3,7 +3,7 @@ import random
 import os
 
 def load_hanzi_csv():
-    path = "data/chinese_characters.csv"
+    path = "data/chinese characters.csv"
     return pd.read_csv(path)
 
 def get_random_hanzi():
