@@ -1,11 +1,11 @@
-# google_places_utils.py
-
 import requests
 import os
 import random
+import json
 from urllib.parse import quote_plus
 
 API_KEY = os.environ["GOOGLE_API_KEY"]
+CITIES_PATH = "data/countries+cities.json"
 
 def get_wikipedia_summary(title):
     try:
@@ -193,4 +193,15 @@ def get_random_restaurant_for_country(country_name):
             "city": city_name
         }
 
+    return None
+
+def load_city_data():
+    with open(CITIES_PATH, encoding="utf-8") as f:
+        return json.load(f)
+
+def get_random_city_for_country(country_name):
+    city_data = load_city_data()
+    for entry in city_data:
+        if entry["name"].lower() == country_name.lower() and entry["cities"]:
+            return random.choice(entry["cities"])
     return None
