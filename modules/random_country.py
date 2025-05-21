@@ -2,7 +2,12 @@ import requests
 import random
 import os
 from telegram_utils import send_image_message
-from google_places_utils import get_random_tourist_photos, get_random_city_photos, get_random_restaurant_for_country
+from google_places_utils import (
+    get_random_tourist_photos,
+    get_random_city_photos,
+    get_random_restaurant_for_country,
+    get_random_cities_for_country
+)
 
 API_URL = "https://restcountries.com/v3.1/all"
 
@@ -69,9 +74,18 @@ def generate():
         for chat_id in chat_ids:
             send_image_message(chat_id.strip(), entry["image_url"], caption)
 
+    # get random cities from cities by country JSON
+    cities = get_random_cities_for_country(country_name, max_results=2)
+    random_photos = []
     
-    random_photos = get_random_city_photos(country_name, max_photos=5)
-
+    if cities:
+        for city in cities:
+            random_photos += get_city_photos_from_name(country_name, city_name=city, max_photos=3)
+    
+    # Still fallback if nothing found
+    if len(random_photos) <= 3:
+        random_photos = get_random_city_photos(country_name, max_photos=5-len(random_photos))
+        
     for entry in random_photos:
         caption = f"📸 *{entry['place_name']}*\n📍 {entry['address']}"
         if entry.get("trivia"):
