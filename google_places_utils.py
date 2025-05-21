@@ -3,7 +3,6 @@ import os
 import random
 import json
 from urllib.parse import quote_plus
-from functools import lru_cache
 
 API_KEY = os.environ["GOOGLE_API_KEY"]
 CITIES_PATH = "data/countries+cities.json"
@@ -244,7 +243,6 @@ def get_city_photos_from_name(country_name, city_name, max_photos=3):
 
     return selected_photos
 
-@lru_cache(maxsize=1)
 def _load_city_data():
     with open("data/countries_cities.json", encoding="utf-8") as f:
         return json.load(f)
