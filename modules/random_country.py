@@ -6,7 +6,8 @@ from google_places_utils import (
     get_random_tourist_photos,
     get_random_city_photos,
     get_random_restaurant_for_country,
-    get_random_cities_for_country
+    get_random_cities_for_country,
+    get_city_photos_from_name
 )
 
 API_URL = "https://restcountries.com/v3.1/all"
@@ -16,7 +17,7 @@ def fetch_country():
         res = requests.get(API_URL)
         if res.status_code != 200:
             print(f"[COUNTRY] API failed: {res.status_code}", flush=True)
-            return None
+            return None, None
 
         countries = res.json()
         country = random.choice(countries)
@@ -45,6 +46,7 @@ def fetch_country():
             f"💰 Moeda(s): {currencies_str}"
         )
 
+        print(f"[COUNTRY] Selected country: {name}")
         return flag_url, caption
 
     except Exception as e:
@@ -52,20 +54,21 @@ def fetch_country():
         return None, None
 
 def generate():
-    
     flag_url, caption = fetch_country()
     if not flag_url or not caption:
         return "⚠️ Não foi possível carregar o país do dia."
 
     chat_ids = os.environ["CHAT_IDS"].split(",")
+
+    # Send flag and country info
     for chat_id in chat_ids:
+        print(f"[SEND] Flag to {chat_id.strip()} -> {flag_url}")
         send_image_message(chat_id.strip(), flag_url, caption)
 
-    # 2. Send photos of tourist spots in that country
     country_name = caption.split("*País do Dia:*")[-1].split("\n")[0].strip()
-    
+
+    # Tourist places
     tourist_photo_entries = get_random_tourist_photos(country_name, max_photos=5)
-    
     for entry in tourist_photo_entries:
         caption = f"📸 *{entry['place_name']}*\n📍 {entry['address']}"
         if entry.get("trivia"):
@@ -73,20 +76,24 @@ def generate():
         if entry.get("maps_url"):
             caption += f"\n🔗 [Ver no Google Maps]({entry['maps_url']})"
         for chat_id in chat_ids:
+            print(f"[SEND] Tourist photo to {chat_id.strip()} -> {entry['image_url']}")
             send_image_message(chat_id.strip(), entry["image_url"], caption)
 
-    # get random cities from cities by country JSON
+    # Random cities from curated list
     cities = get_random_cities_for_country(country_name, max_results=2)
     random_photos = []
-    
+
     if cities:
+        print(f"[CITIES] Using curated cities: {cities}")
         for city in cities:
             random_photos += get_city_photos_from_name(country_name, city_name=city, max_photos=3)
-    
-    # Still fallback if nothing found
-    if len(random_photos) <= 3:
-        random_photos = get_random_city_photos(country_name, max_photos=5-len(random_photos))
-        
+
+    # Fallback if too few city photos
+    if len(random_photos) < 5:
+        fallback = get_random_city_photos(country_name, max_photos=5 - len(random_photos))
+        print(f"[CITIES] Fallback to random city photos: got {len(fallback)}")
+        random_photos += fallback
+
     for entry in random_photos:
         caption = f"📸 *{entry['place_name']}*\n📍 {entry['address']}"
         if entry.get("trivia"):
@@ -94,9 +101,10 @@ def generate():
         if entry.get("maps_url"):
             caption += f"\n🔗 [Ver no Google Maps]({entry['maps_url']})"
         for chat_id in chat_ids:
+            print(f"[SEND] City photo to {chat_id.strip()} -> {entry['image_url']}")
             send_image_message(chat_id.strip(), entry["image_url"], caption)
 
-
+    # Restaurant
     restaurant = get_random_restaurant_for_country(country_name)
     if restaurant:
         caption = (
@@ -105,20 +113,10 @@ def generate():
             f"⭐ Avaliação: {restaurant['rating'] or 'Sem nota'}"
         )
         if restaurant.get("maps_url"):
-            caption += f"\n🔗 [Ver no Google Maps]({entry['maps_url']})"
-    
+            caption += f"\n🔗 [Ver no Google Maps]({restaurant['maps_url']})"
+
         for chat_id in chat_ids:
+            print(f"[SEND] Restaurant to {chat_id.strip()} -> {restaurant['image_url']}")
             send_image_message(chat_id.strip(), restaurant["image_url"], caption)
-            
+
     return None
-
-
-
-
-
-
-
-
-
-
-
