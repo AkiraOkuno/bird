@@ -68,7 +68,7 @@ def generate():
     country_name = caption.split("*País do Dia:*")[-1].split("\n")[0].strip()
 
     # Tourist places
-    tourist_photo_entries = get_random_tourist_photos(country_name, max_photos=5)
+    tourist_photo_entries = get_random_tourist_photos(country_name, max_photos=2)
     for entry in tourist_photo_entries:
         caption = f"📸 *{entry['place_name']}*\n📍 {entry['address']}"
         if entry.get("trivia"):
@@ -86,7 +86,7 @@ def generate():
     if cities:
         print(f"[CITIES] Using curated cities: {cities}")
         for city in cities:
-            random_photos += get_city_photos_from_name(country_name, city_name=city, max_photos=3)
+            random_photos += get_city_photos_from_name(country_name, city_name=city, max_photos=1)
 
     # Fallback if too few city photos
     if len(random_photos) < 5:
