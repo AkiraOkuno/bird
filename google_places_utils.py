@@ -3,6 +3,7 @@ import os
 import random
 import json
 from urllib.parse import quote_plus
+from functools import lru_cache
 
 API_KEY = os.environ["GOOGLE_API_KEY"]
 CITIES_PATH = "data/countries+cities.json"
