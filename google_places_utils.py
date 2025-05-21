@@ -244,7 +244,7 @@ def get_city_photos_from_name(country_name, city_name, max_photos=3):
     return selected_photos
 
 def _load_city_data():
-    with open("data/countries_cities.json", encoding="utf-8") as f:
+    with open("data/countries+cities.json", encoding="utf-8") as f:
         return json.load(f)
 
 def get_random_cities_for_country(country_name, max_results=1):
