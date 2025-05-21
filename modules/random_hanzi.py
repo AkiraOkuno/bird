@@ -13,13 +13,13 @@ def get_random_hanzi():
 
     return {
         "char": row["Character"],
-        "pinyin": row["Pronunciation"],
+        "pinyin": row["Pronounciation"],
         "meaning": row["Meaning"],
         "radical": row["Radical"],
-        "freq": row["Freq."],
         "standard": row["General standard #"],
         "hsk": row["HSK 3.0"],
-        "strokes": row["Stroke count"]
+        "strokes": row["Stroke count"],
+        "frequency":row["Frequency"]
     }
 
 def format_hanzi_for_telegram(hanzi):
@@ -30,7 +30,7 @@ def format_hanzi_for_telegram(hanzi):
         f"\n📝 *Significado:* _{hanzi['meaning']}_"
         f"\n\n🧬 *Radical:* `{hanzi['radical']}`"
         f"\n🔢 *Traços:* `{hanzi['strokes']}`"
-        f"\n📊 *Frequência:* `{hanzi['freq']}`"
+        f"\n📊 *Frequência:* `{hanzi['frequency']}`"
         f"\n📚 *HSK:* `{hanzi['hsk']}`"
         f"\n📖 *Padrão:* `{hanzi['standard']}`"
     )
