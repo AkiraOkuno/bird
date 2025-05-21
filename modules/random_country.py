@@ -52,6 +52,7 @@ def fetch_country():
         return None, None
 
 def generate():
+    
     flag_url, caption = fetch_country()
     if not flag_url or not caption:
         return "⚠️ Não foi possível carregar o país do dia."
