@@ -195,13 +195,18 @@ def get_random_restaurant_for_country(country_name):
 
     return None
 
-def load_city_data():
-    with open(CITIES_PATH, encoding="utf-8") as f:
+@lru_cache(maxsize=1)
+def _load_city_data():
+    with open("data/countries_cities.json", encoding="utf-8") as f:
         return json.load(f)
 
-def get_random_city_for_country(country_name):
-    city_data = load_city_data()
+def get_random_cities_for_country(country_name, max_results=1):
+    city_data = _load_city_data()
     for entry in city_data:
-        if entry["name"].lower() == country_name.lower() and entry["cities"]:
-            return random.choice(entry["cities"])
+        if entry["name"].lower() == country_name.lower():
+            cities = entry.get("cities", [])
+            if not cities:
+                return None
+            sample = random.sample(cities, min(max_results, len(cities)))
+            return sample[0] if max_results == 1 else sample
     return None
