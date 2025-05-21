@@ -80,28 +80,38 @@ def generate():
             send_image_message(chat_id.strip(), entry["image_url"], caption)
 
     # Random cities from curated list
-    cities = get_random_cities_for_country(country_name, max_results=2)
-    random_photos = []
-
+    curated_photos = []
+    cities = get_random_cities_for_country(country_name, max_results=100)  # Increase max to allow more tries
+    found_cities = 0
+    
     if cities:
         print(f"[CITIES] Using curated cities: {cities}")
         for city in cities:
-            random_photos += get_city_photos_from_name(country_name, city_name=city, max_photos=1)
-
-    # Fallback if too few city photos
-    if len(random_photos) < 5:
-        fallback = get_random_city_photos(country_name, max_photos=5 - len(random_photos))
-        print(f"[CITIES] Fallback to random city photos: got {len(fallback)}")
-        random_photos += fallback
-
-    for entry in random_photos:
+            photos = get_city_photos_from_name(country_name, city_name=city, max_photos=1)
+            if photos:
+                curated_photos += photos
+                found_cities += 1
+                print(f"[CITIES] Found {len(photos)} photos for {city}")
+            else:
+                print(f"[CITIES] No photos for {city}")
+            if found_cities >= 2:
+                break
+    
+    # Fallback if still less than 5 photos
+    if len(curated_photos) < 2:
+        needed = 2 - len(curated_photos)
+        fallback = get_random_city_photos(country_name, max_photos=needed)
+        print(f"[CITIES] Using {len(fallback)} fallback photos")
+        curated_photos += fallback
+    
+    # Now send photos
+    for entry in curated_photos:
         caption = f"📸 *{entry['place_name']}*\n📍 {entry['address']}"
         if entry.get("trivia"):
             caption += f"\n🧠 {entry['trivia']}"
         if entry.get("maps_url"):
             caption += f"\n🔗 [Ver no Google Maps]({entry['maps_url']})"
         for chat_id in chat_ids:
-            print(f"[SEND] City photo to {chat_id.strip()} -> {entry['image_url']}")
             send_image_message(chat_id.strip(), entry["image_url"], caption)
 
     # Restaurant
