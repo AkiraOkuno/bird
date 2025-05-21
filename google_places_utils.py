@@ -195,6 +195,54 @@ def get_random_restaurant_for_country(country_name):
 
     return None
 
+def get_city_photos_from_name(country_name, city_name, max_photos=3):
+    """
+    Search for photo(s) of a specific city by name within the given country.
+    Returns up to `max_photos`, including image URLs and trivia.
+    """
+    search_url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
+    photo_url_template = "https://maps.googleapis.com/maps/api/place/photo"
+
+    query = f"{city_name}, {country_name}"
+    res = requests.get(search_url, params={"query": query, "key": API_KEY})
+
+    if res.status_code != 200:
+        print(f"[PLACES] City lookup failed: {res.status_code}")
+        return []
+
+    results = res.json().get("results", [])
+    if not results:
+        print(f"[PLACES] No city found: {city_name}, {country_name}")
+        return []
+
+    selected_photos = []
+    for place in results:
+        name = place.get("name", city_name)
+        address = place.get("formatted_address", "")
+        place_id = place.get("place_id")
+        maps_url = (
+            f"https://www.google.com/maps/search/?api=1"
+            f"&query={quote_plus(name)}&query_place_id={place_id}"
+            if place_id else None
+        )
+        trivia = get_wikipedia_summary(f"{name}, {country_name}")
+
+        for photo in place.get("photos", []):
+            ref = photo.get("photo_reference")
+            if ref:
+                image_url = f"{photo_url_template}?maxwidth=1600&photoreference={ref}&key={API_KEY}"
+                selected_photos.append({
+                    "image_url": image_url,
+                    "place_name": name,
+                    "address": address,
+                    "trivia": trivia,
+                    "maps_url": maps_url
+                })
+                if len(selected_photos) >= max_photos:
+                    return selected_photos
+
+    return selected_photos
+
 @lru_cache(maxsize=1)
 def _load_city_data():
     with open("data/countries_cities.json", encoding="utf-8") as f:
