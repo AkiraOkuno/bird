@@ -1,6 +1,4885 @@
 {
-  "error": {
-    "status": 401,
-    "message": "Unauthenticated. Visit https://www.restfulcountries.com/request-access-token to generate token. See documentation for more details."
+  "data": [
+    {
+      "name": "Afghanistan",
+      "full_name": "Islamic Republic of Afghanistan",
+      "capital": "Kabul",
+      "iso2": "AF",
+      "iso3": "AFG",
+      "covid19": {
+        "total_case": "46,498",
+        "total_deaths": "1,774",
+        "last_updated": "2020-12-01T08:35:51.000000Z"
+      },
+      "current_president": {
+        "name": "Ashraf Ghani",
+        "gender": "Male",
+        "appointment_start_date": "2020-03-09",
+        "appointment_end_date": null,
+        "href": {
+          "self": "https://restfulcountries.com/api/v1/countries/Afghanistan/presidents/Ashraf-Ghani",
+          "country": "https://restfulcountries.com/api/v1/countries/Afghanistan",
+          "picture": "https://restfulcountries.com/storage/images/presidents/ashraf-ghanikntaoxrjmp.jpg"
+        }
+      },
+      "currency": "AFN",
+      "phone_code": "93",
+      "continent": "Asia",
+      "description": null,
+      "size": "652,000 km²",
+      "independence_date": null,
+      "population": "39,306,195",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Afghanistan",
+        "states": "https://restfulcountries.com/api/v1/countries/Afghanistan/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Afghanistan/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Afghanistan.png"
+      }
+    },
+    {
+      "name": "Albania",
+      "full_name": "Republic of Albania | Shqipëria",
+      "capital": "Tirana",
+      "iso2": "AL",
+      "iso3": "ALB",
+      "covid19": {
+        "total_case": "37,625",
+        "total_deaths": "798",
+        "last_updated": "2020-12-01T08:35:52.000000Z"
+      },
+      "current_president": {
+        "name": "Ilir Rexhep Meta",
+        "gender": "Male",
+        "appointment_start_date": "2017-07-24",
+        "appointment_end_date": null,
+        "href": {
+          "self": "https://restfulcountries.com/api/v1/countries/Albania/presidents/Ilir-Rexhep-Meta",
+          "country": "https://restfulcountries.com/api/v1/countries/Albania",
+          "picture": "https://restfulcountries.com/storage/images/presidents/ilir-rexhep-meta4ywtu9tyxz.jpg"
+        }
+      },
+      "currency": "lek",
+      "phone_code": "355",
+      "continent": "Europe",
+      "description": null,
+      "size": "28,748 km²",
+      "independence_date": null,
+      "population": "2,876,490",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Albania",
+        "states": "https://restfulcountries.com/api/v1/countries/Albania/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Albania/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Albania.png"
+      }
+    },
+    {
+      "name": "Algeria",
+      "full_name": "Democratic Republic of Algeria",
+      "capital": "Algiers",
+      "iso2": "DZ",
+      "iso3": "DZA",
+      "covid19": {
+        "total_case": "83,199",
+        "total_deaths": "2,431",
+        "last_updated": "2020-12-01T08:35:46.000000Z"
+      },
+      "current_president": null,
+      "currency": "DZD",
+      "phone_code": "213",
+      "continent": "Africa",
+      "description": null,
+      "size": "2,381,741 km²",
+      "independence_date": null,
+      "population": "44,190,030",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Algeria",
+        "states": "https://restfulcountries.com/api/v1/countries/Algeria/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Algeria/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Algeria.png"
+      }
+    },
+    {
+      "name": "Andorra",
+      "full_name": "Principality of Andorra",
+      "capital": "Andorra la Vella",
+      "iso2": "AD",
+      "iso3": "AND",
+      "covid19": {
+        "total_case": "6,712",
+        "total_deaths": "76",
+        "last_updated": "2020-12-01T08:36:08.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "376",
+      "continent": "Europe",
+      "description": null,
+      "size": "468 km²",
+      "independence_date": null,
+      "population": "77,317",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Andorra",
+        "states": "https://restfulcountries.com/api/v1/countries/Andorra/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Andorra/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Andorra.png"
+      }
+    },
+    {
+      "name": "Angola",
+      "full_name": "Republic of Angola",
+      "capital": "Luanda",
+      "iso2": "AO",
+      "iso3": "AGO",
+      "covid19": {
+        "total_case": "15,139",
+        "total_deaths": "348",
+        "last_updated": "2020-12-01T08:36:00.000000Z"
+      },
+      "current_president": null,
+      "currency": "AOA",
+      "phone_code": "244",
+      "continent": "Africa",
+      "description": "1246620",
+      "size": "1,246,620 km²",
+      "independence_date": null,
+      "population": "33,312,843",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Angola",
+        "states": "https://restfulcountries.com/api/v1/countries/Angola/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Angola/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Angola.png"
+      }
+    },
+    {
+      "name": "Antigua And Barbuda",
+      "full_name": "The independent nation of Antigua and Barbuda",
+      "capital": "St. John's",
+      "iso2": "AG",
+      "iso3": "ATG",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:19:30.000000Z"
+      },
+      "current_president": null,
+      "currency": "XCD",
+      "phone_code": "+1-268",
+      "continent": "The Caribean",
+      "description": null,
+      "size": "440 km²",
+      "independence_date": null,
+      "population": "98,271",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Antigua%20And%20Barbuda",
+        "states": "https://restfulcountries.com/api/v1/countries/Antigua%20And%20Barbuda/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Antigua%20And%20Barbuda/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Antigua-And-Barbuda.png"
+      }
+    },
+    {
+      "name": "Argentina",
+      "full_name": "The Argentine Republic",
+      "capital": "Buenos Aires",
+      "iso2": "AR",
+      "iso3": "ARG",
+      "covid19": {
+        "total_case": "1,418,807",
+        "total_deaths": "38,473",
+        "last_updated": "2020-12-01T08:35:25.000000Z"
+      },
+      "current_president": null,
+      "currency": "ARS",
+      "phone_code": "54",
+      "continent": "South America",
+      "description": null,
+      "size": "2,780,400 km²",
+      "independence_date": null,
+      "population": "45,370,984",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Argentina",
+        "states": "https://restfulcountries.com/api/v1/countries/Argentina/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Argentina/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Argentina.png"
+      }
+    },
+    {
+      "name": "Armenia",
+      "full_name": "Hayastani Hanrapetut'yun",
+      "capital": "Yerevan",
+      "iso2": "AM",
+      "iso3": "ARM",
+      "covid19": {
+        "total_case": "135,124",
+        "total_deaths": "2,164",
+        "last_updated": "2020-12-01T08:35:40.000000Z"
+      },
+      "current_president": null,
+      "currency": "AMD",
+      "phone_code": "374",
+      "continent": "Asia",
+      "description": null,
+      "size": "29,743 km²",
+      "independence_date": null,
+      "population": "2,965,558",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Armenia",
+        "states": "https://restfulcountries.com/api/v1/countries/Armenia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Armenia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Armenia.png"
+      }
+    },
+    {
+      "name": "Australia",
+      "full_name": "The Commonwealth of Australia,",
+      "capital": "Canberra",
+      "iso2": "AU",
+      "iso3": "AUS",
+      "covid19": {
+        "total_case": "27,904",
+        "total_deaths": "908",
+        "last_updated": "2020-12-01T08:35:55.000000Z"
+      },
+      "current_president": null,
+      "currency": "AUD",
+      "phone_code": "61",
+      "continent": "Australia",
+      "description": null,
+      "size": "7,617,930 km²",
+      "independence_date": null,
+      "population": "25,625,341",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Australia",
+        "states": "https://restfulcountries.com/api/v1/countries/Australia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Australia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Australia.png"
+      }
+    },
+    {
+      "name": "Austria",
+      "full_name": "The Republic of Austria",
+      "capital": "Vienna",
+      "iso2": "AT",
+      "iso3": "AUT",
+      "covid19": {
+        "total_case": "278,182",
+        "total_deaths": "2,904",
+        "last_updated": "2020-12-01T08:35:34.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "43",
+      "continent": "Europe",
+      "description": null,
+      "size": "83,879 km²",
+      "independence_date": null,
+      "population": "9,027,998",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Austria",
+        "states": "https://restfulcountries.com/api/v1/countries/Austria/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Austria/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Austria.png"
+      }
+    },
+    {
+      "name": "Azerbaijan",
+      "full_name": "The Azerbaijan Democratic Republic",
+      "capital": "Baku",
+      "iso2": "AZ",
+      "iso3": "AZE",
+      "covid19": {
+        "total_case": "118,195",
+        "total_deaths": "1,361",
+        "last_updated": "2020-12-01T08:35:42.000000Z"
+      },
+      "current_president": null,
+      "currency": "AZN",
+      "phone_code": "994",
+      "continent": "Europe",
+      "description": null,
+      "size": "86,600 km²",
+      "independence_date": null,
+      "population": "10,177,781",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Azerbaijan",
+        "states": "https://restfulcountries.com/api/v1/countries/Azerbaijan/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Azerbaijan/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Azerbaijan.png"
+      }
+    },
+    {
+      "name": "Bahamas",
+      "full_name": "Commonwealth of The Bahamas",
+      "capital": "Nassau",
+      "iso2": "BS",
+      "iso3": "BHS",
+      "covid19": {
+        "total_case": "7,517",
+        "total_deaths": "163",
+        "last_updated": "2020-12-01T08:36:08.000000Z"
+      },
+      "current_president": null,
+      "currency": "BSD",
+      "phone_code": "+1-242",
+      "continent": "The Caribean",
+      "description": null,
+      "size": "13,878 km²",
+      "independence_date": null,
+      "population": "394,833",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Bahamas",
+        "states": "https://restfulcountries.com/api/v1/countries/Bahamas/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Bahamas/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Bahamas.png"
+      }
+    },
+    {
+      "name": "Bahrain",
+      "full_name": "The Kingdom of Bahrain",
+      "capital": "Manama",
+      "iso2": "BH",
+      "iso3": "BHR",
+      "covid19": {
+        "total_case": "86,956",
+        "total_deaths": "341",
+        "last_updated": "2020-12-01T08:35:46.000000Z"
+      },
+      "current_president": null,
+      "currency": "BHD",
+      "phone_code": "973",
+      "continent": "Asia",
+      "description": null,
+      "size": "780 km²",
+      "independence_date": null,
+      "population": "1,727,565",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Bahrain",
+        "states": "https://restfulcountries.com/api/v1/countries/Bahrain/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Bahrain/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Bahrain.png"
+      }
+    },
+    {
+      "name": "Bangladesh",
+      "full_name": "People's Republic of Bangladesh",
+      "capital": "Dhaka",
+      "iso2": "BD",
+      "iso3": "BGD",
+      "covid19": {
+        "total_case": "464,932",
+        "total_deaths": "6,644",
+        "last_updated": "2020-12-01T08:35:30.000000Z"
+      },
+      "current_president": null,
+      "currency": "BDT",
+      "phone_code": "880",
+      "continent": "Asia",
+      "description": null,
+      "size": "148,460 km²",
+      "independence_date": null,
+      "population": "165,383,477",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Bangladesh",
+        "states": "https://restfulcountries.com/api/v1/countries/Bangladesh/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Bangladesh/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Bangladesh.png"
+      }
+    },
+    {
+      "name": "Barbados",
+      "full_name": "Barbados",
+      "capital": "Bridgetown",
+      "iso2": "BB",
+      "iso3": "BRB",
+      "covid19": {
+        "total_case": "276",
+        "total_deaths": "7",
+        "last_updated": "2020-12-01T08:36:24.000000Z"
+      },
+      "current_president": null,
+      "currency": "BBD",
+      "phone_code": "+1-246",
+      "continent": "North America",
+      "description": null,
+      "size": "431 km²",
+      "independence_date": null,
+      "population": "287,522",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Barbados",
+        "states": "https://restfulcountries.com/api/v1/countries/Barbados/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Barbados/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Barbados.png"
+      }
+    },
+    {
+      "name": "Belarus",
+      "full_name": "The Republic of Belarus",
+      "capital": "Minsk",
+      "iso2": "BY",
+      "iso3": "BLR",
+      "covid19": {
+        "total_case": "135,008",
+        "total_deaths": "1,151",
+        "last_updated": "2020-12-01T08:35:40.000000Z"
+      },
+      "current_president": null,
+      "currency": "BYR",
+      "phone_code": "375",
+      "continent": "Europe",
+      "description": null,
+      "size": "207,595 km²",
+      "independence_date": null,
+      "population": "9,448,028",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Belarus",
+        "states": "https://restfulcountries.com/api/v1/countries/Belarus/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Belarus/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Belarus.png"
+      }
+    },
+    {
+      "name": "Belgium",
+      "full_name": "The Kingdom of Belgium",
+      "capital": "Brussels",
+      "iso2": "BE",
+      "iso3": "BEL",
+      "covid19": {
+        "total_case": "576,503",
+        "total_deaths": "16,547",
+        "last_updated": "2020-12-01T08:35:28.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "32",
+      "continent": "Europe",
+      "description": null,
+      "size": "30,689 km²",
+      "independence_date": null,
+      "population": "11,610,784",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Belgium",
+        "states": "https://restfulcountries.com/api/v1/countries/Belgium/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Belgium/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Belgium.png"
+      }
+    },
+    {
+      "name": "Belize",
+      "full_name": "Belize",
+      "capital": "Belmopan",
+      "iso2": "BZ",
+      "iso3": "BLZ",
+      "covid19": {
+        "total_case": "5,743",
+        "total_deaths": "147",
+        "last_updated": "2020-12-01T08:36:10.000000Z"
+      },
+      "current_president": null,
+      "currency": "BZD",
+      "phone_code": "501",
+      "continent": "Central America",
+      "description": null,
+      "size": "22,966 km²",
+      "independence_date": null,
+      "population": "400,720",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Belize",
+        "states": "https://restfulcountries.com/api/v1/countries/Belize/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Belize/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Belize.png"
+      }
+    },
+    {
+      "name": "Benin",
+      "full_name": "Republic of Benin",
+      "capital": "Porto-Novo",
+      "iso2": "BJ",
+      "iso3": "BEN",
+      "covid19": {
+        "total_case": "3,015",
+        "total_deaths": "43",
+        "last_updated": "2020-12-01T08:36:15.000000Z"
+      },
+      "current_president": null,
+      "currency": "XOF",
+      "phone_code": "229",
+      "continent": "Africa",
+      "description": null,
+      "size": "114,763 km²",
+      "independence_date": null,
+      "population": "12,260,889",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Benin",
+        "states": "https://restfulcountries.com/api/v1/countries/Benin/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Benin/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Benin.png"
+      }
+    },
+    {
+      "name": "Bhutan",
+      "full_name": "The Kingdom of Bhutan",
+      "capital": "Thimphu",
+      "iso2": "BT",
+      "iso3": "BTN",
+      "covid19": {
+        "total_case": "410",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:23.000000Z"
+      },
+      "current_president": null,
+      "currency": "BTN",
+      "phone_code": "975",
+      "continent": "Asia",
+      "description": null,
+      "size": "38,394 km²",
+      "independence_date": null,
+      "population": "775,208",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Bhutan",
+        "states": "https://restfulcountries.com/api/v1/countries/Bhutan/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Bhutan/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Bhutan.png"
+      }
+    },
+    {
+      "name": "Bolivia",
+      "full_name": "Republic of Bolivia",
+      "capital": "Sucre",
+      "iso2": "BO",
+      "iso3": "BOL",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:19:41.000000Z"
+      },
+      "current_president": null,
+      "currency": "BOB",
+      "phone_code": "591",
+      "continent": "South America",
+      "description": null,
+      "size": "1,098,581 km²",
+      "independence_date": null,
+      "population": "11,740,763",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Bolivia",
+        "states": "https://restfulcountries.com/api/v1/countries/Bolivia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Bolivia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Bolivia.png"
+      }
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "full_name": "Republic of Bosnia and Herzegovina",
+      "capital": "Sarajevo",
+      "iso2": "BA",
+      "iso3": "BIH",
+      "covid19": {
+        "total_case": "87,374",
+        "total_deaths": "2,620",
+        "last_updated": "2020-12-01T08:35:45.000000Z"
+      },
+      "current_president": null,
+      "currency": "BAM",
+      "phone_code": "387",
+      "continent": "Europe",
+      "description": null,
+      "size": "51,197 km²",
+      "independence_date": null,
+      "population": "3,272,331",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Bosnia%20and%20Herzegovina",
+        "states": "https://restfulcountries.com/api/v1/countries/Bosnia%20and%20Herzegovina/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Bosnia%20and%20Herzegovina/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Bosnia-Herzegovina.png"
+      }
+    },
+    {
+      "name": "Botswana",
+      "full_name": "Republic of Botswana",
+      "capital": "Gaborone",
+      "iso2": "BW",
+      "iso3": "BWA",
+      "covid19": {
+        "total_case": "9,992",
+        "total_deaths": "31",
+        "last_updated": "2020-12-01T08:36:05.000000Z"
+      },
+      "current_president": null,
+      "currency": "BWP",
+      "phone_code": "267",
+      "continent": "Africa",
+      "description": null,
+      "size": "581,730 km²",
+      "independence_date": null,
+      "population": "2,372,028",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Botswana",
+        "states": "https://restfulcountries.com/api/v1/countries/Botswana/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Botswana/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Botswana.png"
+      }
+    },
+    {
+      "name": "Brazil",
+      "full_name": "Federative Republic of Brazil",
+      "capital": "Brasilia",
+      "iso2": "BR",
+      "iso3": "BRA",
+      "covid19": {
+        "total_case": "6,314,740",
+        "total_deaths": "172,833",
+        "last_updated": "2020-12-01T08:35:23.000000Z"
+      },
+      "current_president": null,
+      "currency": "BRL",
+      "phone_code": "55",
+      "continent": "South America",
+      "description": null,
+      "size": "8,515,767 km²",
+      "independence_date": null,
+      "population": "213,196,006",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Brazil",
+        "states": "https://restfulcountries.com/api/v1/countries/Brazil/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Brazil/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Brazil.png"
+      }
+    },
+    {
+      "name": "Brunei",
+      "full_name": "Negara Brunei Darussalam",
+      "capital": "Bandar Seri Begawan",
+      "iso2": "BN",
+      "iso3": "BRN",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:19:43.000000Z"
+      },
+      "current_president": null,
+      "currency": "BND",
+      "phone_code": "673",
+      "continent": "Asia",
+      "description": null,
+      "size": "5,765 km²",
+      "independence_date": null,
+      "population": "439,250",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Brunei",
+        "states": "https://restfulcountries.com/api/v1/countries/Brunei/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Brunei/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Brunei.png"
+      }
+    },
+    {
+      "name": "Bulgaria",
+      "full_name": "Republic of Bulgaria",
+      "capital": "Sofia",
+      "iso2": "BG",
+      "iso3": "BGR",
+      "covid19": {
+        "total_case": "142,486",
+        "total_deaths": "3,814",
+        "last_updated": "2020-12-01T08:35:38.000000Z"
+      },
+      "current_president": null,
+      "currency": "BGN",
+      "phone_code": "359",
+      "continent": "Europe",
+      "description": null,
+      "size": "110,994 km²",
+      "independence_date": null,
+      "population": "6,926,881",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Bulgaria",
+        "states": "https://restfulcountries.com/api/v1/countries/Bulgaria/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Bulgaria/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Bulgaria.png"
+      }
+    },
+    {
+      "name": "Burkina Faso",
+      "full_name": "Burkina Faso",
+      "capital": "Ouagadougou",
+      "iso2": "BF",
+      "iso3": "BFA",
+      "covid19": {
+        "total_case": "2,886",
+        "total_deaths": "68",
+        "last_updated": "2020-12-01T08:36:16.000000Z"
+      },
+      "current_president": null,
+      "currency": "XOF",
+      "phone_code": "226",
+      "continent": "Africa",
+      "description": null,
+      "size": "274,200 km²",
+      "independence_date": null,
+      "population": "21,152,326",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Burkina%20Faso",
+        "states": "https://restfulcountries.com/api/v1/countries/Burkina%20Faso/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Burkina%20Faso/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Burkina-Faso.png"
+      }
+    },
+    {
+      "name": "Burundi",
+      "full_name": "Republic of Burundi",
+      "capital": "Bujumbura",
+      "iso2": "BI",
+      "iso3": "BDI",
+      "covid19": {
+        "total_case": "689",
+        "total_deaths": "1",
+        "last_updated": "2020-12-01T08:36:21.000000Z"
+      },
+      "current_president": null,
+      "currency": "BIF",
+      "phone_code": "257",
+      "continent": "Africa",
+      "description": null,
+      "size": "27,834 km²",
+      "independence_date": null,
+      "population": "12,045,230",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Burundi",
+        "states": "https://restfulcountries.com/api/v1/countries/Burundi/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Burundi/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Burundi.png"
+      }
+    },
+    {
+      "name": "Cambodia",
+      "full_name": "Kingdom of Cambodia",
+      "capital": "Phnom Penh",
+      "iso2": "KH",
+      "iso3": "KHM",
+      "covid19": {
+        "total_case": "326",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:24.000000Z"
+      },
+      "current_president": null,
+      "currency": "KHR",
+      "phone_code": "855",
+      "continent": "Asia",
+      "description": null,
+      "size": "181,035 km²",
+      "independence_date": null,
+      "population": "16,817,449",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Cambodia",
+        "states": "https://restfulcountries.com/api/v1/countries/Cambodia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Cambodia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Cambodia.png"
+      }
+    },
+    {
+      "name": "Cameroon",
+      "full_name": "Republic of Cameroon",
+      "capital": "Yaounde",
+      "iso2": "CM",
+      "iso3": "CMR",
+      "covid19": {
+        "total_case": "24,487",
+        "total_deaths": "441",
+        "last_updated": "2020-12-01T08:35:56.000000Z"
+      },
+      "current_president": null,
+      "currency": "XAF",
+      "phone_code": "237",
+      "continent": "Africa",
+      "description": null,
+      "size": "475,442 km²",
+      "independence_date": null,
+      "population": "26,831,876",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Cameroon",
+        "states": "https://restfulcountries.com/api/v1/countries/Cameroon/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Cameroon/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Cameroon.png"
+      }
+    },
+    {
+      "name": "Canada",
+      "full_name": "Dominion of Canada",
+      "capital": "Ottawa",
+      "iso2": "CA",
+      "iso3": "CAN",
+      "covid19": {
+        "total_case": "370,278",
+        "total_deaths": "12,032",
+        "last_updated": "2020-12-01T08:35:32.000000Z"
+      },
+      "current_president": null,
+      "currency": "CAD",
+      "phone_code": "1",
+      "continent": "North America",
+      "description": null,
+      "size": "9,984,670 km²",
+      "independence_date": null,
+      "population": "37,881,943",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Canada",
+        "states": "https://restfulcountries.com/api/v1/countries/Canada/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Canada/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Canada.png"
+      }
+    },
+    {
+      "name": "Central African Republic",
+      "full_name": "Central African Republic",
+      "capital": "Bangui",
+      "iso2": "CF",
+      "iso3": "CAF",
+      "covid19": {
+        "total_case": "4,918",
+        "total_deaths": "63",
+        "last_updated": "2020-12-01T08:36:13.000000Z"
+      },
+      "current_president": null,
+      "currency": "XAF",
+      "phone_code": "236",
+      "continent": "Africa",
+      "description": null,
+      "size": "622,984 km²",
+      "independence_date": null,
+      "population": "4,865,703",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Central%20African%20Republic",
+        "states": "https://restfulcountries.com/api/v1/countries/Central%20African%20Republic/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Central%20African%20Republic/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Central-African-Republic.png"
+      }
+    },
+    {
+      "name": "Chad",
+      "full_name": "Republic of Chad",
+      "capital": "N'Djamena",
+      "iso2": "TD",
+      "iso3": "TCD",
+      "covid19": {
+        "total_case": "1,688",
+        "total_deaths": "101",
+        "last_updated": "2020-12-01T08:36:18.000000Z"
+      },
+      "current_president": null,
+      "currency": "XAF",
+      "phone_code": "235",
+      "continent": "Africa",
+      "description": null,
+      "size": "1,284,000 km²",
+      "independence_date": null,
+      "population": "16,631,098",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Chad",
+        "states": "https://restfulcountries.com/api/v1/countries/Chad/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Chad/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Chad.png"
+      }
+    },
+    {
+      "name": "Chile",
+      "full_name": "Republic of Chile",
+      "capital": "Santiago",
+      "iso2": "CL",
+      "iso3": "CHL",
+      "covid19": {
+        "total_case": "551,743",
+        "total_deaths": "15,410",
+        "last_updated": "2020-12-01T08:35:29.000000Z"
+      },
+      "current_president": null,
+      "currency": "CLP",
+      "phone_code": "56",
+      "continent": "South America",
+      "description": null,
+      "size": "756,950 km²",
+      "independence_date": null,
+      "population": "19,185,504",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Chile",
+        "states": "https://restfulcountries.com/api/v1/countries/Chile/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Chile/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Chile.png"
+      }
+    },
+    {
+      "name": "China",
+      "full_name": "People's Republic of China",
+      "capital": "Beijing",
+      "iso2": "CN",
+      "iso3": "CHN",
+      "covid19": {
+        "total_case": "93,577",
+        "total_deaths": "4,750",
+        "last_updated": "2020-12-01T08:35:45.000000Z"
+      },
+      "current_president": null,
+      "currency": "CNY",
+      "phone_code": "86",
+      "continent": "Asia",
+      "description": null,
+      "size": "9,600,000 km²",
+      "independence_date": null,
+      "population": "1,441,654,790",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/China",
+        "states": "https://restfulcountries.com/api/v1/countries/China/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/China/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/China.png"
+      }
+    },
+    {
+      "name": "Colombia",
+      "full_name": "Spanish Republic of Colombia",
+      "capital": "Bogota",
+      "iso2": "CO",
+      "iso3": "COL",
+      "covid19": {
+        "total_case": "1,308,376",
+        "total_deaths": "36,584",
+        "last_updated": "2020-12-01T08:35:25.000000Z"
+      },
+      "current_president": null,
+      "currency": "COP",
+      "phone_code": "57",
+      "continent": "South America",
+      "description": null,
+      "size": "1,138,910 km²",
+      "independence_date": null,
+      "population": "51,112,670",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Colombia",
+        "states": "https://restfulcountries.com/api/v1/countries/Colombia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Colombia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Colombia.png"
+      }
+    },
+    {
+      "name": "Comoros",
+      "full_name": "Union of the Comoros",
+      "capital": "Moroni",
+      "iso2": "KM",
+      "iso3": "COM",
+      "covid19": {
+        "total_case": "611",
+        "total_deaths": "7",
+        "last_updated": "2020-12-01T08:36:22.000000Z"
+      },
+      "current_president": null,
+      "currency": "KMF",
+      "phone_code": "269",
+      "continent": "Africa",
+      "description": null,
+      "size": "1,861 km²",
+      "independence_date": null,
+      "population": "877,576",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Comoros",
+        "states": "https://restfulcountries.com/api/v1/countries/Comoros/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Comoros/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Comoros.png"
+      }
+    },
+    {
+      "name": "Congo",
+      "full_name": "Democratic Republic of the Congo",
+      "capital": "Brazzaville",
+      "iso2": "CG",
+      "iso3": "COG",
+      "covid19": {
+        "total_case": "5,774",
+        "total_deaths": "94",
+        "last_updated": "2020-12-01T08:36:10.000000Z"
+      },
+      "current_president": null,
+      "currency": "XAF",
+      "phone_code": "242",
+      "continent": "Africa",
+      "description": null,
+      "size": "2,345,410 km²",
+      "independence_date": null,
+      "population": "5,576,861",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Congo",
+        "states": "https://restfulcountries.com/api/v1/countries/Congo/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Congo/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Congo.png"
+      }
+    },
+    {
+      "name": "Costa Rica",
+      "full_name": "The Republic of Costa Rica",
+      "capital": "San Jose",
+      "iso2": "CR",
+      "iso3": "CRI",
+      "covid19": {
+        "total_case": "137,093",
+        "total_deaths": "1,690",
+        "last_updated": "2020-12-01T08:35:39.000000Z"
+      },
+      "current_president": null,
+      "currency": "CRC",
+      "phone_code": "506",
+      "continent": "North America",
+      "description": null,
+      "size": "51,100 km²",
+      "independence_date": null,
+      "population": "5,113,783",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Costa%20Rica",
+        "states": "https://restfulcountries.com/api/v1/countries/Costa%20Rica/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Costa%20Rica/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Costa-Rica.png"
+      }
+    },
+    {
+      "name": "Cote D'Ivoire",
+      "full_name": "Republic of Côte d'Ivoire",
+      "capital": "Yamoussoukro",
+      "iso2": "CI",
+      "iso3": "CIV",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:19:53.000000Z"
+      },
+      "current_president": null,
+      "currency": "XOF",
+      "phone_code": "225",
+      "continent": "Africa",
+      "description": null,
+      "size": "322,463 km²",
+      "independence_date": null,
+      "population": "26,661,011",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Cote%20D%27Ivoire",
+        "states": "https://restfulcountries.com/api/v1/countries/Cote%20D%27Ivoire/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Cote%20D%27Ivoire/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Cote-d-Ivoire.png"
+      }
+    },
+    {
+      "name": "Croatia",
+      "full_name": "Republic of Croatia",
+      "capital": "Zagreb",
+      "iso2": "HR",
+      "iso3": "HRV",
+      "covid19": {
+        "total_case": "126,612",
+        "total_deaths": "1,712",
+        "last_updated": "2020-12-01T08:35:41.000000Z"
+      },
+      "current_president": null,
+      "currency": "HRK",
+      "phone_code": "385",
+      "continent": "Europe",
+      "description": null,
+      "size": "56,594 km²",
+      "independence_date": null,
+      "population": "4,094,735",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Croatia",
+        "states": "https://restfulcountries.com/api/v1/countries/Croatia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Croatia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Croatia.jpg"
+      }
+    },
+    {
+      "name": "Cuba",
+      "full_name": "Republic of Cuba",
+      "capital": "Havana",
+      "iso2": "CU",
+      "iso3": "CUB",
+      "covid19": {
+        "total_case": "8,284",
+        "total_deaths": "135",
+        "last_updated": "2020-12-01T08:36:08.000000Z"
+      },
+      "current_president": null,
+      "currency": "CUP",
+      "phone_code": "53",
+      "continent": "North America",
+      "description": null,
+      "size": "109,884 km²",
+      "independence_date": null,
+      "population": "11,323,735",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Cuba",
+        "states": "https://restfulcountries.com/api/v1/countries/Cuba/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Cuba/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Cuba.png"
+      }
+    },
+    {
+      "name": "Cyprus",
+      "full_name": "Republic of Cyprus",
+      "capital": "Nicosia",
+      "iso2": "CY",
+      "iso3": "CYP",
+      "covid19": {
+        "total_case": "10,383",
+        "total_deaths": "48",
+        "last_updated": "2020-12-01T08:36:04.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "357",
+      "continent": "Europe",
+      "description": null,
+      "size": "9,251 km²",
+      "independence_date": null,
+      "population": "1,211,064",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Cyprus",
+        "states": "https://restfulcountries.com/api/v1/countries/Cyprus/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Cyprus/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Cyprus.png"
+      }
+    },
+    {
+      "name": "Czech Republic",
+      "full_name": "Czechia",
+      "capital": "Prague",
+      "iso2": "CZ",
+      "iso3": "CZE",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:19:56.000000Z"
+      },
+      "current_president": null,
+      "currency": "CZK",
+      "phone_code": "420",
+      "continent": "Europe",
+      "description": null,
+      "size": "78,866 km²",
+      "independence_date": null,
+      "population": "10,717,290",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Czech%20Republic",
+        "states": "https://restfulcountries.com/api/v1/countries/Czech%20Republic/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Czech%20Republic/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Czech-Republic.png"
+      }
+    },
+    {
+      "name": "Denmark",
+      "full_name": "Kingdom of Denmark",
+      "capital": "Copenhagen",
+      "iso2": "DK",
+      "iso3": "DNK",
+      "covid19": {
+        "total_case": "79,352",
+        "total_deaths": "829",
+        "last_updated": "2020-12-01T08:35:48.000000Z"
+      },
+      "current_president": null,
+      "currency": "DKK",
+      "phone_code": "45",
+      "continent": "Europe",
+      "description": null,
+      "size": "42,933 km²",
+      "independence_date": null,
+      "population": "5,800,754",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Denmark",
+        "states": "https://restfulcountries.com/api/v1/countries/Denmark/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Denmark/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Denmark.png"
+      }
+    },
+    {
+      "name": "Djibouti",
+      "full_name": "Republic of Djibouti",
+      "capital": "Djibouti",
+      "iso2": "DJ",
+      "iso3": "DJI",
+      "covid19": {
+        "total_case": "5,679",
+        "total_deaths": "61",
+        "last_updated": "2020-12-01T08:36:11.000000Z"
+      },
+      "current_president": null,
+      "currency": "DJF",
+      "phone_code": "253",
+      "continent": "Africa",
+      "description": null,
+      "size": "23,200 km²",
+      "independence_date": null,
+      "population": "994,124",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Djibouti",
+        "states": "https://restfulcountries.com/api/v1/countries/Djibouti/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Djibouti/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Djibouti.png"
+      }
+    },
+    {
+      "name": "Dominica",
+      "full_name": "Commonwealth of Dominica",
+      "capital": "Roseau",
+      "iso2": "DM",
+      "iso3": "DMA",
+      "covid19": {
+        "total_case": "85",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:25.000000Z"
+      },
+      "current_president": null,
+      "currency": "XCD",
+      "phone_code": "+1-767",
+      "continent": "North America",
+      "description": null,
+      "size": "750 km²",
+      "independence_date": null,
+      "population": "72,061",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Dominica",
+        "states": "https://restfulcountries.com/api/v1/countries/Dominica/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Dominica/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Dominica.png"
+      }
+    },
+    {
+      "name": "Dominican Republic",
+      "full_name": "The Dominican Republic",
+      "capital": "Santo Domingo",
+      "iso2": "DO",
+      "iso3": "DOM",
+      "covid19": {
+        "total_case": "143,988",
+        "total_deaths": "2,331",
+        "last_updated": "2020-12-01T08:35:38.000000Z"
+      },
+      "current_president": null,
+      "currency": "DOP",
+      "phone_code": "+1-809 and 1-829",
+      "continent": "North America",
+      "description": null,
+      "size": "48,442 km²",
+      "independence_date": null,
+      "population": "10,894,019",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Dominican%20Republic",
+        "states": "https://restfulcountries.com/api/v1/countries/Dominican%20Republic/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Dominican%20Republic/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Dominican-Republic.png"
+      }
+    },
+    {
+      "name": "Ecuador",
+      "full_name": "Republic of Ecuador",
+      "capital": "Quito",
+      "iso2": "EC",
+      "iso3": "ECU",
+      "covid19": {
+        "total_case": "192,685",
+        "total_deaths": "13,461",
+        "last_updated": "2020-12-01T08:35:35.000000Z"
+      },
+      "current_president": null,
+      "currency": "USD",
+      "phone_code": "593",
+      "continent": "South America",
+      "description": null,
+      "size": "283,560 km²",
+      "independence_date": null,
+      "population": "17,757,364",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Ecuador",
+        "states": "https://restfulcountries.com/api/v1/countries/Ecuador/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Ecuador/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Ecuador.png"
+      }
+    },
+    {
+      "name": "Egypt",
+      "full_name": "The Arab Republic of Egypt",
+      "capital": "Cairo",
+      "iso2": "EG",
+      "iso3": "EGY",
+      "covid19": {
+        "total_case": "115,911",
+        "total_deaths": "6,650",
+        "last_updated": "2020-12-01T08:35:42.000000Z"
+      },
+      "current_president": null,
+      "currency": "EGP",
+      "phone_code": "20",
+      "continent": "Africa",
+      "description": null,
+      "size": "1,002,450 km²",
+      "independence_date": null,
+      "population": "103,162,538",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Egypt",
+        "states": "https://restfulcountries.com/api/v1/countries/Egypt/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Egypt/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Egypt.png"
+      }
+    },
+    {
+      "name": "El Salvador",
+      "full_name": "Republic of El Salvador",
+      "capital": "San Salvador",
+      "iso2": "SV",
+      "iso3": "SLV",
+      "covid19": {
+        "total_case": "38,405",
+        "total_deaths": "1,114",
+        "last_updated": "2020-12-01T08:35:52.000000Z"
+      },
+      "current_president": null,
+      "currency": "USD",
+      "phone_code": "503",
+      "continent": "Central America",
+      "description": null,
+      "size": "21,041 km²",
+      "independence_date": null,
+      "population": "6,499,959",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/El%20Salvador",
+        "states": "https://restfulcountries.com/api/v1/countries/El%20Salvador/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/El%20Salvador/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/El-Salvador.png"
+      }
+    },
+    {
+      "name": "Equatorial Guinea",
+      "full_name": "Republic of Equatorial Guinea",
+      "capital": "Malabo",
+      "iso2": "GQ",
+      "iso3": "GNQ",
+      "covid19": {
+        "total_case": "5,153",
+        "total_deaths": "85",
+        "last_updated": "2020-12-01T08:36:12.000000Z"
+      },
+      "current_president": null,
+      "currency": "XAF",
+      "phone_code": "240",
+      "continent": "Africa",
+      "description": null,
+      "size": "28,050 km²",
+      "independence_date": null,
+      "population": "1,423,195",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Equatorial%20Guinea",
+        "states": "https://restfulcountries.com/api/v1/countries/Equatorial%20Guinea/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Equatorial%20Guinea/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Equatorial-Guinea.png"
+      }
+    },
+    {
+      "name": "Eritrea",
+      "full_name": "The State of Eritrea",
+      "capital": "Asmara",
+      "iso2": "ER",
+      "iso3": "ERI",
+      "covid19": {
+        "total_case": "577",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:22.000000Z"
+      },
+      "current_president": null,
+      "currency": "ERN",
+      "phone_code": "291",
+      "continent": "Africa",
+      "description": null,
+      "size": "117,600 km²",
+      "independence_date": null,
+      "population": "3,567,323",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Eritrea",
+        "states": "https://restfulcountries.com/api/v1/countries/Eritrea/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Eritrea/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Eritrea.png"
+      }
+    },
+    {
+      "name": "Estonia",
+      "full_name": "Republic of Estonia",
+      "capital": "Tallinn",
+      "iso2": "EE",
+      "iso3": "EST",
+      "covid19": {
+        "total_case": "12,052",
+        "total_deaths": "112",
+        "last_updated": "2020-12-01T08:36:03.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "372",
+      "continent": "Europe",
+      "description": null,
+      "size": "45,227 km²",
+      "independence_date": null,
+      "population": "1,326,908",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Estonia",
+        "states": "https://restfulcountries.com/api/v1/countries/Estonia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Estonia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Estonia.png"
+      }
+    },
+    {
+      "name": "Ethiopia",
+      "full_name": "Federal Democratic Republic of Ethiopia",
+      "capital": "Addis Ababa",
+      "iso2": "ET",
+      "iso3": "ETH",
+      "covid19": {
+        "total_case": "110,074",
+        "total_deaths": "1,706",
+        "last_updated": "2020-12-01T08:35:43.000000Z"
+      },
+      "current_president": null,
+      "currency": "ETB",
+      "phone_code": "251",
+      "continent": "Africa",
+      "description": null,
+      "size": "1,127,127 km²",
+      "independence_date": null,
+      "population": "116,197,488",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Ethiopia",
+        "states": "https://restfulcountries.com/api/v1/countries/Ethiopia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Ethiopia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Ethiopia.png"
+      }
+    },
+    {
+      "name": "Fiji",
+      "full_name": "Republic of Fiji",
+      "capital": "Suva",
+      "iso2": "FJ",
+      "iso3": "FJI",
+      "covid19": {
+        "total_case": "42",
+        "total_deaths": "2",
+        "last_updated": "2020-12-01T08:36:26.000000Z"
+      },
+      "current_president": null,
+      "currency": "FJD",
+      "phone_code": "679",
+      "continent": "Oceana",
+      "description": null,
+      "size": "18,333 km²",
+      "independence_date": null,
+      "population": "899,202",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Fiji",
+        "states": "https://restfulcountries.com/api/v1/countries/Fiji/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Fiji/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Fiji.png"
+      }
+    },
+    {
+      "name": "Finland",
+      "full_name": "Republic of Finland (Suomen Tasavalta)",
+      "capital": "Helsinki",
+      "iso2": "FI",
+      "iso3": "FIN",
+      "covid19": {
+        "total_case": "24,629",
+        "total_deaths": "393",
+        "last_updated": "2020-12-01T08:35:55.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "358",
+      "continent": "Europe",
+      "description": null,
+      "size": "338,440 km²",
+      "independence_date": null,
+      "population": "5,544,322",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Finland",
+        "states": "https://restfulcountries.com/api/v1/countries/Finland/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Finland/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Finland.png"
+      }
+    },
+    {
+      "name": "France",
+      "full_name": "French Republic",
+      "capital": "Paris",
+      "iso2": "FR",
+      "iso3": "FRA",
+      "covid19": {
+        "total_case": "2,179,481",
+        "total_deaths": "51,965",
+        "last_updated": "2020-12-01T08:35:23.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "33",
+      "continent": "Europe",
+      "description": null,
+      "size": "643,801 km²",
+      "independence_date": null,
+      "population": "65,334,006",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/France",
+        "states": "https://restfulcountries.com/api/v1/countries/France/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/France/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/France.png"
+      }
+    },
+    {
+      "name": "Gabon",
+      "full_name": "The Gabonese Republic",
+      "capital": "Libreville",
+      "iso2": "GA",
+      "iso3": "GAB",
+      "covid19": {
+        "total_case": "9,191",
+        "total_deaths": "59",
+        "last_updated": "2020-12-01T08:36:07.000000Z"
+      },
+      "current_president": null,
+      "currency": "XAF",
+      "phone_code": "241",
+      "continent": "Africa",
+      "description": null,
+      "size": "267,667 km²",
+      "independence_date": null,
+      "population": "2,248,450",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Gabon",
+        "states": "https://restfulcountries.com/api/v1/countries/Gabon/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Gabon/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Gabon.png"
+      }
+    },
+    {
+      "name": "Gambia",
+      "full_name": "The Republic of The Gambia",
+      "capital": "Banjul",
+      "iso2": "GM",
+      "iso3": "GMB",
+      "covid19": {
+        "total_case": "3,742",
+        "total_deaths": "123",
+        "last_updated": "2020-12-01T08:36:15.000000Z"
+      },
+      "current_president": null,
+      "currency": "GMD",
+      "phone_code": "220",
+      "continent": "Africa",
+      "description": null,
+      "size": "11,295 km²",
+      "independence_date": null,
+      "population": "2,446,240",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Gambia",
+        "states": "https://restfulcountries.com/api/v1/countries/Gambia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Gambia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Gambia.png"
+      }
+    },
+    {
+      "name": "Georgia",
+      "full_name": "Republic of Georgia",
+      "capital": "Tbilisi",
+      "iso2": "GE",
+      "iso3": "GEO",
+      "covid19": {
+        "total_case": "135,584",
+        "total_deaths": "1,267",
+        "last_updated": "2020-12-01T08:35:39.000000Z"
+      },
+      "current_president": null,
+      "currency": "GEL",
+      "phone_code": "995",
+      "continent": "Europe",
+      "description": null,
+      "size": "153,909 km²",
+      "independence_date": null,
+      "population": "3,985,979",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Georgia",
+        "states": "https://restfulcountries.com/api/v1/countries/Georgia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Georgia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Georgia.png"
+      }
+    },
+    {
+      "name": "Germany",
+      "full_name": "Federal Republic of Germany",
+      "capital": "Berlin",
+      "iso2": "DE",
+      "iso3": "DEU",
+      "covid19": {
+        "total_case": "1,053,869",
+        "total_deaths": "16,248",
+        "last_updated": "2020-12-01T08:35:26.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "49",
+      "continent": "Europe",
+      "description": null,
+      "size": "357,386 km²",
+      "independence_date": null,
+      "population": "83,896,324",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Germany",
+        "states": "https://restfulcountries.com/api/v1/countries/Germany/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Germany/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Germany.png"
+      }
+    },
+    {
+      "name": "Ghana",
+      "full_name": "Republic of Ghana",
+      "capital": "Accra",
+      "iso2": "GH",
+      "iso3": "GHA",
+      "covid19": {
+        "total_case": "51,667",
+        "total_deaths": "323",
+        "last_updated": "2020-12-01T08:35:51.000000Z"
+      },
+      "current_president": null,
+      "currency": "GHS",
+      "phone_code": "233",
+      "continent": "Africa",
+      "description": null,
+      "size": "238,535 km²",
+      "independence_date": null,
+      "population": "31,352,348",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Ghana",
+        "states": "https://restfulcountries.com/api/v1/countries/Ghana/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Ghana/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Ghana.png"
+      }
+    },
+    {
+      "name": "Greece",
+      "full_name": "The Hellenic Republic",
+      "capital": "Athens",
+      "iso2": "GR",
+      "iso3": "GRC",
+      "covid19": {
+        "total_case": "104,227",
+        "total_deaths": "2,321",
+        "last_updated": "2020-12-01T08:35:44.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "30",
+      "continent": "Europe",
+      "description": null,
+      "size": "131,957 km²",
+      "independence_date": null,
+      "population": "10,401,951",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Greece",
+        "states": "https://restfulcountries.com/api/v1/countries/Greece/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Greece/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Greece.png"
+      }
+    },
+    {
+      "name": "Grenada",
+      "full_name": "Grenada",
+      "capital": "St. George's",
+      "iso2": "GD",
+      "iso3": "GRD",
+      "covid19": {
+        "total_case": "41",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:26.000000Z"
+      },
+      "current_president": null,
+      "currency": "XCD",
+      "phone_code": "+1-473",
+      "continent": "North America",
+      "description": null,
+      "size": "344 km²",
+      "independence_date": null,
+      "population": "112,742",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Grenada",
+        "states": "https://restfulcountries.com/api/v1/countries/Grenada/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Grenada/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Grenada.png"
+      }
+    },
+    {
+      "name": "Guatemala",
+      "full_name": "Republic of Guatemala",
+      "capital": "Guatemala City",
+      "iso2": "GT",
+      "iso3": "GTM",
+      "covid19": {
+        "total_case": "122,062",
+        "total_deaths": "4,171",
+        "last_updated": "2020-12-01T08:35:42.000000Z"
+      },
+      "current_president": null,
+      "currency": "GTQ",
+      "phone_code": "502",
+      "continent": "North America",
+      "description": null,
+      "size": "108,889 km²",
+      "independence_date": null,
+      "population": "18,057,824",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Guatemala",
+        "states": "https://restfulcountries.com/api/v1/countries/Guatemala/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Guatemala/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Guatemala.png"
+      }
+    },
+    {
+      "name": "Guinea",
+      "full_name": "The Republic of Guinea",
+      "capital": "Conakry",
+      "iso2": "GN",
+      "iso3": "GIN",
+      "covid19": {
+        "total_case": "13,097",
+        "total_deaths": "76",
+        "last_updated": "2020-12-01T08:36:02.000000Z"
+      },
+      "current_president": null,
+      "currency": "GNF",
+      "phone_code": "224",
+      "continent": "Africa",
+      "description": null,
+      "size": "245,857 km²",
+      "independence_date": null,
+      "population": "13,287,738",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Guinea",
+        "states": "https://restfulcountries.com/api/v1/countries/Guinea/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Guinea/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Guinea.png"
+      }
+    },
+    {
+      "name": "Guinea-Bissau",
+      "full_name": "Guinea-Bissau",
+      "capital": "Bissau",
+      "iso2": "GW",
+      "iso3": "GNB",
+      "covid19": {
+        "total_case": "2,422",
+        "total_deaths": "43",
+        "last_updated": "2020-12-01T08:36:16.000000Z"
+      },
+      "current_president": null,
+      "currency": "XOF",
+      "phone_code": "245",
+      "continent": "Africa",
+      "description": null,
+      "size": "36,125 km²",
+      "independence_date": null,
+      "population": "1,988,124",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Guinea-Bissau",
+        "states": "https://restfulcountries.com/api/v1/countries/Guinea-Bissau/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Guinea-Bissau/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Guinea-Bissau.png"
+      }
+    },
+    {
+      "name": "Guyana",
+      "full_name": "Co-operative Republic of Guyana",
+      "capital": "Georgetown",
+      "iso2": "GY",
+      "iso3": "GUY",
+      "covid19": {
+        "total_case": "5,376",
+        "total_deaths": "150",
+        "last_updated": "2020-12-01T08:36:12.000000Z"
+      },
+      "current_president": null,
+      "currency": "GYD",
+      "phone_code": "592",
+      "continent": "South America",
+      "description": null,
+      "size": "214,969 km²",
+      "independence_date": null,
+      "population": "788,148",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Guyana",
+        "states": "https://restfulcountries.com/api/v1/countries/Guyana/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Guyana/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Guyana.png"
+      }
+    },
+    {
+      "name": "Haiti",
+      "full_name": "The Republic of Haiti",
+      "capital": "Port-au-Prince",
+      "iso2": "HT",
+      "iso3": "HTI",
+      "covid19": {
+        "total_case": "9,294",
+        "total_deaths": "233",
+        "last_updated": "2020-12-01T08:36:06.000000Z"
+      },
+      "current_president": null,
+      "currency": "HTG",
+      "phone_code": "509",
+      "continent": "North America",
+      "description": null,
+      "size": "27,750 km²",
+      "independence_date": null,
+      "population": "11,461,636",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Haiti",
+        "states": "https://restfulcountries.com/api/v1/countries/Haiti/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Haiti/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Haiti.png"
+      }
+    },
+    {
+      "name": "Honduras",
+      "full_name": "The Republic of Honduras",
+      "capital": "Tegucigalpa",
+      "iso2": "HN",
+      "iso3": "HND",
+      "covid19": {
+        "total_case": "107,888",
+        "total_deaths": "2,909",
+        "last_updated": "2020-12-01T08:35:43.000000Z"
+      },
+      "current_president": null,
+      "currency": "HNL",
+      "phone_code": "504",
+      "continent": "Central America",
+      "description": null,
+      "size": "112,492 km²",
+      "independence_date": null,
+      "population": "9,971,969",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Honduras",
+        "states": "https://restfulcountries.com/api/v1/countries/Honduras/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Honduras/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Honduras.png"
+      }
+    },
+    {
+      "name": "Hungary",
+      "full_name": "Republic of Hungary",
+      "capital": "Budapest",
+      "iso2": "HU",
+      "iso3": "HUN",
+      "covid19": {
+        "total_case": "217,122",
+        "total_deaths": "4,823",
+        "last_updated": "2020-12-01T08:35:35.000000Z"
+      },
+      "current_president": null,
+      "currency": "HUF",
+      "phone_code": "36",
+      "continent": "Europe",
+      "description": null,
+      "size": "93,030 km²",
+      "independence_date": null,
+      "population": "9,650,147",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Hungary",
+        "states": "https://restfulcountries.com/api/v1/countries/Hungary/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Hungary/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Hungary.png"
+      }
+    },
+    {
+      "name": "Iceland",
+      "full_name": "Republic of Iceland",
+      "capital": "Reykjavik",
+      "iso2": "IS",
+      "iso3": "ISL",
+      "covid19": {
+        "total_case": "5,381",
+        "total_deaths": "26",
+        "last_updated": "2020-12-01T08:36:11.000000Z"
+      },
+      "current_president": null,
+      "currency": "ISK",
+      "phone_code": "354",
+      "continent": "Europe",
+      "description": null,
+      "size": "103,000 km²",
+      "independence_date": null,
+      "population": "342,177",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Iceland",
+        "states": "https://restfulcountries.com/api/v1/countries/Iceland/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Iceland/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Iceland.png"
+      }
+    },
+    {
+      "name": "India",
+      "full_name": "The Republic of India",
+      "capital": "New Delhi",
+      "iso2": "IN",
+      "iso3": "IND",
+      "covid19": {
+        "total_case": "9,462,809",
+        "total_deaths": "137,621",
+        "last_updated": "2020-12-01T08:35:22.000000Z"
+      },
+      "current_president": null,
+      "currency": "INR",
+      "phone_code": "91",
+      "continent": "Asia",
+      "description": null,
+      "size": "3,287,263 km²",
+      "independence_date": null,
+      "population": "1,385,753,930",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/India",
+        "states": "https://restfulcountries.com/api/v1/countries/India/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/India/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/India.png"
+      }
+    },
+    {
+      "name": "Indonesia",
+      "full_name": "The Republic of Indonesia",
+      "capital": "Jakarta",
+      "iso2": "ID",
+      "iso3": "IDN",
+      "covid19": {
+        "total_case": "538,883",
+        "total_deaths": "16,945",
+        "last_updated": "2020-12-01T08:35:29.000000Z"
+      },
+      "current_president": null,
+      "currency": "IDR",
+      "phone_code": "62",
+      "continent": "Asia",
+      "description": null,
+      "size": "1,904,569 km²",
+      "independence_date": null,
+      "population": "274,750,669",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Indonesia",
+        "states": "https://restfulcountries.com/api/v1/countries/Indonesia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Indonesia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Indonesia.png"
+      }
+    },
+    {
+      "name": "Iran",
+      "full_name": "The Islamic Republic of Iran",
+      "capital": "Tehran",
+      "iso2": "IR",
+      "iso3": "IRN",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:20:16.000000Z"
+      },
+      "current_president": null,
+      "currency": "IRR",
+      "phone_code": "98",
+      "continent": "Asia",
+      "description": null,
+      "size": "1,648,195 km²",
+      "independence_date": null,
+      "population": "84,450,573",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Iran",
+        "states": "https://restfulcountries.com/api/v1/countries/Iran/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Iran/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Iran.png"
+      }
+    },
+    {
+      "name": "Iraq",
+      "full_name": "Republic of Iraq (Al Jumhuriyah al Iraqiyah)",
+      "capital": "Baghdad",
+      "iso2": "IQ",
+      "iso3": "IRQ",
+      "covid19": {
+        "total_case": "552,549",
+        "total_deaths": "12,258",
+        "last_updated": "2020-12-01T08:35:28.000000Z"
+      },
+      "current_president": null,
+      "currency": "IQD",
+      "phone_code": "964",
+      "continent": "Asia",
+      "description": null,
+      "size": "437,072 km²",
+      "independence_date": null,
+      "population": "40,612,338",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Iraq",
+        "states": "https://restfulcountries.com/api/v1/countries/Iraq/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Iraq/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Iraq.png"
+      }
+    },
+    {
+      "name": "Ireland",
+      "full_name": "Republic of Ireland",
+      "capital": "Dublin",
+      "iso2": "IE",
+      "iso3": "IRL",
+      "covid19": {
+        "total_case": "72,241",
+        "total_deaths": "2,052",
+        "last_updated": "2020-12-01T08:35:50.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "353",
+      "continent": "Europe",
+      "description": null,
+      "size": "84,421 km²",
+      "independence_date": null,
+      "population": "4,961,208",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Ireland",
+        "states": "https://restfulcountries.com/api/v1/countries/Ireland/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Ireland/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Ireland.png"
+      }
+    },
+    {
+      "name": "Israel",
+      "full_name": "The State of Israel",
+      "capital": "Jerusalem",
+      "iso2": "IL",
+      "iso3": "ISR",
+      "covid19": {
+        "total_case": "332,192",
+        "total_deaths": "2,831",
+        "last_updated": "2020-12-01T08:35:33.000000Z"
+      },
+      "current_president": null,
+      "currency": "ILS",
+      "phone_code": "972",
+      "continent": "Asia",
+      "description": null,
+      "size": "22,145 km²",
+      "independence_date": null,
+      "population": "8,713,402",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Israel",
+        "states": "https://restfulcountries.com/api/v1/countries/Israel/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Israel/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Israel.png"
+      }
+    },
+    {
+      "name": "Italy",
+      "full_name": "The Italian Republic",
+      "capital": "Rome",
+      "iso2": "IT",
+      "iso3": "ITA",
+      "covid19": {
+        "total_case": "1,585,178",
+        "total_deaths": "54,904",
+        "last_updated": "2020-12-01T08:35:24.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "39",
+      "continent": "Europe",
+      "description": null,
+      "size": "301,340 km²",
+      "independence_date": null,
+      "population": "60,424,778",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Italy",
+        "states": "https://restfulcountries.com/api/v1/countries/Italy/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Italy/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Italy.png"
+      }
+    },
+    {
+      "name": "Jamaica",
+      "full_name": "The Caribbean island of Jamaica",
+      "capital": "Kingston",
+      "iso2": "JM",
+      "iso3": "JAM",
+      "covid19": {
+        "total_case": "10,763",
+        "total_deaths": "257",
+        "last_updated": "2020-12-01T08:36:04.000000Z"
+      },
+      "current_president": null,
+      "currency": "JMD",
+      "phone_code": "+1-876",
+      "continent": "The Caribean",
+      "description": null,
+      "size": "10,992 km²",
+      "independence_date": null,
+      "population": "2,966,600",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Jamaica",
+        "states": "https://restfulcountries.com/api/v1/countries/Jamaica/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Jamaica/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Jamaica.png"
+      }
+    },
+    {
+      "name": "Japan",
+      "full_name": "Nippon-koku",
+      "capital": "Tokyo",
+      "iso2": "JP",
+      "iso3": "JPN",
+      "covid19": {
+        "total_case": "148,694",
+        "total_deaths": "2,139",
+        "last_updated": "2020-12-01T08:35:37.000000Z"
+      },
+      "current_president": null,
+      "currency": "JPY",
+      "phone_code": "81",
+      "continent": "Asia",
+      "description": null,
+      "size": "377,915 km²",
+      "independence_date": null,
+      "population": "126,315,493",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Japan",
+        "states": "https://restfulcountries.com/api/v1/countries/Japan/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Japan/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Japan.png"
+      }
+    },
+    {
+      "name": "Jordan",
+      "full_name": "Hashemite Kingdom of Jordan",
+      "capital": "Amman",
+      "iso2": "JO",
+      "iso3": "JOR",
+      "covid19": {
+        "total_case": "219,430",
+        "total_deaths": "2,751",
+        "last_updated": "2020-12-01T08:35:35.000000Z"
+      },
+      "current_president": null,
+      "currency": "JOD",
+      "phone_code": "962",
+      "continent": "Asia",
+      "description": null,
+      "size": "89,342 km²",
+      "independence_date": null,
+      "population": "10,246,070",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Jordan",
+        "states": "https://restfulcountries.com/api/v1/countries/Jordan/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Jordan/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Jordan.png"
+      }
+    },
+    {
+      "name": "Kazakhstan",
+      "full_name": "Republic of Kazakhstan",
+      "capital": "Astana",
+      "iso2": "KZ",
+      "iso3": "KAZ",
+      "covid19": {
+        "total_case": "173,806",
+        "total_deaths": "2,477",
+        "last_updated": "2020-12-01T08:35:36.000000Z"
+      },
+      "current_president": null,
+      "currency": "KZT",
+      "phone_code": "7",
+      "continent": "Asia",
+      "description": null,
+      "size": "2,700,000 km²",
+      "independence_date": null,
+      "population": "18,872,202",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Kazakhstan",
+        "states": "https://restfulcountries.com/api/v1/countries/Kazakhstan/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Kazakhstan/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Kazakhstan.png"
+      }
+    },
+    {
+      "name": "Kenya",
+      "full_name": "The Republic of Kenya",
+      "capital": "Nairobi",
+      "iso2": "KE",
+      "iso3": "KEN",
+      "covid19": {
+        "total_case": "83,618",
+        "total_deaths": "1,469",
+        "last_updated": "2020-12-01T08:35:46.000000Z"
+      },
+      "current_president": null,
+      "currency": "KES",
+      "phone_code": "254",
+      "continent": "Africa",
+      "description": null,
+      "size": "580,367 km²",
+      "independence_date": null,
+      "population": "54,282,617",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Kenya",
+        "states": "https://restfulcountries.com/api/v1/countries/Kenya/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Kenya/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Kenya.png"
+      }
+    },
+    {
+      "name": "Kiribati",
+      "full_name": "Republic of Kiribati",
+      "capital": "Tarawa",
+      "iso2": "KI",
+      "iso3": "KIR",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:28.000000Z"
+      },
+      "current_president": null,
+      "currency": "AUD",
+      "phone_code": "686",
+      "continent": "Oceana",
+      "description": null,
+      "size": "811 km²",
+      "independence_date": null,
+      "population": "120,232",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Kiribati",
+        "states": "https://restfulcountries.com/api/v1/countries/Kiribati/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Kiribati/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Kiribati.png"
+      }
+    },
+    {
+      "name": "Kuwait",
+      "full_name": "State of Kuwait",
+      "capital": "Kuwait City",
+      "iso2": "KW",
+      "iso3": "KWT",
+      "covid19": {
+        "total_case": "142,635",
+        "total_deaths": "880",
+        "last_updated": "2020-12-01T08:35:38.000000Z"
+      },
+      "current_president": null,
+      "currency": "KWD",
+      "phone_code": "965",
+      "continent": "Asia",
+      "description": null,
+      "size": "17,818 km²",
+      "independence_date": null,
+      "population": "4,297,541",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Kuwait",
+        "states": "https://restfulcountries.com/api/v1/countries/Kuwait/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Kuwait/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Kuwait.png"
+      }
+    },
+    {
+      "name": "Kyrgyzstan",
+      "full_name": "Kyrgyz Republic",
+      "capital": "Bishkek",
+      "iso2": "KG",
+      "iso3": "KGZ",
+      "covid19": {
+        "total_case": "72,807",
+        "total_deaths": "1,271",
+        "last_updated": "2020-12-01T08:35:49.000000Z"
+      },
+      "current_president": null,
+      "currency": "KGS",
+      "phone_code": "996",
+      "continent": "Asia",
+      "description": null,
+      "size": "199,900 km²",
+      "independence_date": null,
+      "population": "6,570,372",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Kyrgyzstan",
+        "states": "https://restfulcountries.com/api/v1/countries/Kyrgyzstan/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Kyrgyzstan/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Kyrgyzstan.png"
+      }
+    },
+    {
+      "name": "Laos",
+      "full_name": "The Lao People's Democratic Republic",
+      "capital": "Vientiane",
+      "iso2": "LA",
+      "iso3": "LAO",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:20:23.000000Z"
+      },
+      "current_president": null,
+      "currency": "LAK",
+      "phone_code": "856",
+      "continent": "Asia",
+      "description": null,
+      "size": "237,955 km²",
+      "independence_date": null,
+      "population": "7,320,717",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Laos",
+        "states": "https://restfulcountries.com/api/v1/countries/Laos/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Laos/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Laos.png"
+      }
+    },
+    {
+      "name": "Latvia",
+      "full_name": "Republic of Latvia",
+      "capital": "Riga",
+      "iso2": "LV",
+      "iso3": "LVA",
+      "covid19": {
+        "total_case": "16,975",
+        "total_deaths": "197",
+        "last_updated": "2020-12-01T08:35:58.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "371",
+      "continent": "Europe",
+      "description": null,
+      "size": "64,589 km²",
+      "independence_date": null,
+      "population": "1,877,611",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Latvia",
+        "states": "https://restfulcountries.com/api/v1/countries/Latvia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Latvia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Latvia.png"
+      }
+    },
+    {
+      "name": "Lebanon",
+      "full_name": "The Lebanese Republic",
+      "capital": "Beirut",
+      "iso2": "LB",
+      "iso3": "LBN",
+      "covid19": {
+        "total_case": "127,903",
+        "total_deaths": "1,018",
+        "last_updated": "2020-12-01T08:35:40.000000Z"
+      },
+      "current_president": null,
+      "currency": "LBP",
+      "phone_code": "961",
+      "continent": "Asia",
+      "description": null,
+      "size": "10,452 km²",
+      "independence_date": null,
+      "population": "6,812,737",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Lebanon",
+        "states": "https://restfulcountries.com/api/v1/countries/Lebanon/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Lebanon/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Lebanon.png"
+      }
+    },
+    {
+      "name": "Lesotho",
+      "full_name": "The Kingdom of Lesotho",
+      "capital": "Maseru",
+      "iso2": "LS",
+      "iso3": "LSO",
+      "covid19": {
+        "total_case": "2,109",
+        "total_deaths": "44",
+        "last_updated": "2020-12-01T08:36:17.000000Z"
+      },
+      "current_president": null,
+      "currency": "LSL",
+      "phone_code": "266",
+      "continent": "South America",
+      "description": null,
+      "size": "30,355 km²",
+      "independence_date": null,
+      "population": "2,149,442",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Lesotho",
+        "states": "https://restfulcountries.com/api/v1/countries/Lesotho/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Lesotho/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Lesotho.png"
+      }
+    },
+    {
+      "name": "Liberia",
+      "full_name": "The Republic of Liberia",
+      "capital": "Monrovia",
+      "iso2": "LR",
+      "iso3": "LBR",
+      "covid19": {
+        "total_case": "1,598",
+        "total_deaths": "83",
+        "last_updated": "2020-12-01T08:36:19.000000Z"
+      },
+      "current_president": null,
+      "currency": "LRD",
+      "phone_code": "231",
+      "continent": "Africa",
+      "description": null,
+      "size": "111,369 km²",
+      "independence_date": null,
+      "population": "5,109,227",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Liberia",
+        "states": "https://restfulcountries.com/api/v1/countries/Liberia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Liberia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Liberia.png"
+      }
+    },
+    {
+      "name": "Libya",
+      "full_name": "Great Socialist People's Libyan Arab Jamahiriya",
+      "capital": "Tripolis",
+      "iso2": "LY",
+      "iso3": "LBY",
+      "covid19": {
+        "total_case": "82,809",
+        "total_deaths": "1,183",
+        "last_updated": "2020-12-01T08:35:47.000000Z"
+      },
+      "current_president": null,
+      "currency": "LYD",
+      "phone_code": "218",
+      "continent": "Africa",
+      "description": null,
+      "size": "1,760,000 km²",
+      "independence_date": null,
+      "population": "6,911,205",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Libya",
+        "states": "https://restfulcountries.com/api/v1/countries/Libya/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Libya/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Libya.png"
+      }
+    },
+    {
+      "name": "Liechtenstein",
+      "full_name": "The Principality of Liechtenstein",
+      "capital": "Vaduz",
+      "iso2": "LI",
+      "iso3": "LIE",
+      "covid19": {
+        "total_case": "1,273",
+        "total_deaths": "15",
+        "last_updated": "2020-12-01T08:36:20.000000Z"
+      },
+      "current_president": null,
+      "currency": "CHF",
+      "phone_code": "423",
+      "continent": "Europe",
+      "description": null,
+      "size": "160 km²",
+      "independence_date": null,
+      "population": "38,174",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Liechtenstein",
+        "states": "https://restfulcountries.com/api/v1/countries/Liechtenstein/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Liechtenstein/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Liechtenstein.png"
+      }
+    },
+    {
+      "name": "Lithuania",
+      "full_name": "The Republic of Lithuania",
+      "capital": "Vilnius",
+      "iso2": "LT",
+      "iso3": "LTU",
+      "covid19": {
+        "total_case": "61,325",
+        "total_deaths": "506",
+        "last_updated": "2020-12-01T08:35:51.000000Z"
+      },
+      "current_president": null,
+      "currency": "LTL",
+      "phone_code": "370",
+      "continent": "Europe",
+      "description": null,
+      "size": "65,300 km²",
+      "independence_date": null,
+      "population": "2,706,713",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Lithuania",
+        "states": "https://restfulcountries.com/api/v1/countries/Lithuania/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Lithuania/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Lithuania.png"
+      }
+    },
+    {
+      "name": "Luxembourg",
+      "full_name": "Grand Duchy of Luxembourg",
+      "capital": "Luxembourg",
+      "iso2": "LU",
+      "iso3": "LUX",
+      "covid19": {
+        "total_case": "33,973",
+        "total_deaths": "306",
+        "last_updated": "2020-12-01T08:35:54.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "352",
+      "continent": "Europe",
+      "description": null,
+      "size": "2,586 km²",
+      "independence_date": null,
+      "population": "630,346",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Luxembourg",
+        "states": "https://restfulcountries.com/api/v1/countries/Luxembourg/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Luxembourg/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Luxembourg.png"
+      }
+    },
+    {
+      "name": "Madagascar",
+      "full_name": "The Republic of Madagascar",
+      "capital": "Antananarivo",
+      "iso2": "MG",
+      "iso3": "MDG",
+      "covid19": {
+        "total_case": "17,341",
+        "total_deaths": "251",
+        "last_updated": "2020-12-01T08:35:58.000000Z"
+      },
+      "current_president": null,
+      "currency": "MGA",
+      "phone_code": "261",
+      "continent": "Africa",
+      "description": null,
+      "size": "587,041 km²",
+      "independence_date": null,
+      "population": "28,000,775",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Madagascar",
+        "states": "https://restfulcountries.com/api/v1/countries/Madagascar/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Madagascar/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Madagascar.png"
+      }
+    },
+    {
+      "name": "Malawi",
+      "full_name": "Republic of Malawi",
+      "capital": "Lilongwe",
+      "iso2": "MW",
+      "iso3": "MWI",
+      "covid19": {
+        "total_case": "6,028",
+        "total_deaths": "185",
+        "last_updated": "2020-12-01T08:36:09.000000Z"
+      },
+      "current_president": null,
+      "currency": "MWK",
+      "phone_code": "265",
+      "continent": "Africa",
+      "description": null,
+      "size": "118,484 km²",
+      "independence_date": null,
+      "population": "19,345,092",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Malawi",
+        "states": "https://restfulcountries.com/api/v1/countries/Malawi/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Malawi/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Malawi.png"
+      }
+    },
+    {
+      "name": "Malaysia",
+      "full_name": "Federation of Malaysia",
+      "capital": "Kuala Lumpur",
+      "iso2": "MY",
+      "iso3": "MYS",
+      "covid19": {
+        "total_case": "65,697",
+        "total_deaths": "360",
+        "last_updated": "2020-12-01T08:35:50.000000Z"
+      },
+      "current_president": null,
+      "currency": "MYR",
+      "phone_code": "60",
+      "continent": "Asia",
+      "description": null,
+      "size": "329,847 km²",
+      "independence_date": null,
+      "population": "32,542,947",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Malaysia",
+        "states": "https://restfulcountries.com/api/v1/countries/Malaysia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Malaysia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Malaysia.png"
+      }
+    },
+    {
+      "name": "Maldives",
+      "full_name": "Republic of Maldives",
+      "capital": "Male",
+      "iso2": "MV",
+      "iso3": "MDV",
+      "covid19": {
+        "total_case": "13,011",
+        "total_deaths": "46",
+        "last_updated": "2020-12-01T08:36:02.000000Z"
+      },
+      "current_president": null,
+      "currency": "MVR",
+      "phone_code": "960",
+      "continent": "Asia",
+      "description": null,
+      "size": "300 km²",
+      "independence_date": null,
+      "population": "544,636",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Maldives",
+        "states": "https://restfulcountries.com/api/v1/countries/Maldives/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Maldives/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Maldives.png"
+      }
+    },
+    {
+      "name": "Mali",
+      "full_name": "Republic of Mali",
+      "capital": "Bamako",
+      "iso2": "ML",
+      "iso3": "MLI",
+      "covid19": {
+        "total_case": "4,688",
+        "total_deaths": "152",
+        "last_updated": "2020-12-01T08:36:13.000000Z"
+      },
+      "current_president": null,
+      "currency": "XOF",
+      "phone_code": "223",
+      "continent": "Africa",
+      "description": null,
+      "size": "1,240,000 km²",
+      "independence_date": null,
+      "population": "20,505,871",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Mali",
+        "states": "https://restfulcountries.com/api/v1/countries/Mali/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Mali/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Mali.png"
+      }
+    },
+    {
+      "name": "Malta",
+      "full_name": "The Republic of Malta",
+      "capital": "Valletta",
+      "iso2": "MT",
+      "iso3": "MLT",
+      "covid19": {
+        "total_case": "9,501",
+        "total_deaths": "128",
+        "last_updated": "2020-12-01T08:36:06.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "356",
+      "continent": "Europe",
+      "description": null,
+      "size": "316 km²",
+      "independence_date": null,
+      "population": "442,037",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Malta",
+        "states": "https://restfulcountries.com/api/v1/countries/Malta/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Malta/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Malta.png"
+      }
+    },
+    {
+      "name": "Marshall Islands",
+      "full_name": "The Republic of the Marshall Islands",
+      "capital": "Majuro",
+      "iso2": "MH",
+      "iso3": "MHL",
+      "covid19": {
+        "total_case": "4",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:27.000000Z"
+      },
+      "current_president": null,
+      "currency": "USD",
+      "phone_code": "692",
+      "continent": "Oceana",
+      "description": null,
+      "size": "181 km²",
+      "independence_date": null,
+      "population": "59,359",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Marshall%20Islands",
+        "states": "https://restfulcountries.com/api/v1/countries/Marshall%20Islands/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Marshall%20Islands/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Marshall-Islands.png"
+      }
+    },
+    {
+      "name": "Mauritania",
+      "full_name": "Islamic Republic of Mauritania",
+      "capital": "Nouakchott",
+      "iso2": "MR",
+      "iso3": "MRT",
+      "covid19": {
+        "total_case": "8,424",
+        "total_deaths": "172",
+        "last_updated": "2020-12-01T08:36:07.000000Z"
+      },
+      "current_president": null,
+      "currency": "MRO",
+      "phone_code": "222",
+      "continent": "Africa",
+      "description": null,
+      "size": "1,030,700 km²",
+      "independence_date": null,
+      "population": "4,702,891",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Mauritania",
+        "states": "https://restfulcountries.com/api/v1/countries/Mauritania/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Mauritania/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Mauritania.png"
+      }
+    },
+    {
+      "name": "Mauritius",
+      "full_name": "The Republic of Mauritius",
+      "capital": "Port Louis",
+      "iso2": "MU",
+      "iso3": "MUS",
+      "covid19": {
+        "total_case": "504",
+        "total_deaths": "10",
+        "last_updated": "2020-12-01T08:36:23.000000Z"
+      },
+      "current_president": null,
+      "currency": "MUR",
+      "phone_code": "230",
+      "continent": "Africa",
+      "description": null,
+      "size": "2,040 km²",
+      "independence_date": null,
+      "population": "1,272,654",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Mauritius",
+        "states": "https://restfulcountries.com/api/v1/countries/Mauritius/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Mauritius/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Mauritius.png"
+      }
+    },
+    {
+      "name": "Mexico",
+      "full_name": "United Mexican States",
+      "capital": "Mexico City",
+      "iso2": "MX",
+      "iso3": "MEX",
+      "covid19": {
+        "total_case": "1,107,071",
+        "total_deaths": "105,655",
+        "last_updated": "2020-12-01T08:35:26.000000Z"
+      },
+      "current_president": null,
+      "currency": "MXN",
+      "phone_code": "52",
+      "continent": "North America",
+      "description": null,
+      "size": "1,972,550 km²",
+      "independence_date": null,
+      "population": "129,508,846",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Mexico",
+        "states": "https://restfulcountries.com/api/v1/countries/Mexico/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Mexico/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Mexico.png"
+      }
+    },
+    {
+      "name": "Micronesia",
+      "full_name": "Federated States of Micronesia",
+      "capital": "Palikir",
+      "iso2": "FM",
+      "iso3": "FSM",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:20:33.000000Z"
+      },
+      "current_president": null,
+      "currency": "USD",
+      "phone_code": "691",
+      "continent": "Oceana",
+      "description": null,
+      "size": "702 km²",
+      "independence_date": null,
+      "population": "551,217",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Micronesia",
+        "states": "https://restfulcountries.com/api/v1/countries/Micronesia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Micronesia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Micronesia.png"
+      }
+    },
+    {
+      "name": "Moldova",
+      "full_name": "Republic of Moldova",
+      "capital": "Chisinau",
+      "iso2": "MD",
+      "iso3": "MDA",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:20:34.000000Z"
+      },
+      "current_president": null,
+      "currency": "MDL",
+      "phone_code": "373",
+      "continent": "Europe",
+      "description": null,
+      "size": "33,846 km²",
+      "independence_date": null,
+      "population": "4,030,051",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Moldova",
+        "states": "https://restfulcountries.com/api/v1/countries/Moldova/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Moldova/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Moldova.png"
+      }
+    },
+    {
+      "name": "Monaco",
+      "full_name": "Principality of Monaco",
+      "capital": "Monaco",
+      "iso2": "MC",
+      "iso3": "MCO",
+      "covid19": {
+        "total_case": "608",
+        "total_deaths": "3",
+        "last_updated": "2020-12-01T08:36:22.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "377",
+      "continent": "Europe",
+      "description": null,
+      "size": "2 km²",
+      "independence_date": null,
+      "population": "39,360",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Monaco",
+        "states": "https://restfulcountries.com/api/v1/countries/Monaco/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Monaco/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Monaco.png"
+      }
+    },
+    {
+      "name": "Mongolia",
+      "full_name": "Mongol Uls",
+      "capital": "Ulan Bator",
+      "iso2": "MN",
+      "iso3": "MNG",
+      "covid19": {
+        "total_case": "791",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:21.000000Z"
+      },
+      "current_president": null,
+      "currency": "MNT",
+      "phone_code": "976",
+      "continent": "Asia",
+      "description": null,
+      "size": "1,564,116 km²",
+      "independence_date": null,
+      "population": "3,300,932",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Mongolia",
+        "states": "https://restfulcountries.com/api/v1/countries/Mongolia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Mongolia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Mongolia.png"
+      }
+    },
+    {
+      "name": "Montenegro",
+      "full_name": "The Republic of Montenegro",
+      "capital": "Podgorica",
+      "iso2": "ME",
+      "iso3": "MNE",
+      "covid19": {
+        "total_case": "34,887",
+        "total_deaths": "487",
+        "last_updated": "2020-12-01T08:35:53.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "382",
+      "continent": "Europe",
+      "description": null,
+      "size": "13,812 km²",
+      "independence_date": null,
+      "population": "628,099",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Montenegro",
+        "states": "https://restfulcountries.com/api/v1/countries/Montenegro/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Montenegro/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Montenegro.png"
+      }
+    },
+    {
+      "name": "Morocco",
+      "full_name": "Kingdom of Morocco",
+      "capital": "Rabat",
+      "iso2": "MA",
+      "iso3": "MAR",
+      "covid19": {
+        "total_case": "356,335",
+        "total_deaths": "5,846",
+        "last_updated": "2020-12-01T08:35:32.000000Z"
+      },
+      "current_president": null,
+      "currency": "MAD",
+      "phone_code": "212",
+      "continent": "Africa",
+      "description": null,
+      "size": "446,550 km²",
+      "independence_date": null,
+      "population": "37,097,014",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Morocco",
+        "states": "https://restfulcountries.com/api/v1/countries/Morocco/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Morocco/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Morocco.png"
+      }
+    },
+    {
+      "name": "Mozambique",
+      "full_name": "Republic of Mozambique",
+      "capital": "Maputo",
+      "iso2": "MZ",
+      "iso3": "MOZ",
+      "covid19": {
+        "total_case": "15,701",
+        "total_deaths": "131",
+        "last_updated": "2020-12-01T08:35:59.000000Z"
+      },
+      "current_president": null,
+      "currency": "MZN",
+      "phone_code": "258",
+      "continent": "Africa",
+      "description": null,
+      "size": "801,590 km²",
+      "independence_date": null,
+      "population": "31,637,928",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Mozambique",
+        "states": "https://restfulcountries.com/api/v1/countries/Mozambique/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Mozambique/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Mozambique.png"
+      }
+    },
+    {
+      "name": "Myanmar",
+      "full_name": "Republic of the Union of Myanmar",
+      "capital": "Nay Pyi Taw",
+      "iso2": "MM",
+      "iso3": "MMR",
+      "covid19": {
+        "total_case": "89,486",
+        "total_deaths": "1,918",
+        "last_updated": "2020-12-01T08:35:45.000000Z"
+      },
+      "current_president": null,
+      "currency": "MMK",
+      "phone_code": "95",
+      "continent": "Asia",
+      "description": null,
+      "size": "676,575 km²",
+      "independence_date": null,
+      "population": "54,564,064",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Myanmar",
+        "states": "https://restfulcountries.com/api/v1/countries/Myanmar/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Myanmar/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Myanmar.png"
+      }
+    },
+    {
+      "name": "Namibia",
+      "full_name": "Republic of Namibia",
+      "capital": "Windhoek",
+      "iso2": "NA",
+      "iso3": "NAM",
+      "covid19": {
+        "total_case": "14,380",
+        "total_deaths": "152",
+        "last_updated": "2020-12-01T08:36:01.000000Z"
+      },
+      "current_president": null,
+      "currency": "NAD",
+      "phone_code": "264",
+      "continent": "Africa",
+      "description": null,
+      "size": "824,292 km²",
+      "independence_date": null,
+      "population": "2,560,702",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Namibia",
+        "states": "https://restfulcountries.com/api/v1/countries/Namibia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Namibia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Namibia.png"
+      }
+    },
+    {
+      "name": "Nauru",
+      "full_name": "The Republic of Nauru",
+      "capital": "Yaren",
+      "iso2": "NR",
+      "iso3": "NRU",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:28.000000Z"
+      },
+      "current_president": null,
+      "currency": "AUD",
+      "phone_code": "674",
+      "continent": "Oceana",
+      "description": null,
+      "size": "21 km²",
+      "independence_date": null,
+      "population": "10,853",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Nauru",
+        "states": "https://restfulcountries.com/api/v1/countries/Nauru/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Nauru/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Nauru.png"
+      }
+    },
+    {
+      "name": "Nepal",
+      "full_name": "The Federal Democratic Republic of Nepal",
+      "capital": "Kathmandu",
+      "iso2": "NP",
+      "iso3": "NPL",
+      "covid19": {
+        "total_case": "233,452",
+        "total_deaths": "1,508",
+        "last_updated": "2020-12-01T08:35:34.000000Z"
+      },
+      "current_president": null,
+      "currency": "NPR",
+      "phone_code": "977",
+      "continent": "Asia",
+      "description": null,
+      "size": "147,516 km²",
+      "independence_date": null,
+      "population": "29,362,236",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Nepal",
+        "states": "https://restfulcountries.com/api/v1/countries/Nepal/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Nepal/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Nepal.png"
+      }
+    },
+    {
+      "name": "New Zealand",
+      "full_name": "New Zealand",
+      "capital": "Wellington",
+      "iso2": "NZ",
+      "iso3": "NZL",
+      "covid19": {
+        "total_case": "1,703",
+        "total_deaths": "25",
+        "last_updated": "2020-12-01T08:36:18.000000Z"
+      },
+      "current_president": null,
+      "currency": "NZD",
+      "phone_code": "64",
+      "continent": "Oceana",
+      "description": null,
+      "size": "268,021 km²",
+      "independence_date": null,
+      "population": "4,838,834",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/New%20Zealand",
+        "states": "https://restfulcountries.com/api/v1/countries/New%20Zealand/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/New%20Zealand/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/New-Zealand.png"
+      }
+    },
+    {
+      "name": "Nicaragua",
+      "full_name": "Republic of Nicaragua",
+      "capital": "Managua",
+      "iso2": "NI",
+      "iso3": "NIC",
+      "covid19": {
+        "total_case": "4,629",
+        "total_deaths": "160",
+        "last_updated": "2020-12-01T08:36:14.000000Z"
+      },
+      "current_president": null,
+      "currency": "NIO",
+      "phone_code": "505",
+      "continent": "Central America",
+      "description": null,
+      "size": "130,373 km²",
+      "independence_date": null,
+      "population": "6,658,149",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Nicaragua",
+        "states": "https://restfulcountries.com/api/v1/countries/Nicaragua/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Nicaragua/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Nicaragua.png"
+      }
+    },
+    {
+      "name": "Niger",
+      "full_name": "Republic of Niger",
+      "capital": "Niamey",
+      "iso2": "NE",
+      "iso3": "NER",
+      "covid19": {
+        "total_case": "1,548",
+        "total_deaths": "72",
+        "last_updated": "2020-12-01T08:36:19.000000Z"
+      },
+      "current_president": null,
+      "currency": "XOF",
+      "phone_code": "227",
+      "continent": "Africa",
+      "description": null,
+      "size": "1,270,000 km²",
+      "independence_date": null,
+      "population": "24,594,403",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Niger",
+        "states": "https://restfulcountries.com/api/v1/countries/Niger/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Niger/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Niger.png"
+      }
+    },
+    {
+      "name": "Nigeria",
+      "full_name": "Federal Republic of Nigeria",
+      "capital": "Abuja",
+      "iso2": "NG",
+      "iso3": "NGA",
+      "covid19": {
+        "total_case": "67,557",
+        "total_deaths": "1,173",
+        "last_updated": "2020-12-01T08:35:50.000000Z"
+      },
+      "current_president": {
+        "name": "Muhammadu Buhari",
+        "gender": "Male",
+        "appointment_start_date": "2015-05-29",
+        "appointment_end_date": null,
+        "href": {
+          "self": "https://restfulcountries.com/api/v1/countries/Nigeria/presidents/Muhammadu-Buhari",
+          "country": "https://restfulcountries.com/api/v1/countries/Nigeria",
+          "picture": "https://restfulcountries.com/storage/images/presidents/muhammadu-buharipxpjw98lcj.jpg"
+        }
+      },
+      "currency": "NGN",
+      "phone_code": "234",
+      "continent": "Africa",
+      "description": "Nigeria is the most populous country in Africa and the seventh most populous country in the world, with an estimated 206 million inhabitants as of late 2019.  The name Nigeria was taken from the Niger River running through the country.",
+      "size": "923,768 km²",
+      "independence_date": "1960-10-01",
+      "population": "208,355,710",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Nigeria",
+        "states": "https://restfulcountries.com/api/v1/countries/Nigeria/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Nigeria/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Nigeria.png"
+      }
+    },
+    {
+      "name": "Norway",
+      "full_name": "Kingdom of Norway",
+      "capital": "Oslo",
+      "iso2": "NO",
+      "iso3": "NOR",
+      "covid19": {
+        "total_case": "34,747",
+        "total_deaths": "328",
+        "last_updated": "2020-12-01T08:35:54.000000Z"
+      },
+      "current_president": null,
+      "currency": "NOK",
+      "phone_code": "47",
+      "continent": "Europe",
+      "description": null,
+      "size": "385,207 km²",
+      "independence_date": null,
+      "population": "5,439,201",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Norway",
+        "states": "https://restfulcountries.com/api/v1/countries/Norway/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Norway/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Norway.png"
+      }
+    },
+    {
+      "name": "Oman",
+      "full_name": "Sultanate of Oman",
+      "capital": "Muscat",
+      "iso2": "OM",
+      "iso3": "OMN",
+      "covid19": {
+        "total_case": "123,699",
+        "total_deaths": "1,423",
+        "last_updated": "2020-12-01T08:35:41.000000Z"
+      },
+      "current_president": null,
+      "currency": "OMR",
+      "phone_code": "968",
+      "continent": "Asia",
+      "description": null,
+      "size": "309,501 km²",
+      "independence_date": null,
+      "population": "5,163,135",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Oman",
+        "states": "https://restfulcountries.com/api/v1/countries/Oman/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Oman/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Oman.png"
+      }
+    },
+    {
+      "name": "Pakistan",
+      "full_name": "Islamic Republic of Pakistan",
+      "capital": "Islamabad",
+      "iso2": "PK",
+      "iso3": "PAK",
+      "covid19": {
+        "total_case": "398,024",
+        "total_deaths": "8,025",
+        "last_updated": "2020-12-01T08:35:31.000000Z"
+      },
+      "current_president": null,
+      "currency": "PKR",
+      "phone_code": "92",
+      "continent": "Asia",
+      "description": null,
+      "size": "881,913 km²",
+      "independence_date": null,
+      "population": "222,741,498",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Pakistan",
+        "states": "https://restfulcountries.com/api/v1/countries/Pakistan/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Pakistan/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Pakistan.png"
+      }
+    },
+    {
+      "name": "Palau",
+      "full_name": "Republic of Palau",
+      "capital": "Melekeok",
+      "iso2": "PW",
+      "iso3": "PLW",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:29.000000Z"
+      },
+      "current_president": null,
+      "currency": "USD",
+      "phone_code": "680",
+      "continent": "Oceana",
+      "description": null,
+      "size": "458 km²",
+      "independence_date": null,
+      "population": "18,130",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Palau",
+        "states": "https://restfulcountries.com/api/v1/countries/Palau/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Palau/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Palau.png"
+      }
+    },
+    {
+      "name": "Panama",
+      "full_name": "The Republic of Panama",
+      "capital": "Panama City",
+      "iso2": "PA",
+      "iso3": "PAN",
+      "covid19": {
+        "total_case": "164,729",
+        "total_deaths": "3,060",
+        "last_updated": "2020-12-01T08:35:37.000000Z"
+      },
+      "current_president": null,
+      "currency": "PAB",
+      "phone_code": "507",
+      "continent": "Central America",
+      "description": null,
+      "size": "75,517 km²",
+      "independence_date": null,
+      "population": "4,343,889",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Panama",
+        "states": "https://restfulcountries.com/api/v1/countries/Panama/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Panama/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Panama.png"
+      }
+    },
+    {
+      "name": "Papua New Guinea",
+      "full_name": "Independent State of Papua New Guinea",
+      "capital": "Port Moresby",
+      "iso2": "PG",
+      "iso3": "PNG",
+      "covid19": {
+        "total_case": "656",
+        "total_deaths": "7",
+        "last_updated": "2020-12-01T08:36:21.000000Z"
+      },
+      "current_president": null,
+      "currency": "PGK",
+      "phone_code": "675",
+      "continent": "Oceana",
+      "description": null,
+      "size": "462,840 km²",
+      "independence_date": null,
+      "population": "17,150,845",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Papua%20New%20Guinea",
+        "states": "https://restfulcountries.com/api/v1/countries/Papua%20New%20Guinea/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Papua%20New%20Guinea/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Papua-New-Guinea.png"
+      }
+    },
+    {
+      "name": "Paraguay",
+      "full_name": "The Republic of Paraguay",
+      "capital": "Asuncion",
+      "iso2": "PY",
+      "iso3": "PRY",
+      "covid19": {
+        "total_case": "81,906",
+        "total_deaths": "1,743",
+        "last_updated": "2020-12-01T08:35:47.000000Z"
+      },
+      "current_president": null,
+      "currency": "PYG",
+      "phone_code": "595",
+      "continent": "South America",
+      "description": null,
+      "size": "406,752 km²",
+      "independence_date": null,
+      "population": "7,169,948",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Paraguay",
+        "states": "https://restfulcountries.com/api/v1/countries/Paraguay/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Paraguay/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Paraguay.png"
+      }
+    },
+    {
+      "name": "Peru",
+      "full_name": "Republic of Peru",
+      "capital": "Lima",
+      "iso2": "PE",
+      "iso3": "PER",
+      "covid19": {
+        "total_case": "962,530",
+        "total_deaths": "35,923",
+        "last_updated": "2020-12-01T08:35:27.000000Z"
+      },
+      "current_president": null,
+      "currency": "PEN",
+      "phone_code": "51",
+      "continent": "South America",
+      "description": null,
+      "size": "1,285,220 km²",
+      "independence_date": null,
+      "population": "33,168,487",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Peru",
+        "states": "https://restfulcountries.com/api/v1/countries/Peru/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Peru/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Peru.png"
+      }
+    },
+    {
+      "name": "Philippines",
+      "full_name": "Republic of the Philippines",
+      "capital": "Manila",
+      "iso2": "PH",
+      "iso3": "PHL",
+      "covid19": {
+        "total_case": "431,630",
+        "total_deaths": "8,392",
+        "last_updated": "2020-12-01T08:35:31.000000Z"
+      },
+      "current_president": null,
+      "currency": "PHP",
+      "phone_code": "63",
+      "continent": "Asia",
+      "description": null,
+      "size": "300,000 km²",
+      "independence_date": null,
+      "population": "110,204,906",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Philippines",
+        "states": "https://restfulcountries.com/api/v1/countries/Philippines/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Philippines/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Philippines.png"
+      }
+    },
+    {
+      "name": "Poland",
+      "full_name": "Rzeczpospolita Polska",
+      "capital": "Warsaw",
+      "iso2": "PL",
+      "iso3": "POL",
+      "covid19": {
+        "total_case": "985,075",
+        "total_deaths": "17,029",
+        "last_updated": "2020-12-01T08:35:27.000000Z"
+      },
+      "current_president": null,
+      "currency": "PLN",
+      "phone_code": "48",
+      "continent": "Europe",
+      "description": null,
+      "size": "312,679 km²",
+      "independence_date": null,
+      "population": "37,829,259",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Poland",
+        "states": "https://restfulcountries.com/api/v1/countries/Poland/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Poland/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Poland.png"
+      }
+    },
+    {
+      "name": "Portugal",
+      "full_name": "Portuguese Republic",
+      "capital": "Lisbon",
+      "iso2": "PT",
+      "iso3": "PRT",
+      "covid19": {
+        "total_case": "294,799",
+        "total_deaths": "4,427",
+        "last_updated": "2020-12-01T08:35:33.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "351",
+      "continent": "Europe",
+      "description": null,
+      "size": "92,212 km²",
+      "independence_date": null,
+      "population": "10,184,296",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Portugal",
+        "states": "https://restfulcountries.com/api/v1/countries/Portugal/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Portugal/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Portugal.png"
+      }
+    },
+    {
+      "name": "Qatar",
+      "full_name": "The State of Qatar",
+      "capital": "Doha",
+      "iso2": "QA",
+      "iso3": "QAT",
+      "covid19": {
+        "total_case": "138,833",
+        "total_deaths": "237",
+        "last_updated": "2020-12-01T08:35:39.000000Z"
+      },
+      "current_president": null,
+      "currency": "QAR",
+      "phone_code": "974",
+      "continent": "Asia",
+      "description": null,
+      "size": "11,571 km²",
+      "independence_date": null,
+      "population": "2,901,976",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Qatar",
+        "states": "https://restfulcountries.com/api/v1/countries/Qatar/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Qatar/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Qatar.png"
+      }
+    },
+    {
+      "name": "Romania",
+      "full_name": "Romania",
+      "capital": "Bucharest",
+      "iso2": "RO",
+      "iso3": "ROU",
+      "covid19": {
+        "total_case": "471,536",
+        "total_deaths": "11,193",
+        "last_updated": "2020-12-01T08:35:30.000000Z"
+      },
+      "current_president": null,
+      "currency": "RON",
+      "phone_code": "40",
+      "continent": "Europe",
+      "description": null,
+      "size": "238,397 km²",
+      "independence_date": null,
+      "population": "19,184,408",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Romania",
+        "states": "https://restfulcountries.com/api/v1/countries/Romania/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Romania/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Romania.png"
+      }
+    },
+    {
+      "name": "Russia",
+      "full_name": "Russian Federation",
+      "capital": "Moscow",
+      "iso2": "RU",
+      "iso3": "RUS",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:20:47.000000Z"
+      },
+      "current_president": null,
+      "currency": "RUB",
+      "phone_code": "7",
+      "continent": "Europe",
+      "description": null,
+      "size": "17,125,200 km²",
+      "independence_date": null,
+      "population": "145,960,720",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Russia",
+        "states": "https://restfulcountries.com/api/v1/countries/Russia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Russia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Russia.png"
+      }
+    },
+    {
+      "name": "Rwanda",
+      "full_name": "The Republic of Rwanda",
+      "capital": "Kigali",
+      "iso2": "RW",
+      "iso3": "RWA",
+      "covid19": {
+        "total_case": "5,934",
+        "total_deaths": "49",
+        "last_updated": "2020-12-01T08:36:09.000000Z"
+      },
+      "current_president": null,
+      "currency": "RWF",
+      "phone_code": "250",
+      "continent": "Africa",
+      "description": null,
+      "size": "26,338 km²",
+      "independence_date": null,
+      "population": "13,091,980",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Rwanda",
+        "states": "https://restfulcountries.com/api/v1/countries/Rwanda/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Rwanda/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Rwanda.png"
+      }
+    },
+    {
+      "name": "Saint Lucia",
+      "full_name": "Saint Lucy of Syracuse",
+      "capital": "Castries",
+      "iso2": "LC",
+      "iso3": "LCA",
+      "covid19": {
+        "total_case": "257",
+        "total_deaths": "2",
+        "last_updated": "2020-12-01T08:36:24.000000Z"
+      },
+      "current_president": null,
+      "currency": "XCD",
+      "phone_code": "+1-758",
+      "continent": "North America",
+      "description": null,
+      "size": "617 km²",
+      "independence_date": null,
+      "population": "183,981",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Saint%20Lucia",
+        "states": "https://restfulcountries.com/api/v1/countries/Saint%20Lucia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Saint%20Lucia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Saint-Lucia.png"
+      }
+    },
+    {
+      "name": "Saint Vincent And The Grenadines",
+      "full_name": "Saint Vincent And The Grenadines",
+      "capital": "Kingstown",
+      "iso2": "VC",
+      "iso3": "VCT",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:20:48.000000Z"
+      },
+      "current_president": null,
+      "currency": "XCD",
+      "phone_code": "+1-784",
+      "continent": "North America",
+      "description": null,
+      "size": "389 km²",
+      "independence_date": null,
+      "population": "111,088",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Saint%20Vincent%20And%20The%20Grenadines",
+        "states": "https://restfulcountries.com/api/v1/countries/Saint%20Vincent%20And%20The%20Grenadines/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Saint%20Vincent%20And%20The%20Grenadines/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Saint-Vincent-And-The-Grenadines.png"
+      }
+    },
+    {
+      "name": "Samoa",
+      "full_name": "Independent State of Samoa",
+      "capital": "Apia",
+      "iso2": "WS",
+      "iso3": "WSM",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:29.000000Z"
+      },
+      "current_president": null,
+      "currency": "WST",
+      "phone_code": "685",
+      "continent": "Oceana",
+      "description": null,
+      "size": "2,842 km²",
+      "independence_date": null,
+      "population": "198,972",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Samoa",
+        "states": "https://restfulcountries.com/api/v1/countries/Samoa/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Samoa/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Samoa.png"
+      }
+    },
+    {
+      "name": "San Marino",
+      "full_name": "Republic of San Marino",
+      "capital": "San Marino",
+      "iso2": "SM",
+      "iso3": "SMR",
+      "covid19": {
+        "total_case": "1,609",
+        "total_deaths": "45",
+        "last_updated": "2020-12-01T08:36:19.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "378",
+      "continent": "Europe",
+      "description": null,
+      "size": "61 km²",
+      "independence_date": null,
+      "population": "33,961",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/San%20Marino",
+        "states": "https://restfulcountries.com/api/v1/countries/San%20Marino/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/San%20Marino/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/San-Marino.png"
+      }
+    },
+    {
+      "name": "Sao Tome and Principe",
+      "full_name": "Democratic Republic of São Tomé and Príncipe",
+      "capital": "Sao Tome",
+      "iso2": "ST",
+      "iso3": "STP",
+      "covid19": {
+        "total_case": "991",
+        "total_deaths": "17",
+        "last_updated": "2020-12-01T08:36:20.000000Z"
+      },
+      "current_president": null,
+      "currency": "STD",
+      "phone_code": "239",
+      "continent": "Africa",
+      "description": null,
+      "size": "1,001 km²",
+      "independence_date": null,
+      "population": "220,914",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Sao%20Tome%20and%20Principe",
+        "states": "https://restfulcountries.com/api/v1/countries/Sao%20Tome%20and%20Principe/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Sao%20Tome%20and%20Principe/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Sao-Tome-and-Principe.png"
+      }
+    },
+    {
+      "name": "Saudi Arabia",
+      "full_name": "Kingdom of Saudi Arabia",
+      "capital": "Riyadh",
+      "iso2": "SA",
+      "iso3": "SAU",
+      "covid19": {
+        "total_case": "357,360",
+        "total_deaths": "5,896",
+        "last_updated": "2020-12-01T08:35:32.000000Z"
+      },
+      "current_president": null,
+      "currency": "SAR",
+      "phone_code": "966",
+      "continent": "Asia",
+      "description": null,
+      "size": "2,150,000 km²",
+      "independence_date": null,
+      "population": "35,046,623",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Saudi%20Arabia",
+        "states": "https://restfulcountries.com/api/v1/countries/Saudi%20Arabia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Saudi%20Arabia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Saudi-Arabia.png"
+      }
+    },
+    {
+      "name": "Senegal",
+      "full_name": "Republic of Senegal",
+      "capital": "Dakar",
+      "iso2": "SN",
+      "iso3": "SEN",
+      "covid19": {
+        "total_case": "16,089",
+        "total_deaths": "333",
+        "last_updated": "2020-12-01T08:35:59.000000Z"
+      },
+      "current_president": null,
+      "currency": "XOF",
+      "phone_code": "221",
+      "continent": "Africa",
+      "description": null,
+      "size": "196,722 km²",
+      "independence_date": null,
+      "population": "16,936,487",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Senegal",
+        "states": "https://restfulcountries.com/api/v1/countries/Senegal/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Senegal/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Senegal.png"
+      }
+    },
+    {
+      "name": "Serbia",
+      "full_name": "Republic of Serbia",
+      "capital": "Belgrade",
+      "iso2": "RS",
+      "iso3": "SRB",
+      "covid19": {
+        "total_case": "169,214",
+        "total_deaths": "1,549",
+        "last_updated": "2020-12-01T08:35:36.000000Z"
+      },
+      "current_president": null,
+      "currency": "RSD",
+      "phone_code": "381",
+      "continent": "Europe",
+      "description": null,
+      "size": "88,361 km²",
+      "independence_date": null,
+      "population": "8,722,698",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Serbia",
+        "states": "https://restfulcountries.com/api/v1/countries/Serbia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Serbia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Serbia.png"
+      }
+    },
+    {
+      "name": "Seychelles",
+      "full_name": "Republic of Seychelles",
+      "capital": "Victoria",
+      "iso2": "SC",
+      "iso3": "SYC",
+      "covid19": {
+        "total_case": "172",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:25.000000Z"
+      },
+      "current_president": null,
+      "currency": "SCR",
+      "phone_code": "248",
+      "continent": "Africa",
+      "description": null,
+      "size": "458 km²",
+      "independence_date": null,
+      "population": "98,605",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Seychelles",
+        "states": "https://restfulcountries.com/api/v1/countries/Seychelles/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Seychelles/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Seychelles.png"
+      }
+    },
+    {
+      "name": "Sierra Leone",
+      "full_name": "Republic of Sierra Leone",
+      "capital": "Freetown",
+      "iso2": "SL",
+      "iso3": "SLE",
+      "covid19": {
+        "total_case": "2,412",
+        "total_deaths": "74",
+        "last_updated": "2020-12-01T08:36:17.000000Z"
+      },
+      "current_president": null,
+      "currency": "SLL",
+      "phone_code": "232",
+      "continent": "Africa",
+      "description": null,
+      "size": "71,740 km²",
+      "independence_date": null,
+      "population": "8,047,131",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Sierra%20Leone",
+        "states": "https://restfulcountries.com/api/v1/countries/Sierra%20Leone/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Sierra%20Leone/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Sierra-Leone.png"
+      }
+    },
+    {
+      "name": "Singapore",
+      "full_name": "The Republic of Singapore",
+      "capital": "Singapur",
+      "iso2": "SG",
+      "iso3": "SGP",
+      "covid19": {
+        "total_case": "58,218",
+        "total_deaths": "29",
+        "last_updated": "2020-12-01T08:35:51.000000Z"
+      },
+      "current_president": null,
+      "currency": "SGD",
+      "phone_code": "65",
+      "continent": "Asia",
+      "description": null,
+      "size": "726 km²",
+      "independence_date": null,
+      "population": "5,869,869",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Singapore",
+        "states": "https://restfulcountries.com/api/v1/countries/Singapore/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Singapore/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Singapore.png"
+      }
+    },
+    {
+      "name": "Slovakia",
+      "full_name": "The Slovak Republic",
+      "capital": "Bratislava",
+      "iso2": "SK",
+      "iso3": "SVK",
+      "covid19": {
+        "total_case": "105,733",
+        "total_deaths": "816",
+        "last_updated": "2020-12-01T08:35:44.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "421",
+      "continent": "Europe",
+      "description": null,
+      "size": "49,035 km²",
+      "independence_date": null,
+      "population": "5,460,752",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Slovakia",
+        "states": "https://restfulcountries.com/api/v1/countries/Slovakia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Slovakia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Slovakia.png"
+      }
+    },
+    {
+      "name": "Slovenia",
+      "full_name": "Republic of Slovenia",
+      "capital": "Ljubljana",
+      "iso2": "SI",
+      "iso3": "SVN",
+      "covid19": {
+        "total_case": "75,381",
+        "total_deaths": "927",
+        "last_updated": "2020-12-01T08:35:48.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "386",
+      "continent": "Europe",
+      "description": null,
+      "size": "20,271 km²",
+      "independence_date": null,
+      "population": "2,079,058",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Slovenia",
+        "states": "https://restfulcountries.com/api/v1/countries/Slovenia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Slovenia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Slovenia.png"
+      }
+    },
+    {
+      "name": "Solomon Islands",
+      "full_name": "Islas Salomón",
+      "capital": "Honiara",
+      "iso2": "SB",
+      "iso3": "SLB",
+      "covid19": {
+        "total_case": "17",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:27.000000Z"
+      },
+      "current_president": null,
+      "currency": "SBD",
+      "phone_code": "677",
+      "continent": "Oceana",
+      "description": null,
+      "size": "28,400 km²",
+      "independence_date": null,
+      "population": "694,217",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Solomon%20Islands",
+        "states": "https://restfulcountries.com/api/v1/countries/Solomon%20Islands/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Solomon%20Islands/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Solomon-Islands.png"
+      }
+    },
+    {
+      "name": "Somalia",
+      "full_name": "Federal Republic of Somalia",
+      "capital": "Mogadishu",
+      "iso2": "SO",
+      "iso3": "SOM",
+      "covid19": {
+        "total_case": "4,451",
+        "total_deaths": "113",
+        "last_updated": "2020-12-01T08:36:14.000000Z"
+      },
+      "current_president": null,
+      "currency": "SOS",
+      "phone_code": "252",
+      "continent": "Africa",
+      "description": null,
+      "size": "637,657 km²",
+      "independence_date": null,
+      "population": "16,087,259",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Somalia",
+        "states": "https://restfulcountries.com/api/v1/countries/Somalia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Somalia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Somalia.png"
+      }
+    },
+    {
+      "name": "South Africa",
+      "full_name": "Republic of South Africa",
+      "capital": "Pretoria",
+      "iso2": "ZA",
+      "iso3": "ZAF",
+      "covid19": {
+        "total_case": "790,004",
+        "total_deaths": "21,535",
+        "last_updated": "2020-12-01T08:35:28.000000Z"
+      },
+      "current_president": null,
+      "currency": "ZAR",
+      "phone_code": "27",
+      "continent": "Africa",
+      "description": null,
+      "size": "12,199,912 km²",
+      "independence_date": null,
+      "population": "59,628,390",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/South%20Africa",
+        "states": "https://restfulcountries.com/api/v1/countries/South%20Africa/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/South%20Africa/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/South-Africa.png"
+      }
+    },
+    {
+      "name": "South Sudan",
+      "full_name": "Republic of South Sudan",
+      "capital": "Juba",
+      "iso2": "SS",
+      "iso3": "SSD",
+      "covid19": {
+        "total_case": "3,109",
+        "total_deaths": "61",
+        "last_updated": "2020-12-01T08:36:15.000000Z"
+      },
+      "current_president": null,
+      "currency": "SSP",
+      "phone_code": "211",
+      "continent": "Africa",
+      "description": null,
+      "size": "619,745 km²",
+      "independence_date": null,
+      "population": "11,249,761",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/South%20Sudan",
+        "states": "https://restfulcountries.com/api/v1/countries/South%20Sudan/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/South%20Sudan/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/South-Sudan.png"
+      }
+    },
+    {
+      "name": "Spain",
+      "full_name": "Kingdom of Spain",
+      "capital": "Madrid",
+      "iso2": "ES",
+      "iso3": "ESP",
+      "covid19": {
+        "total_case": "1,628,208",
+        "total_deaths": "44,668",
+        "last_updated": "2020-12-01T08:35:23.000000Z"
+      },
+      "current_president": null,
+      "currency": "EUR",
+      "phone_code": "34",
+      "continent": "Europe",
+      "description": null,
+      "size": "505,990 km²",
+      "independence_date": null,
+      "population": "46,762,381",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Spain",
+        "states": "https://restfulcountries.com/api/v1/countries/Spain/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Spain/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Spain.png"
+      }
+    },
+    {
+      "name": "Sri Lanka",
+      "full_name": "Democratic Socialist Republic of Sri Lanka",
+      "capital": "Colombo",
+      "iso2": "LK",
+      "iso3": "LKA",
+      "covid19": {
+        "total_case": "23,484",
+        "total_deaths": "116",
+        "last_updated": "2020-12-01T08:35:56.000000Z"
+      },
+      "current_president": null,
+      "currency": "LKR",
+      "phone_code": "94",
+      "continent": "Asia",
+      "description": null,
+      "size": "65,610 km²",
+      "independence_date": null,
+      "population": "21,451,157",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Sri%20Lanka",
+        "states": "https://restfulcountries.com/api/v1/countries/Sri%20Lanka/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Sri%20Lanka/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Sri-Lanka.png"
+      }
+    },
+    {
+      "name": "Sudan",
+      "full_name": "Republic of the Sudan",
+      "capital": "Khartoum",
+      "iso2": "SD",
+      "iso3": "SDN",
+      "covid19": {
+        "total_case": "17,810",
+        "total_deaths": "1,249",
+        "last_updated": "2020-12-01T08:35:57.000000Z"
+      },
+      "current_president": null,
+      "currency": "SDG",
+      "phone_code": "249",
+      "continent": "Africa",
+      "description": null,
+      "size": "1,886,068 km²",
+      "independence_date": null,
+      "population": "44,294,189",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Sudan",
+        "states": "https://restfulcountries.com/api/v1/countries/Sudan/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Sudan/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Sudan.png"
+      }
+    },
+    {
+      "name": "Suriname",
+      "full_name": "Republic of Suriname",
+      "capital": "Paramaribo",
+      "iso2": "SR",
+      "iso3": "SUR",
+      "covid19": {
+        "total_case": "5,312",
+        "total_deaths": "117",
+        "last_updated": "2020-12-01T08:36:12.000000Z"
+      },
+      "current_president": null,
+      "currency": "SRD",
+      "phone_code": "597",
+      "continent": "South America",
+      "description": null,
+      "size": "163,821 km²",
+      "independence_date": null,
+      "population": "588,867",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Suriname",
+        "states": "https://restfulcountries.com/api/v1/countries/Suriname/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Suriname/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Suriname.png"
+      }
+    },
+    {
+      "name": "Swaziland",
+      "full_name": "Kingdom of Swaziland",
+      "capital": "Mbabane",
+      "iso2": "SZ",
+      "iso3": "SWZ",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:20:58.000000Z"
+      },
+      "current_president": null,
+      "currency": "SZL",
+      "phone_code": "268",
+      "continent": "Africa",
+      "description": null,
+      "size": "17,364 km²",
+      "independence_date": null,
+      "population": "1,165,287",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Swaziland",
+        "states": "https://restfulcountries.com/api/v1/countries/Swaziland/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Swaziland/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Swaziland.png"
+      }
+    },
+    {
+      "name": "Sweden",
+      "full_name": "Kingdom of Sweden",
+      "capital": "Stockholm",
+      "iso2": "SE",
+      "iso3": "SWE",
+      "covid19": {
+        "total_case": "243,129",
+        "total_deaths": "6,681",
+        "last_updated": "2020-12-01T08:35:34.000000Z"
+      },
+      "current_president": null,
+      "currency": "SEK",
+      "phone_code": "46",
+      "continent": "Europe",
+      "description": null,
+      "size": "450,295 km²",
+      "independence_date": null,
+      "population": "10,125,943",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Sweden",
+        "states": "https://restfulcountries.com/api/v1/countries/Sweden/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Sweden/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Sweden.png"
+      }
+    },
+    {
+      "name": "Switzerland",
+      "full_name": "Swiss Confederation",
+      "capital": "Berne",
+      "iso2": "CH",
+      "iso3": "CHE",
+      "covid19": {
+        "total_case": "317,017",
+        "total_deaths": "4,236",
+        "last_updated": "2020-12-01T08:35:33.000000Z"
+      },
+      "current_president": null,
+      "currency": "CHF",
+      "phone_code": "41",
+      "continent": "Europe",
+      "description": null,
+      "size": "41,285 km²",
+      "independence_date": null,
+      "population": "8,681,478",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Switzerland",
+        "states": "https://restfulcountries.com/api/v1/countries/Switzerland/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Switzerland/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Switzerland.png"
+      }
+    },
+    {
+      "name": "Syria",
+      "full_name": "Syrian Arab Republic",
+      "capital": "Damascus",
+      "iso2": "SY",
+      "iso3": "SYR",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:20:59.000000Z"
+      },
+      "current_president": null,
+      "currency": "SYP",
+      "phone_code": "963",
+      "continent": "Asia",
+      "description": null,
+      "size": "185,180 km²",
+      "independence_date": null,
+      "population": "17,685,746",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Syria",
+        "states": "https://restfulcountries.com/api/v1/countries/Syria/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Syria/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Syria.png"
+      }
+    },
+    {
+      "name": "Taiwan",
+      "full_name": "Republic of China",
+      "capital": "Taipei",
+      "iso2": "TW",
+      "iso3": "TWN",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:21:00.000000Z"
+      },
+      "current_president": null,
+      "currency": "TWD",
+      "phone_code": "886",
+      "continent": "Asia",
+      "description": null,
+      "size": "36,193 km²",
+      "independence_date": null,
+      "population": "23,834,918",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Taiwan",
+        "states": "https://restfulcountries.com/api/v1/countries/Taiwan/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Taiwan/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Taiwan.png"
+      }
+    },
+    {
+      "name": "Tajikistan",
+      "full_name": "Republic of Tajikistan",
+      "capital": "Dushanbe",
+      "iso2": "TJ",
+      "iso3": "TJK",
+      "covid19": {
+        "total_case": "12,155",
+        "total_deaths": "86",
+        "last_updated": "2020-12-01T08:36:03.000000Z"
+      },
+      "current_president": null,
+      "currency": "TJS",
+      "phone_code": "992",
+      "continent": "Asia",
+      "description": null,
+      "size": "143,100 km²",
+      "independence_date": null,
+      "population": "9,630,651",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Tajikistan",
+        "states": "https://restfulcountries.com/api/v1/countries/Tajikistan/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Tajikistan/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Tajikistan.png"
+      }
+    },
+    {
+      "name": "Tanzania",
+      "full_name": "The United Republic of Tanzania",
+      "capital": "Dodoma",
+      "iso2": "TZ",
+      "iso3": "TZA",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:21:01.000000Z"
+      },
+      "current_president": null,
+      "currency": "TZS",
+      "phone_code": "255",
+      "continent": "Africa",
+      "description": null,
+      "size": "945,087 km²",
+      "independence_date": null,
+      "population": "60,479,818",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Tanzania",
+        "states": "https://restfulcountries.com/api/v1/countries/Tanzania/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Tanzania/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Tanzania.png"
+      }
+    },
+    {
+      "name": "Thailand",
+      "full_name": "Kingdom of Thailand",
+      "capital": "Bangkok",
+      "iso2": "TH",
+      "iso3": "THA",
+      "covid19": {
+        "total_case": "3,998",
+        "total_deaths": "60",
+        "last_updated": "2020-12-01T08:36:14.000000Z"
+      },
+      "current_president": null,
+      "currency": "THB",
+      "phone_code": "66",
+      "continent": "Asia",
+      "description": null,
+      "size": "513,120 km²",
+      "independence_date": null,
+      "population": "69,873,773",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Thailand",
+        "states": "https://restfulcountries.com/api/v1/countries/Thailand/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Thailand/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Thailand.png"
+      }
+    },
+    {
+      "name": "Togo",
+      "full_name": "Togolese Republic",
+      "capital": "Lome",
+      "iso2": "TG",
+      "iso3": "TGO",
+      "covid19": {
+        "total_case": "2,946",
+        "total_deaths": "64",
+        "last_updated": "2020-12-01T08:36:16.000000Z"
+      },
+      "current_president": null,
+      "currency": "XOF",
+      "phone_code": "228",
+      "continent": "Africa",
+      "description": null,
+      "size": "56,785 km²",
+      "independence_date": null,
+      "population": "8,363,092",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Togo",
+        "states": "https://restfulcountries.com/api/v1/countries/Togo/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Togo/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Togo.png"
+      }
+    },
+    {
+      "name": "Tonga",
+      "full_name": "Kingdom of Tonga",
+      "capital": "Nuku'alofa",
+      "iso2": "TO",
+      "iso3": "TON",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:30.000000Z"
+      },
+      "current_president": null,
+      "currency": "TOP",
+      "phone_code": "676",
+      "continent": "Oceana",
+      "description": null,
+      "size": "747 km²",
+      "independence_date": null,
+      "population": "106,206",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Tonga",
+        "states": "https://restfulcountries.com/api/v1/countries/Tonga/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Tonga/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Tonga.png"
+      }
+    },
+    {
+      "name": "Trinidad And Tobago",
+      "full_name": null,
+      "capital": "Port of Spain",
+      "iso2": "TT",
+      "iso3": "TTO",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:21:02.000000Z"
+      },
+      "current_president": null,
+      "currency": "TTD",
+      "phone_code": "+1-868",
+      "continent": null,
+      "description": null,
+      "size": "0 km²",
+      "independence_date": null,
+      "population": "0",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Trinidad%20And%20Tobago",
+        "states": "https://restfulcountries.com/api/v1/countries/Trinidad%20And%20Tobago/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Trinidad%20And%20Tobago/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Trinidad-and-Tobago.png"
+      }
+    },
+    {
+      "name": "Tunisia",
+      "full_name": null,
+      "capital": "Tunis",
+      "iso2": "TN",
+      "iso3": "TUN",
+      "covid19": {
+        "total_case": "96,769",
+        "total_deaths": "3,260",
+        "last_updated": "2020-12-01T08:35:44.000000Z"
+      },
+      "current_president": null,
+      "currency": "TND",
+      "phone_code": "216",
+      "continent": null,
+      "description": null,
+      "size": "0 km²",
+      "independence_date": null,
+      "population": "0",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Tunisia",
+        "states": "https://restfulcountries.com/api/v1/countries/Tunisia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Tunisia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Tunisia.png"
+      }
+    },
+    {
+      "name": "Turkey",
+      "full_name": "Republic of Turkey",
+      "capital": "Ankara",
+      "iso2": "TR",
+      "iso3": "TUR",
+      "covid19": {
+        "total_case": "494,351",
+        "total_deaths": "13,558",
+        "last_updated": "2020-12-01T08:35:30.000000Z"
+      },
+      "current_president": null,
+      "currency": "TRY",
+      "phone_code": "90",
+      "continent": "Asia",
+      "description": null,
+      "size": "783,562 km²",
+      "independence_date": null,
+      "population": "84,726,208",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Turkey",
+        "states": "https://restfulcountries.com/api/v1/countries/Turkey/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Turkey/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Turkey.png"
+      }
+    },
+    {
+      "name": "Turkmenistan",
+      "full_name": "Turkmenistan",
+      "capital": "Ashgabat",
+      "iso2": "TM",
+      "iso3": "TKM",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:30.000000Z"
+      },
+      "current_president": null,
+      "currency": "TMT",
+      "phone_code": "993",
+      "continent": "Asia",
+      "description": null,
+      "size": "491,210 km²",
+      "independence_date": null,
+      "population": "6,069,243",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Turkmenistan",
+        "states": "https://restfulcountries.com/api/v1/countries/Turkmenistan/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Turkmenistan/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Turkmenistan.png"
+      }
+    },
+    {
+      "name": "Tuvalu",
+      "full_name": "Tuvalu",
+      "capital": "Funafuti",
+      "iso2": "TV",
+      "iso3": "TUV",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:31.000000Z"
+      },
+      "current_president": null,
+      "currency": "AUD",
+      "phone_code": "688",
+      "continent": "Oceana",
+      "description": null,
+      "size": "26 km²",
+      "independence_date": null,
+      "population": "11,854",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Tuvalu",
+        "states": "https://restfulcountries.com/api/v1/countries/Tuvalu/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Tuvalu/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Tuvalu.png"
+      }
+    },
+    {
+      "name": "Uganda",
+      "full_name": "Republic of Uganda",
+      "capital": "Kampala",
+      "iso2": "UG",
+      "iso3": "UGA",
+      "covid19": {
+        "total_case": "20,459",
+        "total_deaths": "205",
+        "last_updated": "2020-12-01T08:35:56.000000Z"
+      },
+      "current_president": null,
+      "currency": "UGX",
+      "phone_code": "256",
+      "continent": "Africa",
+      "description": null,
+      "size": "241,037 km²",
+      "independence_date": null,
+      "population": "46,377,077",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Uganda",
+        "states": "https://restfulcountries.com/api/v1/countries/Uganda/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Uganda/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Uganda.png"
+      }
+    },
+    {
+      "name": "Ukraine",
+      "full_name": "Ukraine",
+      "capital": "Kiev",
+      "iso2": "UA",
+      "iso3": "UKR",
+      "covid19": {
+        "total_case": "732,625",
+        "total_deaths": "12,327",
+        "last_updated": "2020-12-01T08:35:28.000000Z"
+      },
+      "current_president": null,
+      "currency": "UAH",
+      "phone_code": "380",
+      "continent": "Europe",
+      "description": null,
+      "size": "603,628 km²",
+      "independence_date": null,
+      "population": "43,624,462",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Ukraine",
+        "states": "https://restfulcountries.com/api/v1/countries/Ukraine/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Ukraine/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Ukraine.png"
+      }
+    },
+    {
+      "name": "United Arab Emirates",
+      "full_name": "United Arab Emirates",
+      "capital": "Abu Dhabi",
+      "iso2": "AE",
+      "iso3": "ARE",
+      "covid19": {
+        "total_case": "168,860",
+        "total_deaths": "572",
+        "last_updated": "2020-12-01T08:35:36.000000Z"
+      },
+      "current_president": null,
+      "currency": "AED",
+      "phone_code": "971",
+      "continent": "Asia",
+      "description": null,
+      "size": "83,600 km²",
+      "independence_date": null,
+      "population": "9,941,469",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/United%20Arab%20Emirates",
+        "states": "https://restfulcountries.com/api/v1/countries/United%20Arab%20Emirates/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/United%20Arab%20Emirates/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/United-Arab-Emirates.png"
+      }
+    },
+    {
+      "name": "United Kingdom",
+      "full_name": "United Kingdom of Great Britain",
+      "capital": "London",
+      "iso2": "GB",
+      "iso3": "GBR",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:21:06.000000Z"
+      },
+      "current_president": null,
+      "currency": "GBP",
+      "phone_code": "44",
+      "continent": "Europe",
+      "description": null,
+      "size": "242,495 km²",
+      "independence_date": null,
+      "population": "68,036,854",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/United%20Kingdom",
+        "states": "https://restfulcountries.com/api/v1/countries/United%20Kingdom/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/United%20Kingdom/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/United-Kingdom.png"
+      }
+    },
+    {
+      "name": "United States",
+      "full_name": "United States of America",
+      "capital": "Washington",
+      "iso2": "US",
+      "iso3": "USA",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:21:07.000000Z"
+      },
+      "current_president": null,
+      "currency": "USD",
+      "phone_code": "1",
+      "continent": "North America",
+      "description": null,
+      "size": "9,834,000 km²",
+      "independence_date": null,
+      "population": "331,825,014",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/United%20States",
+        "states": "https://restfulcountries.com/api/v1/countries/United%20States/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/United%20States/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/United-States-of-America.png"
+      }
+    },
+    {
+      "name": "Uruguay",
+      "full_name": "Oriental Republic of Uruguay",
+      "capital": "Montevideo",
+      "iso2": "UY",
+      "iso3": "URY",
+      "covid19": {
+        "total_case": "5,716",
+        "total_deaths": "76",
+        "last_updated": "2020-12-01T08:36:10.000000Z"
+      },
+      "current_president": null,
+      "currency": "UYU",
+      "phone_code": "598",
+      "continent": "South America",
+      "description": null,
+      "size": "176,215 km²",
+      "independence_date": null,
+      "population": "3,478,809",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Uruguay",
+        "states": "https://restfulcountries.com/api/v1/countries/Uruguay/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Uruguay/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Uruguay.png"
+      }
+    },
+    {
+      "name": "Uzbekistan",
+      "full_name": "Republic of Uzbekistan",
+      "capital": "Tashkent",
+      "iso2": "UZ",
+      "iso3": "UZB",
+      "covid19": {
+        "total_case": "72,920",
+        "total_deaths": "608",
+        "last_updated": "2020-12-01T08:35:49.000000Z"
+      },
+      "current_president": null,
+      "currency": "UZS",
+      "phone_code": "998",
+      "continent": "Asia",
+      "description": null,
+      "size": "448,978 km²",
+      "independence_date": null,
+      "population": "33,677,231",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Uzbekistan",
+        "states": "https://restfulcountries.com/api/v1/countries/Uzbekistan/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Uzbekistan/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Uzbekistan.png"
+      }
+    },
+    {
+      "name": "Vanuatu",
+      "full_name": "Republic of Vanuatu",
+      "capital": "Port Vila",
+      "iso2": "VU",
+      "iso3": "VUT",
+      "covid19": {
+        "total_case": "1",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:36:27.000000Z"
+      },
+      "current_president": null,
+      "currency": "VUV",
+      "phone_code": "678",
+      "continent": "Oceana",
+      "description": null,
+      "size": "12,189 km²",
+      "independence_date": null,
+      "population": "310,265",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Vanuatu",
+        "states": "https://restfulcountries.com/api/v1/countries/Vanuatu/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Vanuatu/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Vanuatu.png"
+      }
+    },
+    {
+      "name": "Venezuela",
+      "full_name": "Bolivarian Republic of Venezuela",
+      "capital": "Caracas",
+      "iso2": "VE",
+      "iso3": "VEN",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:21:09.000000Z"
+      },
+      "current_president": null,
+      "currency": "VEF",
+      "phone_code": "58",
+      "continent": "South America",
+      "description": null,
+      "size": "916,445 km²",
+      "independence_date": null,
+      "population": "28,402,272",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Venezuela",
+        "states": "https://restfulcountries.com/api/v1/countries/Venezuela/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Venezuela/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Venezuela.png"
+      }
+    },
+    {
+      "name": "Vietnam",
+      "full_name": "Socialist Republic of Vietnam",
+      "capital": "Hanoi",
+      "iso2": "VN",
+      "iso3": "VNM",
+      "covid19": {
+        "total_case": "0",
+        "total_deaths": "0",
+        "last_updated": "2020-12-01T08:21:10.000000Z"
+      },
+      "current_president": null,
+      "currency": "VND",
+      "phone_code": "84",
+      "continent": "Asia",
+      "description": null,
+      "size": "331,212 km²",
+      "independence_date": null,
+      "population": "97,702,766",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Vietnam",
+        "states": "https://restfulcountries.com/api/v1/countries/Vietnam/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Vietnam/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Vietnam.png"
+      }
+    },
+    {
+      "name": "Yemen",
+      "full_name": "Republic of Yemen",
+      "capital": "Sanaa",
+      "iso2": "YE",
+      "iso3": "YEM",
+      "covid19": {
+        "total_case": "2,081",
+        "total_deaths": "606",
+        "last_updated": "2020-12-01T08:36:18.000000Z"
+      },
+      "current_president": null,
+      "currency": "YER",
+      "phone_code": "967",
+      "continent": "Asia",
+      "description": null,
+      "size": "527,968 km²",
+      "independence_date": null,
+      "population": "30,110,883",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Yemen",
+        "states": "https://restfulcountries.com/api/v1/countries/Yemen/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Yemen/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Yemen.png"
+      }
+    },
+    {
+      "name": "Zambia",
+      "full_name": "Republic of Zambia",
+      "capital": "Lusaka",
+      "iso2": "ZM",
+      "iso3": "ZMB",
+      "covid19": {
+        "total_case": "17,647",
+        "total_deaths": "357",
+        "last_updated": "2020-12-01T08:35:57.000000Z"
+      },
+      "current_president": null,
+      "currency": "ZMK",
+      "phone_code": "260",
+      "continent": "Africa",
+      "description": null,
+      "size": "752,618 km²",
+      "independence_date": null,
+      "population": "18,609,335",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Zambia",
+        "states": "https://restfulcountries.com/api/v1/countries/Zambia/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Zambia/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Zambia.png"
+      }
+    },
+    {
+      "name": "Zimbabwe",
+      "full_name": "Republic of Zimbabwe",
+      "capital": "Harare",
+      "iso2": "ZW",
+      "iso3": "ZWE",
+      "covid19": {
+        "total_case": "10,034",
+        "total_deaths": "277",
+        "last_updated": "2020-12-01T08:36:05.000000Z"
+      },
+      "current_president": null,
+      "currency": "ZWL",
+      "phone_code": "263",
+      "continent": "Africa",
+      "description": null,
+      "size": "390,757 km²",
+      "independence_date": null,
+      "population": "14,955,711",
+      "href": {
+        "self": "https://restfulcountries.com/api/v1/countries/Zimbabwe",
+        "states": "https://restfulcountries.com/api/v1/countries/Zimbabwe/states",
+        "presidents": "https://restfulcountries.com/api/v1/countries/Zimbabwe/presidents",
+        "flag": "https://restfulcountries.com/assets/images/flags/Zimbabwe.png"
+      }
+    }
+  ],
+  "links": {
+    "first": "https://restfulcountries.com/api/v1/countries?page=1",
+    "last": "https://restfulcountries.com/api/v1/countries?page=1",
+    "prev": null,
+    "next": null
+  },
+  "meta": {
+    "current_page": 1,
+    "from": 1,
+    "last_page": 1,
+    "path": "https://restfulcountries.com/api/v1/countries",
+    "per_page": 186,
+    "to": 186,
+    "total": 186
   }
 }
