@@ -46,6 +46,8 @@ def fetch_country():
         title = additional_wiki_data["stateTitle"]
         head_url = additional_wiki_data["stateImage"]
         gov_type = additional_wiki_data["governmentType"]
+
+        print(additional_wiki_data)
         
         caption = (
             f"🌍 *País do Dia:* {name}\n"
