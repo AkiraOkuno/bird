@@ -12,130 +12,96 @@ from google_places_utils import (
 )
 
 API_URL = "https://restcountries.com/v3.1/all"
+WIKI_API = "https://en.wikipedia.org/w/api.php"
+SPARQL_URL = "https://query.wikidata.org/sparql"
 
 def fetch_country():
     try:
         res = requests.get(API_URL)
-        if res.status_code != 200:
-            print(f"[COUNTRY] API failed: {res.status_code}", flush=True)
-            return None, None, None
-
         countries = res.json()
         country = random.choice(countries)
 
         name = country.get("name", {}).get("common", "Desconhecido")
         capital = country.get("capital", ["Desconhecida"])[0]
-        population_raw = country.get("population", 0)
+        population = country.get("population", 0)
         area = country.get("area", 0)
         region = country.get("region", "Desconhecida")
         languages = ", ".join(country.get("languages", {}).values()) or "Desconhecido"
 
         currencies_data = country.get("currencies", {})
-        currencies = []
-        for code, data in currencies_data.items():
-            currencies.append(f"{data.get('name', 'Moeda')} ({code})")
+        currencies = [f"{data.get('name', 'Moeda')} ({code})" for code, data in currencies_data.items()]
         currencies_str = ", ".join(currencies) if currencies else "Desconhecida"
-
         flag_url = country.get("flags", {}).get("png")
 
-        # === Extra data via Wikidata ===
-        wikidata_id = get_wikidata_id(name)
-        extra = get_wikidata_government_info(wikidata_id, country_name=name)
+        # ==== Wikidata ====
+        wiki_params = {
+            "action": "query", "format": "json",
+            "titles": name,
+            "prop": "pageprops", "ppprop": "wikibase_item"
+        }
+        r = requests.get(WIKI_API, params=wiki_params).json()
+        pages = r["query"]["pages"]
+        wikidata_id = next(iter(pages.values())).get("pageprops", {}).get("wikibase_item")
 
-        # Compose main message
+        leader_name = leader_img = gov_type = None
+
+        if wikidata_id:
+            sparql = f"""
+            SELECT ?pop ?popDate ?personLabel ?img WHERE {{
+              wd:{wikidata_id} p:P1082 ?stmt.
+              ?stmt ps:P1082 ?pop; pq:P585 ?popDate.
+              OPTIONAL {{
+                wd:{wikidata_id} wdt:P35 ?person.
+                ?person rdfs:label ?personLabel FILTER(LANG(?personLabel)="en").
+                OPTIONAL {{ ?person wdt:P18 ?img. }}
+              }}
+            }} ORDER BY DESC(?popDate) LIMIT 1
+            """
+            data = requests.get(SPARQL_URL, params={"query": sparql, "format": "json"},
+                                headers={"Accept": "application/sparql-results+json"}).json()
+            result = data["results"]["bindings"]
+            if result:
+                result = result[0]
+                leader_name = result.get("personLabel", {}).get("value")
+                leader_img = result.get("img", {}).get("value")
+
+        # ==== Scrape Wikipedia infobox for gov type ====
+        try:
+            html = requests.get(f"https://en.wikipedia.org/wiki/{name.replace(' ', '_')}").text
+            soup = BeautifulSoup(html, "lxml")
+            infobox = soup.find("table", class_="infobox")
+            gov_row = infobox.find("th", string=lambda t: t and "Government" in t) if infobox else None
+            if gov_row:
+                gov_type = gov_row.find_next_sibling("td").get_text(" ", strip=True)
+        except Exception as e:
+            print(f"[WIKI] Parsing failed: {e}")
+
         caption = (
             f"🌍 *País do Dia:* {name}\n"
             f"🏙️ Capital: {capital}\n"
-            f"👥 População: {int(extra['population']):,} (em {extra['populationDate'][:10]})\n"
+            f"👥 População: {population:,}\n"
             f"📏 Área: {int(area):,} km²\n"
             f"🗣️ Idioma(s): {languages}\n"
-            f"💰 Moeda(s): {currencies_str}\n"
-            f"🏛️ Tipo de governo: {extra['governmentType']}\n"
-            f"🧑‍⚖️ {extra['stateTitle']}: {extra['head_of_state'] or 'Desconhecido'}"
+            f"💰 Moeda(s): {currencies_str}"
         )
+        if leader_name:
+            caption += f"\n👤 Líder: {leader_name}"
+        if gov_type:
+            caption += f"\n🏛️ Governo: {gov_type}"
 
         print(f"[COUNTRY] Selected: {name}")
-        return flag_url, caption, extra["stateImage"]
+        return flag_url, caption, leader_img
 
     except Exception as e:
-        print(f"[COUNTRY] Exception: {e}", flush=True)
+        print(f"[COUNTRY] Exception: {e}")
         return None, None, None
 
-def get_wikidata_id(country):
-    url = "https://en.wikipedia.org/w/api.php"
-    params = {
-        "action": "query",
-        "format": "json",
-        "titles": country,
-        "prop": "pageprops",
-        "ppprop": "wikibase_item"
-    }
-    resp = requests.get(url, params=params)
-    resp.raise_for_status()
-    pages = resp.json()["query"]["pages"]
-    page = next(iter(pages.values()))
-    return page.get("pageprops", {}).get("wikibase_item")
+def generate():
+    flag_url, caption, portrait_url = fetch_country()
+    if not flag_url or not caption:
+        return "⚠️ Não foi possível carregar o país do dia."
 
-def get_wikidata_government_info(wikidata_id, country_name):
-    session = requests.Session()
-    sparql = f"""
-    SELECT ?pop ?popDate ?personLabel ?img WHERE {{
-      wd:{wikidata_id} p:P1082 ?stmt.
-      ?stmt ps:P1082 ?pop; pq:P585 ?popDate.
-      OPTIONAL {{
-        wd:{wikidata_id} wdt:P35 ?person.
-        ?person rdfs:label ?personLabel FILTER(LANG(?personLabel)="en").
-        OPTIONAL {{ ?person wdt:P18 ?img. }}
-      }}
-    }}
-    ORDER BY DESC(?popDate)
-    LIMIT 1
-    """
-    data = session.get(
-        "https://query.wikidata.org/sparql",
-        params={"query": sparql, "format": "json"},
-        headers={"Accept": "application/sparql-results+json"}
-    )
-    data.raise_for_status()
-    results = data.json()["results"]["bindings"]
-    entry = results[0] if results else {}
-
-    pop = entry.get("pop", {}).get("value", 0)
-    pop_date = entry.get("popDate", {}).get("value", "unknown")
-    head_name = entry.get("personLabel", {}).get("value")
-    image_url = entry.get("img", {}).get("value")
-
-    # Scrape Wikipedia infobox
-    url = f"https://en.wikipedia.org/wiki/{country_name.replace(' ', '_')}"
-    html = session.get(url).text
-    soup = BeautifulSoup(html, "lxml")
-    infobox = soup.find("table", class_="infobox")
-
-    state_title = "Head of state"
-    gov_type = "Unknown"
-    if infobox:
-        if head_name:
-            for row in infobox.find_all("tr"):
-                th = row.find("th")
-                td = row.find("td")
-                if th and td and head_name in td.get_text():
-                    state_title = th.get_text().strip("•·.- ").strip()
-                    break
-        gov_row = infobox.find("th", string=lambda t: t and "Government" in t)
-        if gov_row:
-            gov_td = gov_row.find_next_sibling("td")
-            if gov_td:
-                gov_type = " ".join(gov_td.get_text(separator=" ", strip=True).split())
-
-    return {
-        "population": int(float(pop)),
-        "populationDate": pop_date,
-        "head_of_state": head_name,
-        "stateImage": image_url,
-        "stateTitle": state_title,
-        "governmentType": gov_type
-    }
-
+    chat_ids = os.environ["CHAT_IDS"].split(",")
 
 def generate():
     flag_url, caption = fetch_country()
@@ -150,6 +116,11 @@ def generate():
         send_image_message(chat_id.strip(), flag_url, caption)
 
     country_name = caption.split("*País do Dia:*")[-1].split("\n")[0].strip()
+
+    for chat_id in chat_ids:
+        send_image_message(chat_id.strip(), flag_url, caption)
+        if portrait_url:
+            send_image_message(chat_id.strip(), portrait_url, "👤 Retrato do líder")
 
     # Tourist places
     tourist_photo_entries = get_random_tourist_photos(country_name, max_photos=2)
