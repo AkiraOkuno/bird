@@ -4,7 +4,11 @@ import json
 API_KEY = ""
 API_URL = "https://restfulcountries.com/storage/images/presidents/muhammadu-buharipxpjw98lcj.jpg"
 
-headers = {"Authorization": API_KEY}
+# Your API call
+headers = {
+    "Accept": "application/json",
+    "Authorization": f"Bearer {API_KEY}"
+    }
 url = "https://restfulcountries.com/api/v1/countries"
 
 response = requests.get(url, headers=headers)
