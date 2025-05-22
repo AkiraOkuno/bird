@@ -1,0 +1,6 @@
+{
+  "error": {
+    "status": 401,
+    "message": "Unauthenticated. Visit https://www.restfulcountries.com/request-access-token to generate token. See documentation for more details."
+  }
+}
