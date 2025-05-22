@@ -9,6 +9,7 @@ from google_places_utils import (
     get_random_cities_for_country,
     get_city_photos_from_name
 )
+from wiki_utils import get_country_data
 
 API_URL = "https://restcountries.com/v3.1/all"
 
@@ -37,6 +38,15 @@ def fetch_country():
 
         flag_url = country.get("flags", {}).get("png")
 
+        additional_wiki_data = get_country_data(name)
+
+        head_url = None
+        
+        head_of_state = additional_wiki_data["head_of_state"]
+        title = additional_wiki_data["stateTitle"]
+        head_url = additional_wiki_data["stateImage"]
+        gov_type = additional_wiki_data["governmentType"]
+        
         caption = (
             f"🌍 *País do Dia:* {name}\n"
             f"🏙️ Capital: {capital}\n"
@@ -46,15 +56,23 @@ def fetch_country():
             f"💰 Moeda(s): {currencies_str}"
         )
 
+        # only add these lines if the value is not None or empty
+        if head_of_state:
+            caption += f"\n👤 Chefe de Estado: {head_of_state}"
+            if title:
+                caption += f"\n🏷️ Título: {title}"
+        if gov_type:
+            caption += f"\n🏛️ Tipo de Governo: {gov_type}"
+
         print(f"[COUNTRY] Selected country: {name}")
-        return flag_url, caption
+        return flag_url, head_url, caption
 
     except Exception as e:
         print(f"[COUNTRY] Exception: {e}", flush=True)
         return None, None
 
 def generate():
-    flag_url, caption = fetch_country()
+    flag_url, head_url, caption = fetch_country()
     if not flag_url or not caption:
         return "⚠️ Não foi possível carregar o país do dia."
 
@@ -64,6 +82,8 @@ def generate():
     for chat_id in chat_ids:
         print(f"[SEND] Flag to {chat_id.strip()} -> {flag_url}")
         send_image_message(chat_id.strip(), flag_url, caption)
+        if head_url:
+            send_image_message(chat_id.strip(), head_url, "👤 Head of State of the Country")
 
     country_name = caption.split("*País do Dia:*")[-1].split("\n")[0].strip()
 
