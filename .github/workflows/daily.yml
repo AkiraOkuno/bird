@@ -3,7 +3,7 @@ name: BIRD
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 14 * * *'  # Runs once daily at 9:00 AM EST/EDT
+    - cron: '0 12 * * *'  # Runs once daily at 8:11 AM EST/EDT
 
 jobs:
   run:
