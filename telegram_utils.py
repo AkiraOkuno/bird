@@ -52,7 +52,7 @@ def send_telegram_audio(link, folder):
 
     try:
         for chat_id in chat_ids:
-            with open(f'../{folder}/{link}', 'rb') as audio:
+            with open(f'./{folder}/{link}', 'rb') as audio:
                 payload = {
                     'chat_id': chat_id,
                     #'title': link,
