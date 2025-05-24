@@ -61,5 +61,5 @@ def fetch_definition_pt():
 
 def generate():
     result = try_with_retries(fetch_definition_pt, attempts=1, delay=5)
-    return result or "⚠️ Não foi possível encontrar uma definição hoje."
+    return result or None #"⚠️ Não foi possível encontrar uma definição hoje."
 
