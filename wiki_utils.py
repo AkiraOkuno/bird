@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import hashlib
 
 def get_country_data(country):
     """
@@ -97,3 +98,22 @@ def get_country_data(country):
         "governmentType": gov_type or "Unknown"
     }
 
+def get_image_from_wikidata(wikidata_id):
+    """
+    Recebe um Wikidata ID (ex.: 'Q17592') e retorna a URL da imagem principal (P18)
+    """
+    url = f"https://www.wikidata.org/wiki/Special:EntityData/{wikidata_id}.json"
+    res = requests.get(url)
+    res.raise_for_status()
+    entity = res.json()["entities"][wikidata_id]
+
+    try:
+        image_filename = entity["claims"]["P18"][0]["mainsnak"]["datavalue"]["value"]
+    except KeyError:
+        raise ValueError("Imagem (P18) não encontrada para esse item no Wikidata")
+
+    # Constrói a URL da imagem no Wikimedia Commons
+    filename = image_filename.replace(" ", "_")
+    md5_hash = hashlib.md5(filename.encode('utf-8')).hexdigest()
+    url_image = f"https://upload.wikimedia.org/wikipedia/commons/{md5_hash[0]}/{md5_hash[0]}{md5_hash[1]}/{filename}"
+    return url_image
