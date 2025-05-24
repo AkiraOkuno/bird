@@ -46,13 +46,13 @@ def send_image_message_v2(chat_id, image_url, caption=None):
     except Exception as e:
         print(f"[Image] Error: {e}")
 
-def send_telegram_audio(link):
+def send_telegram_audio(link, folder):
     token = os.environ["TELEGRAM_TOKEN"]
     chat_ids = os.environ["CHAT_IDS"].split(",")
 
     try:
         for chat_id in chat_ids:
-            with open(f'xeno/{link}', 'rb') as audio:
+            with open(f'{folder}/{link}', 'rb') as audio:
                 payload = {
                     'chat_id': chat_id,
                     #'title': link,
