@@ -9,7 +9,7 @@ def fetch_core():
 
     contagem = 1
     sucesso = 0
-    while contagem <= 10:
+    while contagem <= 100:
         number = random.randint(1,150000000)
         if not sucesso:
             try:
