@@ -11,7 +11,7 @@ from utils.retry import try_with_retries
 def save_mp3_xeno(codigo):
     url = f"https://xeno-canto.org/{codigo}/download"
     req = requests.get(url)
-    with open(f"../xeno/{codigo}.mp3", 'wb') as f:
+    with open(f"./xeno/{codigo}.mp3", 'wb') as f:
         f.write(req.content)
 
 def get_xeno():
