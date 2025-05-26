@@ -3,6 +3,7 @@ import numpy as np
 import random
 import os
 import time
+import requests
 from telegram_utils import send_image_message
 
 def get_artists_from_country(country_code, limit=100, offset=0):
