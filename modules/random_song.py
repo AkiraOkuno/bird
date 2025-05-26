@@ -131,7 +131,7 @@ def try_get_valid_song(country_code, artist_count, max_attempts=100, limit=5):
 
 def generate():
     df = load_artist_df()
-    row = choose_random_country(df)
+    row = choose_country(df)
 
     country_code = row["Code"]
     country_name = row["Country"]
