@@ -24,6 +24,9 @@ def fetch_country():
         country = random.choice(countries)
 
         name = country.get("name", {}).get("common", "Desconhecido")
+        native_names = list(country.get("nativeName", {}).values())[0]
+        official_name = native.get("official")
+        common_name = native.get("common")
         capital = country.get("capital", ["Desconhecida"])[0]
         population = country.get("population", 0)
         area = country.get("area", 0)
@@ -50,14 +53,16 @@ def fetch_country():
         print(additional_wiki_data)
         
         caption = (
-            f"🌍 *País do Dia:* {name}\n"
+            f"🗺️ *País do Dia:* {name}\n"
+            f"🗣️ *Nome local (comum):* {common_name}\n"
+            f"🏛️ *Nome local (oficial):* {official_name}\n"
             f"🏙️ Capital: {capital}\n"
             f"👥 População: {population:,}\n"
             f"📏 Área: {int(area):,} km²\n"
             f"🗣️ Idioma(s): {languages}\n"
             f"💰 Moeda(s): {currencies_str}"
         )
-
+        
         # only add these lines if the value is not None or empty
         if head_of_state:
             caption += f"\n👤 Chefe de Estado: {head_of_state}"
