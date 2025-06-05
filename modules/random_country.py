@@ -25,8 +25,11 @@ def fetch_country():
 
         name = country.get("name", {}).get("common", "Desconhecido")
         native_names = list(country.get("nativeName", {}).values())[0]
+        print(native_names)
         official_name = native.get("official")
         common_name = native.get("common")
+        print(official_name)
+        print(common_name)
         capital = country.get("capital", ["Desconhecida"])[0]
         population = country.get("population", 0)
         area = country.get("area", 0)
@@ -71,6 +74,10 @@ def fetch_country():
         if gov_type:
             caption += f"\n🏛️ Tipo de Governo: {gov_type}"
 
+        print(flag_url)
+        print(head_url)
+        print(caption)
+        
         print(f"[COUNTRY] Selected country: {name}")
         return flag_url, head_url, caption
 
