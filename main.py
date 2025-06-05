@@ -8,7 +8,7 @@ errors = []
 
 for filename in os.listdir(MODULES_DIR):
     #if filename.endswith(".py"):
-    if filename in ["random_website.py"]:
+    if filename in ["random_website.py","random_country.py"]:
         module_name = filename[:-3]
         module_path = os.path.join(MODULES_DIR, filename)
 
