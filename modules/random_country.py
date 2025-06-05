@@ -18,26 +18,25 @@ def fetch_country():
         res = requests.get(API_URL, timeout=10)
         if res.status_code != 200:
             print(f"[COUNTRY] API failed: {res.status_code}", flush=True)
-            # Always return three values
             return None, None, None
 
         countries = res.json()
         country = random.choice(countries)
 
-        # 1) Country names
+        # ─── 1) Country names ────────────────────────────────────────────
         name = country.get("name", {}).get("common", "Desconhecido")
 
-        # 2) Safe native name extraction
-        native_name_dicts = list(country.get("nativeName", {}).values())
+        # ─── 2) NativeName is under country["name"]["nativeName"] ──────
+        native_name_dicts = list(country.get("name", {}).get("nativeName", {}).values())
         if native_name_dicts:
             native = native_name_dicts[0]
             official_name = native.get("official", "Desconhecido")
-            common_name  = native.get("common",  "Desconhecido")
+            common_name   = native.get("common",   "Desconhecido")
         else:
             official_name = "Desconhecido"
             common_name   = "Desconhecido"
 
-        # 3) Capital, population, area, region, languages
+        # ─── 3) Other fields (unchanged) ────────────────────────────────
         capital    = country.get("capital", ["Desconhecida"])
         capital    = capital[0] if capital else "Desconhecida"
         population = country.get("population", 0)
@@ -46,27 +45,23 @@ def fetch_country():
         langs      = country.get("languages", {}) or {}
         languages  = ", ".join(langs.values()) if langs else "Desconhecido"
 
-        # 4) Currencies
         currencies_data = country.get("currencies", {}) or {}
         currencies = []
         for code, data in currencies_data.items():
-            # some entries may be missing "name"
             curr_name = data.get("name", "Moeda")
             currencies.append(f"{curr_name} ({code})")
         currencies_str = ", ".join(currencies) if currencies else "Desconhecida"
 
-        # 5) Flag URL
         flag_url = country.get("flags", {}).get("png")
 
-        # 6) Wiki data
+        # ─── 4) Wiki data (unchanged) ────────────────────────────────────
         additional_wiki_data = get_country_data(name)
-        head_url      = None
         head_of_state = additional_wiki_data.get("head_of_state")
         title         = additional_wiki_data.get("stateTitle")
         head_url      = additional_wiki_data.get("stateImage")
         gov_type      = additional_wiki_data.get("governmentType")
 
-        # 7) Build the caption
+        # ─── 5) Build caption ────────────────────────────────────────────
         caption = (
             f"🗺️ *País do Dia:* {name}\n"
             f"🗣️ *Nome local (comum):* {common_name}\n"
@@ -92,7 +87,6 @@ def fetch_country():
 
     except Exception as e:
         print(f"[COUNTRY] Exception: {e}", flush=True)
-        # Always return exactly three values, even on exception
         return None, None, None
 
 
