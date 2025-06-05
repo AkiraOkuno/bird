@@ -101,7 +101,7 @@ def fetch_random_site_with_selenium(timeout: int = TIMEOUT) -> str | None:
 
     except (TimeoutException, WebDriverException) as e:
         # Log or print the exception if you want to debug
-        # print(f"[SELENIUM] Error: {e}", flush=True)
+        print(f"[SELENIUM] Error: {e}", flush=True)
         return None
 
 
