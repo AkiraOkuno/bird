@@ -22,12 +22,16 @@ def get_artists_from_country(country_code, limit=100, offset=0):
         "User-Agent": "MusicExplorerBot/1.0 (your-email@example.com)"
     }
 
+    print("Start getting random song")
+
     response = requests.get(url, params=params, headers=headers)
+    print(response)
     if response.status_code != 200:
         print(f"Error: {response.status_code}")
         return []
 
     data = response.json()
+    print(data)
     return [{
         "name": artist.get("name"),
         "id": artist.get("id"),
