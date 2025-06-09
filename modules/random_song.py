@@ -151,7 +151,8 @@ def generate():
     track_title = result["track_title"]
     release_title = result["release_title"]
     cover_image = result.get("cover_image")
-
+    print(cover_image)
+    
     caption = (
         f"🎵 *Música do dia*\n\n"
         f"👤 Artista: *{name}*\n"
@@ -159,6 +160,7 @@ def generate():
         f"💿 Álbum: _{release_title}_\n"
         f"🌍 País de origem: *{country_name}*"
     )
+    print(caption)
 
     chat_ids = os.environ["CHAT_IDS"].split(",")
 
