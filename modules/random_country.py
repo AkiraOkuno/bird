@@ -11,7 +11,7 @@ from google_places_utils import (
 )
 from wiki_utils import get_country_data
 
-API_URL = "https://restcountries.com/v3.1/alpha/bi"
+API_URL = "https://restcountries.com/v3.1/alpha/ph"
 
 def fetch_country():
     try:
