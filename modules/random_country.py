@@ -1,3 +1,4 @@
+import pandas as pd
 import requests
 import random
 import os
@@ -11,10 +12,20 @@ from google_places_utils import (
 )
 from wiki_utils import get_country_data
 
-API_URL = "https://restcountries.com/v3.1/alpha/gy"
+def load_random_country_alpha2_code():
+    path = "data/country_codes.csv"
+    df = pd.read_csv(path)
+    cc = df.sample(n=1).iloc[0]["alpha-2"].lower()
+    
+    return cc
+
+def get_api_url(cc):
+    return f"https://restcountries.com/v3.1/alpha/{cc}"
 
 def fetch_country():
     try:
+        cc = load_random_country_alpha2_code()
+        API_URL = get_api_url(cc)
         res = requests.get(API_URL, timeout=10)
         if res.status_code != 200:
             print(f"[COUNTRY] API failed: {res.status_code}", flush=True)
