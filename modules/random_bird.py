@@ -15,8 +15,9 @@ def save_mp3_xeno(codigo):
         f.write(req.content)
 
 def get_xeno():
-    headers = {'User-Agent': 'Mozilla/5.0',
-               'Accept-Language': 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'}
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+           'Cookie': '__utmz=47666734.1748033008.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); techaro.lol-anubis-auth=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhY3Rpb24iOiJDSEFMTEVOR0UiLCJjaGFsbGVuZ2UiOiI5NzNiZWI2YjJiZTk4NDM1IiwiZXhwIjoxNzU0MjY3OTE0LCJpYXQiOjE3NTM2NjMxMTQsIm1ldGhvZCI6ImZhc3QiLCJuYmYiOjE3NTM2NjMwNTQsInBvbGljeVJ1bGUiOiJhYzk4MGY0OWM0ZDM1ZmFiIn0.CPP_XbEXkKkcnvbH2Mu3LFYMwD6m6KRxSPTTjGsPJOdiK8IQas8Io4hjmVKmMkY7zQvAMSGtHVGZNLJOAkR6BA; PHPSESSID=s4snka2lf81pb5qevilfs1igcm; __utma=47666734.1071623632.1748033008.1748120272.1753663117.7; __utmc=47666734; __utmb=47666734.2.10.1753663117',
+           'Accept-Language': 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'}
 
 
     req = requests.get("https://xeno-canto.org/explore/random", headers=headers)
